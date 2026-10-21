@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>AECO Innovation Lab - Heather Stokes</title><meta name="description" content="Creative work driven by strategy and brought to life through design."><meta property="og:title" content="AECO Innovation Lab - Heather Stokes"><meta property="og:description" content="Creative work driven by strategy and brought to life through design.">
+<meta property="og:image" content="images/social-share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/social-share.png">
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}
+@keyframes aecoHop{
+  0%   { transform: translateY(0) scale(1,1); animation-timing-function: ease-out; }
+  4%   { transform: translateY(0) scale(1.07,0.93); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+  15%  { transform: translateY(-64px) scale(0.95,1.05); animation-timing-function: cubic-bezier(.6,0,.85,.4); }
+  25%  { transform: translateY(0) scale(1,1); animation-timing-function: ease-out; }
+  28%  { transform: translateY(0) scale(1.1,0.88); animation-timing-function: ease-in-out; }
+  32%  { transform: translateY(0) scale(0.95,1.06); animation-timing-function: ease-in-out; }
+  36%  { transform: translateY(0) scale(1.03,0.97); animation-timing-function: ease-in-out; }
+  40%  { transform: translateY(0) scale(0.99,1.01); animation-timing-function: ease-in-out; }
+  44%  { transform: translateY(0) scale(1,1); }
+  100% { transform: translateY(0) scale(1,1); }
+}</style>
+</helmet>
+<div style="border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+      <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
+        <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      </div>
+    </nav>
+</div>
+<div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;container-type:inline-size;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="display:flex;flex-direction:column;">
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:48px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">Creative director &amp; designer</div></div>
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">AECO Innovation Lab</div></div>
+      </div>
+      <div style="grid-column:{{ col.mid3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</div>
+        <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; rollout</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Event identity &amp; rollout</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+        </div>
+      </div>
+      <div style="grid-column:{{ col.right3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</div>
+        <div style="max-width:340px;font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Professionals in the "built environment," particularly architects, civil engineers, construction, and property owners and operators.&nbsp;</div>
+      </div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;padding-top:32px;border-bottom:1px solid #D9D9D9;">
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.role.toggle }}" aria-expanded="{{ info.role.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.role.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.role.rows }};opacity:{{ info.role.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Creative director &amp; designer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.employer.toggle }}" aria-expanded="{{ info.employer.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.employer.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.employer.rows }};opacity:{{ info.employer.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">AECO Innovation Lab</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.services.toggle }}" aria-expanded="{{ info.services.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.services.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.services.rows }};opacity:{{ info.services.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; rollout</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Event identity &amp; rollout</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.audience.toggle }}" aria-expanded="{{ info.audience.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.audience.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.audience.rows }};opacity:{{ info.audience.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Professionals in the "built environment," particularly architects, civil engineers, construction, and property owners and operators.&nbsp;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="height:{{ col.spacer }};"></div>
+
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-bottom:32px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;align-items:flex-start;gap:10px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#FA3420;padding:2px 4px;">AECO Innovation Lab</div>
+        <h1 style="margin: 0; max-width: 570px; font-family: 'farnham-display',serif; font-weight: 300; font-size: 60px; line-height: 1; letter-spacing: -0.01em; text-wrap: pretty">Creating an identity for disruption.</h1>
+      </div>
+      <div style="grid-column:{{ col.right6 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Summary</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+          <p style="margin:0;">When I started with AECO Innovation Lab, the company was new and had bold ideas about disrupting their industry. As a venture lab, they felt their sector was stuck in the past, and needed to be pulled into the future with cutting-edge tech and innovative ventures. My job was to build and launch the identity and all its assets to get the brand off the ground.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/aeco-hero.jpg" alt="AECO Innovation Lab logo over a dark building facade" style="display:block;width:100%;height:auto;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.noteCol }};grid-row:{{ col.noteRow }};display:flex;flex-direction:column;justify-content:space-between;gap:48px;">
+    <div style="display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define strategic goals</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Competitive research</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Branding sessions</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Concept exploration</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Presentations and feedback</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:4px;">
+      <div style="font-size:32px;line-height:1;height:20px;font-weight:500;color:#FA3420;">*</div>
+      <div style="padding-top:1px;font-size:14px;line-height:1.5;font-weight:300;color:#767676;">All mockups represent real, existing assets.</div>
+    </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+    <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">THE BRAND ELEMENTS</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+      <p style="margin:0;">To understand the business goals for the brand and get to know the audience, I met with stakeholders for discussion over hopes, expectations and constraints. We had many working sessions to outline what was needed, what resources I had, and how the design process would work. Because I was in-house for this, I was able to work closely and frequently with the team.</p>
+      <p style="margin:0;">For the logo, we wanted something that felt very tech, very digital and a bit futuristic. I really wanted to emphasize that as a venture lab, this company was made up of groups of individuals all working together, which is why the E subtly became 3 people standing together.&nbsp;</p>
+      <p style="margin:0;">We settled on a blinding neon aqua against a completely black background to achieve the most contrast. The colour almost vibrates off the page. For visuals I used architectural imagery at unique, dramatic angles to emphasize the "disruptive" nature of the brand.</p>
+      
+      
+    </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span4 }};aspect-ratio:1/1;display:flex;flex-direction:column;">
+      <div style="flex:0 0 80%;background:#000000;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>BLACK</div><div>#000000</div></div>
+      <div style="flex:0 0 20%;background:#00F0C3;color:#000000;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>ELECTRIC MINT</div><div>#00F0C3</div></div>
+    </div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};order:{{ col.logoOrder }};background:#000000;"><img src="img/aeco-logo-flat.jpg" alt="AECO Innovation Lab logo" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:{{ col.three }};gap:24px;margin-top:24px;">
+    <div style="width:100%;aspect-ratio:1/1;background:#0F1716 url(img/aeco-icon-bg.jpg) center / cover no-repeat;">{{ aecoHop }}</div>
+    <img src="img/aeco-typography-01.jpg" alt="AECO typography: Nunito Sans font family" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/aeco-imagery-01.jpg" alt="Black and white building facade looking upward" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">THE AECO BRAND</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">The AECO team was looking to make a dramatic entrance onto the scene. That meant they wanted the marketing and support materials to give their audience a bit of a shock. The industry is very accustomed to conservative, traditional design. So getting strong reactions and feedback on presentations, business cards, website and brochures was a positive indication that we were doing a good job.</p>
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Visual language</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define and design collateral</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/aeco-slides-mockup.jpg" alt="AECO presentation slides mockup" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><video src="img/aeco-homepage-video.mp4" ref="{{ macVideo }}" onCanPlay="{{ playVideo }}" onEnded="{{ restartVideo }}" autoplay="" muted="" loop="" playsinline="" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></video></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-brochure-01c.jpg" alt="AECO corporate updates brochures" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <img src="img/aeco-web-services.jpg" alt="AECO website: How we are transforming the industry section" style="display:block;width:100%;height:auto;margin-top:24px;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-brochure-02c.jpg" alt="AECO brochure interior spread" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-2pager.jpg" alt="AECO two-page overview" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-lanyard-01.jpg" alt="AECO lanyard" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-business-cards-02.jpg" alt="AECO business cards" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Creative research</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Editorial design</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Written content</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">ANNIVERSARY EVENT</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">At their 5-year anniversary, AECO wanted to host an event to celebrate the milestone and kick off some new initiatives. After discussing the objectives for the event, I sat with marketing to plan what would be needed. Marketing planned out the operations, and I planned out the assets. One of the main pieces we planned was a booklet that summarized AECO's accomplishments and gave a sneak peek into the future of the company. I printed it with thick paper and a soft-touch cover for a weighty, impactful feel.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <img src="img/aeco-magazine-06b.jpg" alt="AECO magazine interior spreads" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/aeco-magazine-05b.jpg" alt="AECO magazine cover: Accelerating sector-wide transformation" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+  </div>
+
+  <img src="img/aeco-magazine-01b.jpg" alt="AECO magazine table of contents spread" style="display:block;width:100%;height:auto;margin-top:24px;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Visual refresh</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Event asset planning</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">ENHANCING THE BRAND</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">For the event, one of the goals was to make the support materials stand out from the regular brand. So I took the regular AECO style, and added a purple to increase the energy and excitement. I also chose conceptual imagery of morphing, abstract objects to represent transformation, as "transforming insights into solutions" is the company's tagline. I then rolled that out across all the materials.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/aeco-display-04b.jpg" alt="AECO reflection on 5 years of innovation slide on a TV display" style="display:block;width:100%;height:auto;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-backdrops-02.jpg" alt="AECO five years of innovation event backdrops" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-tall-signs-02.jpg" alt="AECO tall signs" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-large-sign-2.jpg" alt="AECO event schedule sign" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-brochure-in-hand-02.jpg" alt="Attendee reading the AECO brochure at the event" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-panel-d.jpg" alt="Panel discussion at the AECO 5 years of innovation event" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-name-tag.jpg" alt="AECO event name tag on a lanyard" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/aeco-small-signage.jpg" alt="AECO welcome table sign" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/aeco-event-front.jpg" alt="AECO 5 years of innovation event space set up for the panel" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:40px;padding:{{ col.accPad }};">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Results and learnings</div>
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">A look behind the project.</h2>
+    </div>
+    <div style="width:{{ col.accW }};display:grid;grid-template-columns:{{ col.accCols }};gap:{{ col.accGap }};align-items:start;">
+      <div style="display:flex;flex-direction:column;border-bottom:{{ col.accLeftBorder }};">
+        <sc-for list="{{ accordionLeft }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; flex: {{ col.accTitleFlex }}"><span style="flex: 1">{{ item.title }}</span></div>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;"><sc-for list="{{ item.segs }}" as="s"><sc-if value="{{ s.href }}"><a href="{{ s.href }}" style="text-decoration:underline;text-underline-offset:3px;">{{ s.text }}</a></sc-if><sc-if value="{{ s.plain }}">{{ s.text }}</sc-if></sc-for></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:1px solid #D9D9D9;">
+        <sc-for list="{{ accordionRight }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <span style="flex:1;">{{ item.title }}</span>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;"><sc-for list="{{ item.segs }}" as="s"><sc-if value="{{ s.href }}"><a href="{{ s.href }}" style="text-decoration:underline;text-underline-offset:3px;">{{ s.text }}</a></sc-if><sc-if value="{{ s.plain }}">{{ s.text }}</sc-if></sc-for></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background:#FFFFFF;color:#000000;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="padding:{{ col.moreTop }} 0 64px;">
+    <div style="max-width:1440px;margin:0 auto 24px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">More projects</h2>
+      <div style="display:flex;gap:12px;">
+        <button onClick="{{ scrollPrev }}" aria-label="Previous projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">←</button>
+        <button onClick="{{ scrollNext }}" aria-label="Next projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">→</button>
+      </div>
+    </div>
+    <div ref="{{ cardsRef }}" onScroll="{{ onCardsScroll }}" style="display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding:0 max(40px, calc((100% - 1440px) / 2 + 40px));">
+      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
+        <a href="{{ card.href }}" style="flex:0 0 {{ col.cardW }};scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;color:#000000;">
+          <img src="{{ card.img }}" alt="{{ card.title }}" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;">
+          <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#000000;">{{ card.title }}</div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { open: [], vw: window.innerWidth, infoOpen: null };
+  items = [
+    { title: 'Were you the solo designer on this project?', body: 'When I started with AECO, there wasn\'t yet any branding, and I was hired to develop it. I was the solo designer on this project, but I had a bigger design team for some of AECO\'s ventures. For the anniversary event 5 years later, I worked closely with marketing, but rolled out all the design elements myself.' },
+    { title: 'How does your role work at AECO Innovation Lab?', body: 'I was hired to develop and manage the identity for AECO, but as a venture lab, AECO also launched new projects and organizations. So my role also meant I would develop those identities as well. Two of these projects seen on this site are LandLogic and One Ontario. In some cases, I built an identity and handed it off, in others I maintained ownership. ' },
+    { title: 'What was the biggest challenge on this project?', body: 'This was my first time working on projects within the "built environment." This meant that there were a lot of technical concepts and terminology that I didn\'t yet understand. I had to put in extra effort upfront to ensure I was representing concepts correctly. I did this by working closely with the internal team, having lots of meetings and brainstorms.' },
+    { title: 'Was AI used in this project?', body: 'No AI was used in the creation of these elements.' },
+    { title: 'Has this brand been successful?', body: 'This company made quite a splash when it launched, generating media coverage within the industry. We received great feedback on the initial branding, and it was well loved by the team. The anniversary event also received great feedback, and we have continued to use the assets we created for other purposes. I was even approached at the event by potential clients who appreciated the work.' },
+    { title: 'What has this project taught you?', body: 'I had come from an agency environment prior to starting this project. In an agency, I had all the tools and resources I needed, but now I was working directly within the client\'s environment. That means I had to learn how to operate with fewer resources, smaller budgets and team members who knew nothing about the design process. So I came up with a new way to work and educate the team at the same time. And I have used and evolved these systems for years now.' }
+  ];
+  toggle(i) {
+    this.setState(s => ({ open: s.open.includes(i) ? [] : [i] }));
+  }
+  cardsRef = React.createRef();
+  videoRef = (v) => {
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true;
+    v.play().catch(() => {});
+  };
+  projects = [{ title: "LandLogic", img: "img/ll-phones-card.jpg", href: "Project - LandLogic.dc.html" }, { title: "One Ontario", img: "img/oo-brochure-tall.jpg", href: "Project - One Ontario.dc.html" }, { title: "Osler, Hoskin & Harcourt LLP", img: "img/osl-holding-card.jpg", href: "Project - Osler.dc.html" }, { title: "AECO Innovation Lab", img: "img/aeco-cover-card.jpg", href: "Project - AECO Innovation Lab.dc.html" }];
+  setWidth() {
+    const el = this.cardsRef.current;
+    const n = this.projects.length;
+    if (!el || el.children.length < n * 3) return 0;
+    return el.children[n].offsetLeft - el.children[0].offsetLeft;
+  }
+  margin() {
+    const el = this.cardsRef.current;
+    return Math.max(40, (el.clientWidth - 1440) / 2 + 40);
+  }
+  centerCards() {
+    const el = this.cardsRef.current, w = this.setWidth();
+    if (!w) return;
+    el.scrollLeft = el.children[this.projects.length].offsetLeft - el.children[0].offsetLeft - this.margin();
+  }
+  componentDidMount() {
+    requestAnimationFrame(() => this.centerCards());
+    this.onResize = () => { this.centerCards(); this.setState({ vw: window.innerWidth }); };
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  onCardsScroll = () => {
+    clearTimeout(this.loopT);
+    this.loopT = setTimeout(() => {
+      const el = this.cardsRef.current, w = this.setWidth();
+      if (!w) return;
+      const base = w - this.margin();
+      if (el.scrollLeft < base - w / 2) el.scrollLeft += w;
+      else if (el.scrollLeft > base + w / 2) el.scrollLeft -= w;
+    }, 120);
+  };
+  scrollCards(dir) {
+    const el = this.cardsRef.current;
+    if (!el || !el.children[0]) return;
+    el.scrollBy({ left: dir * (el.children[0].offsetWidth + 24), behavior: 'smooth' });
+  }
+  links = { 'LandLogic': 'Project - LandLogic.dc.html', 'One Ontario': 'Project - One Ontario.dc.html' };
+  acc(a, b) {
+    return this.items.slice(a, b).map((it, j) => {
+      const i = a + j, open = this.state.open.includes(i);
+      const segs = [];
+      (it.body || '').split(/(LandLogic|One Ontario)/).forEach(t => { if (!t) return; const href = this.links[t]; segs.push(href ? { text: t, href } : { text: t, plain: true }); });
+      return { ...it, segs, open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.toggle(i) };
+    });
+  }
+  buildHop() {
+    const e = React.createElement, c = '#00F2C3', dur = 2.6;
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const g = (key, d, x, y1, cy) => e('g', { key, style: { transformBox: 'fill-box', transformOrigin: '50% 100%', animation: reduce ? 'none' : `aecoHop ${dur}s ${d * dur}s infinite both` } },
+      e('line', { x1: x, y1, x2: x, y2: 270, stroke: c, strokeWidth: 42, strokeLinecap: 'round' }),
+      e('circle', { cx: x, cy, r: 21, fill: c }));
+    return e('svg', { viewBox: '0 0 560 560', role: 'img', 'aria-label': 'AECO icon: three bars with dots hopping in sequence', style: { display: 'block', width: '100%', height: '100%', overflow: 'visible' } },
+      e('svg', { x: 160, y: 172, width: 240, height: 264, viewBox: '0 0 264 291', overflow: 'visible' },
+        g('a', 0, 21, 105, 21), g('b', 0.14, 132, 187, 103), g('c', 0.28, 243, 105, 21)));
+  }
+  macVideo = (el) => {
+    if (!el) return;
+    el.muted = true;
+    el.loop = true;
+    el.playsInline = true;
+    el.play().catch(() => {});
+  };
+  renderVals() {
+    if (!this.hopEl) this.hopEl = this.buildHop();
+    const m = this.state.vw < 768;
+    const info = {};
+    ['role','employer','services','audience'].forEach(k => {
+      const open = this.state.infoOpen === k;
+      info[k] = { open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.setState(s => ({ infoOpen: s.infoOpen === k ? null : k })) };
+    });
+    return {
+      info, isMobile: m, isDesktop: !m, aecoHop: this.hopEl,
+      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0' },
+      cardsRef: this.cardsRef,
+      onCardsScroll: this.onCardsScroll,
+      cards: [...this.projects, ...this.projects, ...this.projects],
+      videoRef: this.videoRef,
+      macVideo: this.macVideo,
+      restartVideo: (e) => { const v = e.currentTarget; v.currentTime = 0; v.play().catch(() => {}); },
+      playVideo: (e) => { const v = e.currentTarget; v.muted = true; v.loop = true; if (v.paused) v.play().catch(() => {}); },
+      scrollPrev: () => this.scrollCards(-1),
+      scrollNext: () => this.scrollCards(1),
+      accordionLeft: this.acc(0, 3),
+      accordionRight: this.acc(3, 6)
+    };
+  }
+}
+</script>
+</body>
+</html>

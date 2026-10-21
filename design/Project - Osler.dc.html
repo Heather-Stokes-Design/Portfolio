@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>Osler - Heather Stokes</title><meta name="description" content="Creative work driven by strategy and brought to life through design."><meta property="og:title" content="Osler - Heather Stokes"><meta property="og:description" content="Creative work driven by strategy and brought to life through design.">
+<meta property="og:image" content="images/social-share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/social-share.png">
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<div style="border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+      <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
+        <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      </div>
+    </nav>
+</div>
+<div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;container-type:inline-size;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="display:flex;flex-direction:column;">
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:48px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">Senior designer / project lead</div></div>
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">Zync Agency</div></div>
+      </div>
+      <div style="grid-column:{{ col.mid3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</div>
+        <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Complete brand guidelines</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Full brand rollout</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+        </div>
+      </div>
+      <div style="grid-column:{{ col.right3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</div>
+        <div style="max-width:340px;font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Osler is a leader in Canadian business law, with offices in Toronto, Montréal, Calgary, Ottawa, Vancouver and New York, and a&nbsp;team of over 500 lawyers.</div>
+      </div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;padding-top:32px;border-bottom:1px solid #D9D9D9;">
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.role.toggle }}" aria-expanded="{{ info.role.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.role.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.role.rows }};opacity:{{ info.role.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Senior designer / project lead</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.employer.toggle }}" aria-expanded="{{ info.employer.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.employer.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.employer.rows }};opacity:{{ info.employer.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Zync Agency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.services.toggle }}" aria-expanded="{{ info.services.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.services.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.services.rows }};opacity:{{ info.services.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Complete brand guidelines</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Full brand rollout</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.audience.toggle }}" aria-expanded="{{ info.audience.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.audience.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.audience.rows }};opacity:{{ info.audience.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Osler is a leader in Canadian business law, with offices in Toronto, Montréal, Calgary, Ottawa, Vancouver and New York, and a&nbsp;team of over 500 lawyers.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="height:{{ col.spacer }};"></div>
+
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-bottom:32px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;align-items:flex-start;gap:10px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#FA3420;padding:2px 4px;">Osler, Hoskin &amp; Harcourt LLP</div>
+        <h1 style="margin: 0; max-width: 570px; font-family: 'farnham-display',serif; font-weight: 300; font-size: 60px; line-height: 1; letter-spacing: -0.01em; text-wrap: pretty">Crafting a powerful brand system.</h1>
+      </div>
+      <div style="grid-column:{{ col.right6 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Summary</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+          <p style="margin:0;">While working at Zync Agency in Toronto, I was the lead designer for our work with Osler. When I started on the project, they had just finished a brand refresh. So concepts were approved, but none of the details or brand rollout had begun. I had the bare bones of a brand, and my job was to develop and refine it into a very tight, very controlled system that could be used globally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/osler-hero.jpg" alt="Osler brand standards pages" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#D9D9D9;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.noteCol }};grid-row:{{ col.noteRow }};display:flex;flex-direction:column;justify-content:space-between;gap:48px;">
+    <div style="display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Audit approved materials</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Refine brand rollout</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Test and refine rules</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Write and maintain guidelines</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:4px;">
+      <div style="font-size:32px;line-height:1;height:20px;font-weight:500;color:#FA3420;">*</div>
+      <div style="padding-top:1px;font-size:14px;line-height:1.5;font-weight:300;color:#767676;">All mockups represent real, existing assets.</div>
+    </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+    <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">THE BRAND GUIDELINES</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+      <p style="margin:0;">One of the most important pieces of the project was creating a very comprehensive brand guidelines document. Consistency across materials was extremely important. It needed to cover every base, every variation, and every possibility that the Osler brand might encounter.</p>
+      <p style="margin:0;">Because this was a totally custom job, I spent weeks creating detailed rules around logo size formulas, systems for creating the brand shapes, calculations for how to measure precise margin sizes, where to use what weight of fonts, and so on. Every ad, every report, every brochure needed to look consistent.</p>
+      <p style="margin:0;">This was the most comprehensive brand system I have created, and because I was the lead designer on this brand for over two years, I pressure tested my own system daily.</p>
+      
+      
+    </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span4 }};aspect-ratio:1/1;display:flex;flex-direction:column;">
+      <div style="flex:0 0 60%;background:#CD153E;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Red</div><div>#CD153E</div></div>
+      <div style="flex:0 0 10%;background:#414141;color:#FFFFFF;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Dark Grey</div><div>#414141</div></div>
+      <div style="flex:0 0 10%;background:#0083C1;color:#FFFFFF;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Blue</div><div>#0083C1</div></div>
+      <div style="flex:0 0 10%;background:#00A896;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Teal</div><div>#00A896</div></div>
+      <div style="flex:0 0 10%;background:#F89C24;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Orange</div><div>#F89C24</div></div>
+    </div>
+    <div style="grid-column:{{ col.bigCol }};grid-row:{{ col.bigRow }};position:relative;aspect-ratio:1/1;order:{{ col.logoOrder }};background:#D9D9D9;"><img src="img/osler-guidelines-01c.jpg" alt="Osler brand guidelines pages" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <img src="img/osler-report-covers-02.jpg" alt="Osler Legal Year in Review report covers" style="grid-column:{{ col.span4 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#D9D9D9;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PRINT AND DIGITAL ADVERTISING</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">One of the main applications of the brand was in Osler's print and digital advertising and communications. Osler is also involved in a breadth of sponsorships and events throughout the year, and shows its public support through magazines, newspapers and digital ads. The design system was key to ensure consistency between the hundreds of published materials.</p>
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Image sourcing</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand rollout</span>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/osler-brand-ads.jpg" alt="Osler brand campaign ads spread across a surface" style="display:block;width:100%;height:auto;margin-bottom:24px;">
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-newspaper-ad.jpg" alt="Osler newspaper ad mockup" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-ads-mockup-2.jpg" alt="Osler infrastructure and mining print ads mockup" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-magazine-ad.jpg" alt="Osler magazine ad mockup" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-magazine-ad-venice.jpg" alt="Osler Proud to play our part magazine ad" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">SCOPE</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Editorial design</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Information visualization</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PUBLICATIONS</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">Osler is a titan in thought leadership, and produces dozens of publications a year for its global audience. These pieces are long-format, text heavy, industry-specific pieces. Layout, information hierarchy and organization within each publication is key. I created layout standards and detailed typesetting styles for consistency between publications from year to year.&nbsp;</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-lyir-covers.jpg" alt="Osler Legal Year in Review report covers" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:1/1;"><img src="img/osler-lyir-pages.jpg" alt="Osler Legal Year in Review interior pages" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+  <img src="img/osler-report-01.jpg" alt="Osler diversity disclosure report spreads" style="display:block;width:100%;height:auto;margin-top:24px;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/osler-report-03.jpg" alt="Osler Diversity Disclosure Practices reports on wall shelves" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/osler-report-02.jpg" alt="Osler Your Canadian Partner brochure cover and spread" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:40px;padding:{{ col.accPad }};">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Results and learnings</div>
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">A look behind the project.</h2>
+    </div>
+    <div style="width:{{ col.accW }};display:grid;grid-template-columns:{{ col.accCols }};gap:{{ col.accGap }};align-items:start;">
+      <div style="display:flex;flex-direction:column;border-bottom:{{ col.accLeftBorder }};">
+        <sc-for list="{{ accordionLeft }}" as="item" hint-placeholder-count="2">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; flex: {{ col.accTitleFlex }}"><span style="flex: 1">{{ item.title }}</span></div>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;">{{ item.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:1px solid #D9D9D9;">
+        <sc-for list="{{ accordionRight }}" as="item" hint-placeholder-count="2">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <span style="flex:1;">{{ item.title }}</span>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;">{{ item.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background:#FFFFFF;color:#000000;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="padding:{{ col.moreTop }} 0 64px;">
+    <div style="max-width:1440px;margin:0 auto 24px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">More projects</h2>
+      <div style="display:flex;gap:12px;">
+        <button onClick="{{ scrollPrev }}" aria-label="Previous projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">←</button>
+        <button onClick="{{ scrollNext }}" aria-label="Next projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">→</button>
+      </div>
+    </div>
+    <div ref="{{ cardsRef }}" onScroll="{{ onCardsScroll }}" style="display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding:0 max(40px, calc((100% - 1440px) / 2 + 40px));">
+      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
+        <a href="{{ card.href }}" style="flex:0 0 {{ col.cardW }};scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;color:#000000;">
+          <img src="{{ card.img }}" alt="{{ card.title }}" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;">
+          <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#000000;">{{ card.title }}</div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { open: [], vw: window.innerWidth, infoOpen: null };
+  items = [
+    { title: 'Who was involved on this brand?', body: 'I was the lead designer on this brand for over 2 years. I worked under a Creative Director, and was assisted daily by amazing project managers, developers and the team at Osler. All of the pieces above were entirely designed by me.' },
+    { title: 'What was the biggest challenge on this brand?', body: 'Because Osler\'s public image as a large law firm was so important, every detail mattered. Every angle, every type size, every margin had to be consistent. The logo could not be 1.75 inches on this publication and 1.85 inches on the next — even if they were printed a year apart. Writing and calculating the design system was a huge challenge, but very satisfying.' },
+    { title: 'Was AI used in this project?', body: 'I worked on this a few years ago before AI in design existed. Everything I did was manual, thought out and deliberate.' },
+    { title: 'What has the project taught you?', body: 'I really benefited from working with Osler for so long because they have very high standards for quality. Every piece had to pass by multiple reviewers, each of whom had different boxes to check. This meant I had to be very critical and careful in my work. Nothing could be out of line. This led me to develop strict policies and processes to ensure quality was met.' }
+  ];
+  toggle(i) {
+    this.setState(s => ({ open: s.open.includes(i) ? [] : [i] }));
+  }
+  cardsRef = React.createRef();
+  videoRef = (v) => {
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true;
+    v.play().catch(() => {});
+  };
+  projects = [{ title: "LandLogic", img: "img/ll-phones-card.jpg", href: "Project - LandLogic.dc.html" }, { title: "One Ontario", img: "img/oo-brochure-tall.jpg", href: "Project - One Ontario.dc.html" }, { title: "Osler, Hoskin & Harcourt LLP", img: "img/osl-holding-card.jpg", href: "Project - Osler.dc.html" }, { title: "AECO Innovation Lab", img: "img/aeco-cover-card.jpg", href: "Project - AECO Innovation Lab.dc.html" }];
+  setWidth() {
+    const el = this.cardsRef.current;
+    const n = this.projects.length;
+    if (!el || el.children.length < n * 3) return 0;
+    return el.children[n].offsetLeft - el.children[0].offsetLeft;
+  }
+  margin() {
+    const el = this.cardsRef.current;
+    return Math.max(40, (el.clientWidth - 1440) / 2 + 40);
+  }
+  centerCards() {
+    const el = this.cardsRef.current, w = this.setWidth();
+    if (!w) return;
+    el.scrollLeft = el.children[this.projects.length].offsetLeft - el.children[0].offsetLeft - this.margin();
+  }
+  componentDidMount() {
+    requestAnimationFrame(() => this.centerCards());
+    this.onResize = () => { this.centerCards(); this.setState({ vw: window.innerWidth }); };
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  onCardsScroll = () => {
+    clearTimeout(this.loopT);
+    this.loopT = setTimeout(() => {
+      const el = this.cardsRef.current, w = this.setWidth();
+      if (!w) return;
+      const base = w - this.margin();
+      if (el.scrollLeft < base - w / 2) el.scrollLeft += w;
+      else if (el.scrollLeft > base + w / 2) el.scrollLeft -= w;
+    }, 120);
+  };
+  scrollCards(dir) {
+    const el = this.cardsRef.current;
+    if (!el || !el.children[0]) return;
+    el.scrollBy({ left: dir * (el.children[0].offsetWidth + 24), behavior: 'smooth' });
+  }
+  acc(a, b) {
+    return this.items.slice(a, b).map((it, j) => {
+      const i = a + j, open = this.state.open.includes(i);
+      return { ...it, open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.toggle(i) };
+    });
+  }
+  renderVals() {
+    const m = this.state.vw < 768;
+    const info = {};
+    ['role','employer','services','audience'].forEach(k => {
+      const open = this.state.infoOpen === k;
+      info[k] = { open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.setState(s => ({ infoOpen: s.infoOpen === k ? null : k })) };
+    });
+    return {
+      info, isMobile: m, isDesktop: !m,
+      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1', bigRow: 'auto', bigCol: '1 / -1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0', bigRow: '1 / span 2', bigCol: '5 / span 8' },
+      cardsRef: this.cardsRef,
+      onCardsScroll: this.onCardsScroll,
+      cards: [...this.projects, ...this.projects, ...this.projects],
+      videoRef: this.videoRef,
+      scrollPrev: () => this.scrollCards(-1),
+      scrollNext: () => this.scrollCards(1),
+      accordionLeft: this.acc(0, 2),
+      accordionRight: this.acc(2, 4)
+    };
+  }
+}
+</script>
+</body>
+</html>

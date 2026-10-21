@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+</helmet>
+<footer style="position:relative;overflow:hidden;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;">
+  <div style="max-width:1440px;margin:0 auto;padding:0 40px;box-sizing:border-box;display:grid;position:relative;">
+    <div style="grid-area:1 / 1;align-self:stretch;position:relative;z-index:1;padding:{{ footPad }};display:flex;flex-direction:column;justify-content:space-between;gap:{{ footGap }};">
+    <div style="display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));column-gap:24px;row-gap:{{ footRowGap }};align-items:start;">
+      <div style="grid-column:{{ footTagCol }};font-size:32px;line-height:1.25;color:#FFFFFF;">Graphic design, branding<br>and communications.</div>
+      <div style="grid-column:{{ footLinksCol }};translate:{{ pjShift }};display:flex;gap:64px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="font-size:15px;line-height:1.5;font-weight:700;color:#FFFFFF;">Explore</div>
+          <a href="Homepage v3.dc.html#work" onClick="{{ goWork }}" style="font-size:15px;line-height:1.5;font-weight:300;color:#FFFFFF;transition:color 100ms ease;" style-hover="color:#FA3420;">Work</a>
+          <a href="Contact Page.dc.html" style="font-size:15px;line-height:1.5;font-weight:300;color:#FFFFFF;transition:color 100ms ease;" style-hover="color:#FA3420;">Contact</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;">
+          <div style="font-size:15px;line-height:1.5;font-weight:700;color:#FFFFFF;">Connect</div>
+          <a href="mailto:hello@heatherstokes.ca" style="font-size:15px;line-height:1.5;font-weight:300;color:#FFFFFF;transition:color 100ms ease;" style-hover="color:#FA3420;">hello@heatherstokes.ca</a>
+          <a href="https://www.linkedin.com/in/heather-stokes-725b9426/" target="_blank" rel="noopener" style="font-size:15px;line-height:1.5;font-weight:300;color:#FFFFFF;transition:color 100ms ease;" style-hover="color:#FA3420;">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div style="font-size:12px;line-height:1.4;color:#FFFFFF;">© 2026 Heather Stokes. All rights reserved.</div>
+    </div>
+    <div ref="{{ footBigRef }}" aria-hidden="true" style="grid-area:1 / 1;width:max-content;align-self:start;justify-self:start;white-space:nowrap;font-family:'barlow-condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:calc((min(100vw, 1440px) - 80px) / 8.6);line-height:0.8;margin-top:-0.12em;margin-bottom:-0.12em;text-align:left;color:#1C1C1C;">Design &amp;<br>Direction</div>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;1280px&quot;,&quot;height&quot;:&quot;520px&quot;}}">
+class Component extends DCLogic {
+  state = { mob: document.documentElement.clientWidth < 768 };
+  footBigRef = React.createRef();
+  fitFoot = () => { const el = this.footBigRef.current; if (!el) return; el.style.fontSize = ''; const cs = getComputedStyle(el.parentElement), avail = el.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight), w = el.getBoundingClientRect().width; if (w > 0) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * avail / w * (window.innerWidth < 768 ? 1.6 : 1)) + 'px'; };
+  onResize = () => { const mob = document.documentElement.clientWidth < 768; if (mob !== this.state.mob) this.setState({ mob }); this.fitFoot(); };
+  componentDidMount() { window.addEventListener('resize', this.onResize); if (document.fonts) document.fonts.ready.then(this.fitFoot); this.fitFoot(); }
+  componentDidUpdate() { this.fitFoot(); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  renderVals() {
+    const mob = this.state.mob;
+    return {
+      footBigRef: this.footBigRef,
+      footPad: mob ? '48px 0 24px' : '96px 0 40px', footGap: mob ? '40px' : '96px', footRowGap: mob ? '24px' : '40px',
+      footTagCol: mob ? '1 / -1' : '1 / 6', footLinksCol: mob ? '1 / -1' : '6 / 13',
+      pjShift: mob ? 'none' : 'calc(0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px)) 0',
+      goWork: e => { const t = document.getElementById('work'); if (!t) return; e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

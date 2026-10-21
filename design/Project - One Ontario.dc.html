@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>One Ontario - Heather Stokes</title><meta name="description" content="Creative work driven by strategy and brought to life through design."><meta property="og:title" content="One Ontario - Heather Stokes"><meta property="og:description" content="Creative work driven by strategy and brought to life through design.">
+<meta property="og:image" content="images/social-share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/social-share.png">
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<div style="border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+      <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
+        <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      </div>
+    </nav>
+</div>
+<div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;container-type:inline-size;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="display:flex;flex-direction:column;">
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:48px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">Director of brand and communications</div></div>
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">AECO Innovation Lab</div></div>
+      </div>
+      <div style="grid-column:{{ col.mid3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</div>
+        <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; design</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Positioning &amp; messaging</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+        </div>
+      </div>
+      <div style="grid-column:{{ col.right3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</div>
+        <div style="max-width:340px;font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Municipal officials, academia and development professionals who work with housing and approvals in Ontario.</div>
+      </div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;padding-top:32px;border-bottom:1px solid #D9D9D9;">
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.role.toggle }}" aria-expanded="{{ info.role.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.role.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.role.rows }};opacity:{{ info.role.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Director of brand and communications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.employer.toggle }}" aria-expanded="{{ info.employer.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.employer.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.employer.rows }};opacity:{{ info.employer.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">AECO Innovation Lab</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.services.toggle }}" aria-expanded="{{ info.services.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.services.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.services.rows }};opacity:{{ info.services.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; design</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Positioning &amp; messaging</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.audience.toggle }}" aria-expanded="{{ info.audience.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.audience.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.audience.rows }};opacity:{{ info.audience.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Municipal officials, academia and development professionals who work with housing and approvals in Ontario.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="height:{{ col.spacer }};"></div>
+
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-bottom:32px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;align-items:flex-start;gap:10px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#FA3420;padding:2px 4px;">One Ontario</div>
+        <h1 style="margin: 0; max-width: 570px; font-family: 'farnham-display',serif; font-weight: 300; font-size: 60px; line-height: 1; letter-spacing: -0.01em; text-wrap: pretty">An identity for a modern Ontario.</h1>
+      </div>
+      <div style="grid-column:{{ col.right6 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Summary</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+          <p style="margin:0;">One Ontario was one of the venture startups that came out of <a href="Project - AECO Innovation Lab.dc.html" style="color:inherit;text-decoration:underline;">AECO Innovation Lab</a>. The goal of the organization was to bring together government, academia and industry to modernize how Ontario approaches development approvals, and therefore improve housing supply. My job was to develop the full brand identity, roll it out and manage the brand over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/oneontario-hero-v2.jpg" alt="One Ontario logo over a city view" style="display:block;width:100%;height:auto;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.noteCol }};grid-row:{{ col.noteRow }};display:flex;flex-direction:column;justify-content:space-between;gap:48px;">
+    <div style="display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define positioning and messaging</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Audit audience and competitors</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Branding workshops</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Concept exploration</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Presentations and feedback</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:4px;">
+      <div style="font-size:32px;line-height:1;height:20px;font-weight:500;color:#FA3420;">*</div>
+      <div style="padding-top:1px;font-size:14px;line-height:1.5;font-weight:300;color:#767676;">All mockups represent real, existing assets.</div>
+    </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+    <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">DEVELOPING THE IDENTITY</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+      <p style="margin:0;">One of the challenges of developing this brand was the positioning. We wanted to make it fresh and digital, but also appeal to government and academia. It needed to walk a fine line between modern and traditional. I spent many sessions defining goals, researching competitors, understanding what the audience was typically used to, and conceptualizing how far we could "push" the sector without overstepping.</p>
+      <p style="margin:0;">Because I was responsible for developing this brand in-house, I worked closely with stakeholders and the audience to find the right balance in tone. For the palette we landed on blue tones to represent calm professionalism, but added orange and yellow to inject a bit of energy and keep it fresh.&nbsp;</p>
+      <p style="margin:0;">For the visual language I spliced apart the "O" from the logo into various shapes that could be organically rearranged to create endless layouts and make each piece very recognizable.</p>
+      
+      
+    </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span4 }};aspect-ratio:1/1;display:flex;flex-direction:column;">
+      <div style="flex:0 0 44%;background:#173D81;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>DARK BLUE</div><div>#173D81</div></div>
+      <div style="flex:0 0 18%;background:#238CFF;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>BOLD BLUE</div><div>#238CFF</div></div>
+      <div style="flex:0 0 18%;background:#E9F4FF;color:#000000;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>LIGHT BLUE</div><div>#E9F4FF</div></div>
+      <div style="flex:0 0 10%;background:#FFCD00;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>YELLOW</div><div>#FFCD00</div></div>
+      <div style="flex:0 0 10%;background:#FF5C33;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>ORANGE</div><div>#FF5C33</div></div>
+    </div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};order:{{ col.logoOrder }};background:#000000;"><img src="img/oneontario-logo-flat-02.jpg" alt="One Ontario logo in four colourways" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:{{ col.three }};gap:24px;margin-top:24px;">
+    <video ref="{{ videoRef }}" src="img/oo-logo-animation.mp4" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#173D81;"></video>
+    <img src="img/oo-typography-01-v3.jpg" alt="One Ontario typography: Rethink Sans font family" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/oo-shapes-01-v3.jpg" alt="One Ontario shape system" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">VISUAL LANGUAGE</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">I worked with the team to define what types of materials would be needed to express the goals of the organization. I then started working on how to develop the brand across those materials. The flexibility in shape and colour allowed me to create endless variation between pieces, which creates visual interest while keeping every piece recognizable and consistent. The circle motif became a key repeated element, even on the business card shape itself.</p>
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Visual language development</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define and design collateral</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};background:#D9D9D9;"><img src="img/oo-brochure-02-v2.jpg" alt="One Ontario brochures" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};background:#D9D9D9;"><img src="img/oo-presentation-03.jpg" alt="One Ontario presentation on an auditorium screen" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};background:#D9D9D9;"><img src="img/oo-ad-01-v5.jpg" alt="One Ontario print ad: Unleashing our collective power" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};background:#D9D9D9;"><img src="img/oo-business-cards-03-v3.jpg" alt="Stacks of One Ontario circular business cards" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};background:#D9D9D9;"><img src="img/oo-brochure-03-v2.jpg" alt="One Ontario brochure spread being read" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};background:#D9D9D9;"><img src="img/oo-ad-02-v4.jpg" alt="One Ontario print ad: Defining the future" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PRESENTATIONS AND INFOGRAPHICS</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">An important goal for One Ontario is the communication of a complex message. This is a not-for-profit that is trying to explain why development approvals in Ontario are problematic, and what needs to change. So finding ways to create clear presentations was key. I worked closely with the team to define what was needed, and I developed a simple infographic style to explain complicated processes and concepts.</p>
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Process brainstorms</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Infographic design</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Presentation design</span>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/oo-slides-mockup-02.jpg" alt="One Ontario presentation slides laid out with a laptop" style="display:block;width:100%;height:auto;background:#D9D9D9;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <img src="img/oo-slides-mockup-03-v2.jpg" alt="One Ontario slide on a tablet" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#D9D9D9;">
+    <img src="img/oo-presentation-02.jpg" alt="Three One Ontario presentation slides" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#D9D9D9;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Social planning</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Communication campaigns</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">SOCIAL MEDIA</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">One Ontario isn't heavy into social media, but does use it to help communicate mandates, news, events, and significant milestones. I worked with the team to create a social plan, and guide the ongoing content creation. Posts are government- and academic-facing, so clarity and professionalism were key. I created reusable, flexible layouts so team members can make posts as needed.&nbsp;</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <img src="img/oo-social.jpg" alt="One Ontario social media posts" style="display:block;width:100%;aspect-ratio:2/1;object-fit:cover;background:#D9D9D9;">
+
+  <img src="img/oo-social-02.jpg" alt="One Ontario social post on a phone" style="display:block;width:100%;height:auto;margin-top:24px;background:#D9D9D9;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">WEBSITE</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">The website for One Ontario is an ever-changing hub. As mandates evolve, the design, layout and messaging have to keep up with it. That means a lot of internal alignment is needed to make sure the right content is communicated. As the brand owner, I build and maintain the frequent updates, ensuring consistency within the brand.</p>
+        
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Site planning</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Design and layout</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Maintain blog</span>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/oo-web-02-v3.jpg" alt="One Ontario website pages laid out with a laptop" style="display:block;width:100%;height:auto;background:#D9D9D9;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <div style="grid-column:{{ col.span8 }};position:relative;width:100%;aspect-ratio:1900 / 965;overflow:hidden;background:#D9D9D9;"><video ref="{{ videoRef }}" src="img/oo-homepage-scroll.mp4" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="position:absolute;top:0;left:0;display:block;width:101.06%;height:auto;"></video></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};background:#D9D9D9;"><img src="img/oo-phone-01.jpg" alt="One Ontario mobile page held in hand" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <img src="img/oo-web-01.jpg" alt="One Ontario Mandate page on a laptop" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#D9D9D9;">
+    <img src="img/oo-web-04-v2.jpg" alt="One Ontario Solutions page on a laptop" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#D9D9D9;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};background:#D9D9D9;"><img src="img/oo-phone-02-v2.jpg" alt="One Ontario mobile pages on a blue background" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};background:#D9D9D9;"><img src="img/oo-web-06.jpg" alt="One Ontario homepage on a desktop monitor" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">PROCESS</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Virtual world booth design</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Navigating technical limitations</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">A UNIQUE APPLICATION</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">During COVID, professional conferences were either cancelled or held online. One Ontario signed up to host a booth at the annual OBOA online event, and that meant navigating an entire interactive world! Flexibility in design and execution was extremely limited, but the project was a lot of fun. It was a unique challenge!</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/oo-booth-02.jpg" alt="One Ontario booth presentation screen" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/oo-booth-01.jpg" alt="One Ontario virtual booth" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:40px;padding:{{ col.accPad }};">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Results and learnings</div>
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">A look behind the project.</h2>
+    </div>
+    <div style="width:{{ col.accW }};display:grid;grid-template-columns:{{ col.accCols }};gap:{{ col.accGap }};align-items:start;">
+      <div style="display:flex;flex-direction:column;border-bottom:{{ col.accLeftBorder }};">
+        <sc-for list="{{ accordionLeft }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; flex: {{ col.accTitleFlex }}"><span style="flex: 1">{{ item.title }}</span></div>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px"><p style="margin: 0">{{ item.body }}</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:1px solid #D9D9D9;">
+        <sc-for list="{{ accordionRight }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <span style="flex:1;">{{ item.title }}</span>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;">{{ item.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background:#FFFFFF;color:#000000;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="padding:{{ col.moreTop }} 0 64px;">
+    <div style="max-width:1440px;margin:0 auto 24px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">More projects</h2>
+      <div style="display:flex;gap:12px;">
+        <button onClick="{{ scrollPrev }}" aria-label="Previous projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">←</button>
+        <button onClick="{{ scrollNext }}" aria-label="Next projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">→</button>
+      </div>
+    </div>
+    <div ref="{{ cardsRef }}" onScroll="{{ onCardsScroll }}" style="display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding:0 max(40px, calc((100% - 1440px) / 2 + 40px));">
+      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
+        <a href="{{ card.href }}" style="flex:0 0 {{ col.cardW }};scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;color:#000000;">
+          <img src="{{ card.img }}" alt="{{ card.title }}" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;">
+          <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#000000;">{{ card.title }}</div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { open: [], vw: window.innerWidth, infoOpen: null };
+  items = [
+    { title: 'Are you the solo designer on this project?', body: 'While I regularly work with board members, marketing, business development and technical teams, I designed and executed this brand solo. Over the years, other team members have worked on the brand using the established guidelines, but the above pieces were all produced by me.' },
+    { title: 'What communications are involved?', body: 'As a part of being the brand owner, I also work on the public-facing communications. I align closely with the board members to ensure correct messaging, and I write the content, articles and posts that get published. This means maintaining the positioning of the organization across public spaces. ' },
+    { title: 'What was the biggest challenge on this project?', body: 'The challenge with One Ontario was striking the balance between government, academia and industry. Leadership was very clear that it had to be a brand that spoke to all three audiences. This meant creative and competitive research across 3 spaces. I was lucky that One Ontario\'s network included members from each, and so I was able to incorporate direct feedback into my concepts.' },
+    { title: 'Was AI used in this project?', body: 'No, the bulk of this brand was completed prior to the AI takeover in the industry. Today, AI may assist in written content or production processes, but it does not replace creative concepts. None of the above pieces used AI in their production.' },
+    { title: 'Has this brand been successful?', body: 'One Ontario has become well known in the industry, and the branding works hard to encourage that. The messaging and communications assets are what get professional public attention and starts conversations. The amount of inbound contact we get supports the success story of the branding.' },
+    { title: 'What has this project taught you?', body: 'One thing I have taken away from this project is how essential it is to start with strong brand elements. I started this brand in 2020, and the mandates and messaging have evolved, but the core visual language has remained the same. Because of the flexibility of the elements, it was able to evolve with the organization. It launched with emphasis on the darker colours and more complex layout to create energy and impact, and over time, the lighter colours and spacious layouts have started becoming more prominent to build more trust and strength. ' }
+  ];
+  toggle(i) {
+    this.setState(s => ({ open: s.open.includes(i) ? [] : [i] }));
+  }
+  cardsRef = React.createRef();
+  videoRef = (v) => {
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true;
+    v.play().catch(() => {});
+  };
+  projects = [{ title: "LandLogic", img: "img/ll-phones-card.jpg", href: "Project - LandLogic.dc.html" }, { title: "One Ontario", img: "img/oo-brochure-tall.jpg", href: "Project - One Ontario.dc.html" }, { title: "Osler, Hoskin & Harcourt LLP", img: "img/osl-holding-card.jpg", href: "Project - Osler.dc.html" }, { title: "AECO Innovation Lab", img: "img/aeco-cover-card.jpg", href: "Project - AECO Innovation Lab.dc.html" }];
+  setWidth() {
+    const el = this.cardsRef.current;
+    const n = this.projects.length;
+    if (!el || el.children.length < n * 3) return 0;
+    return el.children[n].offsetLeft - el.children[0].offsetLeft;
+  }
+  margin() {
+    const el = this.cardsRef.current;
+    return Math.max(40, (el.clientWidth - 1440) / 2 + 40);
+  }
+  centerCards() {
+    const el = this.cardsRef.current, w = this.setWidth();
+    if (!w) return;
+    el.scrollLeft = el.children[this.projects.length].offsetLeft - el.children[0].offsetLeft - this.margin();
+  }
+  componentDidMount() {
+    requestAnimationFrame(() => this.centerCards());
+    this.onResize = () => { this.centerCards(); this.setState({ vw: window.innerWidth }); };
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  onCardsScroll = () => {
+    clearTimeout(this.loopT);
+    this.loopT = setTimeout(() => {
+      const el = this.cardsRef.current, w = this.setWidth();
+      if (!w) return;
+      const base = w - this.margin();
+      if (el.scrollLeft < base - w / 2) el.scrollLeft += w;
+      else if (el.scrollLeft > base + w / 2) el.scrollLeft -= w;
+    }, 120);
+  };
+  scrollCards(dir) {
+    const el = this.cardsRef.current;
+    if (!el || !el.children[0]) return;
+    el.scrollBy({ left: dir * (el.children[0].offsetWidth + 24), behavior: 'smooth' });
+  }
+  acc(a, b) {
+    return this.items.slice(a, b).map((it, j) => {
+      const i = a + j, open = this.state.open.includes(i);
+      return { ...it, open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.toggle(i) };
+    });
+  }
+  renderVals() {
+    const m = this.state.vw < 768;
+    const info = {};
+    ['role','employer','services','audience'].forEach(k => {
+      const open = this.state.infoOpen === k;
+      info[k] = { open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.setState(s => ({ infoOpen: s.infoOpen === k ? null : k })) };
+    });
+    return {
+      info, isMobile: m, isDesktop: !m,
+      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0' },
+      cardsRef: this.cardsRef,
+      onCardsScroll: this.onCardsScroll,
+      cards: [...this.projects, ...this.projects, ...this.projects],
+      videoRef: this.videoRef,
+      scrollPrev: () => this.scrollCards(-1),
+      scrollNext: () => this.scrollCards(1),
+      accordionLeft: this.acc(0, 3),
+      accordionRight: this.acc(3, 6)
+    };
+  }
+}
+</script>
+</body>
+</html>

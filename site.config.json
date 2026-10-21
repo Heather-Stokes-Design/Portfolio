@@ -1,0 +1,74 @@
+{
+  "siteUrl": "https://heatherstokes.ca",
+  "siteName": "Heather Stokes",
+  "person": {
+    "name": "Heather Stokes",
+    "jobTitle": "Graphic designer and creative director",
+    "description": "Toronto-based graphic designer and creative director specializing in brand identity, branding and communications design.",
+    "email": "hello@heatherstokes.ca",
+    "city": "Toronto",
+    "region": "ON",
+    "country": "CA",
+    "sameAs": ["https://www.linkedin.com/in/heather-stokes-725b9426/"],
+    "knowsAbout": ["Graphic design", "Brand identity", "Branding", "Communications design", "Creative direction", "Event identity", "Brand systems"]
+  },
+  "shareImage": { "path": "/images/social-share.png", "width": 1200, "height": 630, "alt": "Heather Stokes - red square with a white asterisk" },
+  "pages": [
+    {
+      "file": "Homepage*.dc.html",
+      "route": "/",
+      "type": "home",
+      "title": "Heather Stokes - Graphic design, branding and communications",
+      "description": "Heather Stokes is a Toronto-based graphic designer and creative director. Creative work driven by strategy and brought to life through design."
+    },
+    {
+      "file": "Project - LandLogic*.dc.html",
+      "route": "/work/landlogic/",
+      "type": "project",
+      "client": "LandLogic",
+      "title": "LandLogic - Heather Stokes",
+      "headline": "Building a new proptech brand",
+      "image": "/img/landlogic-hero.jpg",
+      "description": "Brand identity for LandLogic, a proptech DaaS / SaaS company: brand positioning, a full identity, asset roll-out and a communication strategy, by designer Heather Stokes."
+    },
+    {
+      "file": "Project - One Ontario*.dc.html",
+      "route": "/work/one-ontario/",
+      "type": "project",
+      "client": "One Ontario",
+      "title": "One Ontario - Heather Stokes",
+      "headline": "An identity for a modern Ontario",
+      "image": "/img/oneontario-hero-v2.jpg",
+      "description": "Brand identity for One Ontario, a not-for-profit: a flexible brand for working with government partners, industry professionals and research initiatives, by designer Heather Stokes."
+    },
+    {
+      "file": "Project - Osler*.dc.html",
+      "route": "/work/osler/",
+      "type": "project",
+      "client": "Osler, Hoskin & Harcourt LLP",
+      "title": "Osler - Heather Stokes",
+      "headline": "Crafting a powerful brand system",
+      "image": "/img/osler-hero.jpg",
+      "description": "Brand system for Osler, Hoskin & Harcourt LLP: a robust, comprehensive system to uphold standards and keep a large law firm consistent, by designer Heather Stokes."
+    },
+    {
+      "file": "Project - AECO Innovation Lab*.dc.html",
+      "route": "/work/aeco-innovation-lab/",
+      "type": "project",
+      "client": "AECO Innovation Lab",
+      "title": "AECO Innovation Lab - Heather Stokes",
+      "headline": "Creating an identity for disruption",
+      "image": "/img/aeco-hero.jpg",
+      "description": "Brand and event identity for AECO Innovation Lab, a venture lab: an edgy launch identity and an energetic 5th-anniversary upgrade, by designer Heather Stokes."
+    },
+    {
+      "file": "Contact*.dc.html",
+      "route": "/contact/",
+      "type": "contact",
+      "form": true,
+      "title": "Contact - Heather Stokes",
+      "description": "Get in touch with Heather Stokes, Toronto-based graphic designer and creative director. Email hello@heatherstokes.ca or send a message."
+    }
+  ],
+  "ignore": ["Style Guide*.dc.html", "Footer*.dc.html"]
+}

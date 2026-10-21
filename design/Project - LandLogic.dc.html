@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>LandLogic - Heather Stokes</title><meta name="description" content="Creative work driven by strategy and brought to life through design."><meta property="og:title" content="LandLogic - Heather Stokes"><meta property="og:description" content="Creative work driven by strategy and brought to life through design.">
+<meta property="og:image" content="images/social-share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/social-share.png">
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<div style="border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+      <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+      <div style="display:flex;align-items:center;gap:24px;">
+        <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
+        <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      </div>
+    </nav>
+</div>
+<div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;container-type:inline-size;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="display:flex;flex-direction:column;">
+
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-top:48px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">Director of design &amp; communications</div></div>
+        <div style="display:flex;flex-direction:column;gap:2px;"><div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</div><div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;">LandLogic Solutions Inc.</div></div>
+      </div>
+      <div style="grid-column:{{ col.mid3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</div>
+        <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; design</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Positioning &amp; messaging</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+          <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+        </div>
+      </div>
+      <div style="grid-column:{{ col.right3 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</div>
+        <div style="max-width:340px;font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Real estate and development professionals working day-to-day with land data to assess development feasibility and potential.</div>
+      </div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="display:flex;flex-direction:column;padding-top:32px;border-bottom:1px solid #D9D9D9;">
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.role.toggle }}" aria-expanded="{{ info.role.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Role</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.role.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.role.rows }};opacity:{{ info.role.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Director of design &amp; communications</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.employer.toggle }}" aria-expanded="{{ info.employer.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Employer</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.employer.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.employer.rows }};opacity:{{ info.employer.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">LandLogic Solutions Inc.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.services.toggle }}" aria-expanded="{{ info.services.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Services</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.services.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.services.rows }};opacity:{{ info.services.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Brand identity &amp; design</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Positioning &amp; messaging</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation &amp; writing</span>
+                <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Ongoing brand ownership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="border-top:1px solid #D9D9D9;">
+        <button onClick="{{ info.audience.toggle }}" aria-expanded="{{ info.audience.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:8px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+          <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Audience</span>
+          <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ info.audience.icon }}</span>
+        </button>
+        <div style="display:grid;grid-template-rows:{{ info.audience.rows }};opacity:{{ info.audience.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+          <div style="overflow:hidden;min-height:0;">
+            <div style="padding:0 28px 14px 0;">
+              <div style="font-size:14px;font-weight:300;line-height:1.5;color:#767676;text-wrap:pretty;">Real estate and development professionals working day-to-day with land data to assess development feasibility and potential.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </sc-if>
+
+    <div style="height:{{ col.spacer }};"></div>
+
+    <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding-bottom:32px;">
+      <div style="grid-column:{{ col.left6 }};display:flex;flex-direction:column;align-items:flex-start;gap:10px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#FA3420;padding:2px 4px;">LandLogic</div>
+        <h1 style="margin: 0; max-width: 570px; font-family: 'farnham-display',serif; font-weight: 300; font-size: 60px; line-height: 1; letter-spacing: -0.01em; text-wrap: pretty">Building a new proptech brand.</h1>
+      </div>
+      <div style="grid-column:{{ col.right6 }};display:flex;flex-direction:column;gap:2px;">
+        <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Summary</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+          <p style="margin:0;">When I started with LandLogic, the company was only a few months old. They were in the midst of creating a property technology platform, and needed to start developing their public presence. My job was to define their positioning and messaging, develop the identity, and create all the necessary assets to get it launched. Following that, I would be the brand owner and continue to develop it as the company evolved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/landlogic-hero.jpg" alt="LandLogic logo over a city street" style="display:block;width:100%;height:auto;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.noteCol }};grid-row:{{ col.noteRow }};display:flex;flex-direction:column;justify-content:space-between;gap:48px;">
+    <div style="display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define strategic goals</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Competitive and user research</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Branding workshops</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Concept exploration</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Presentations and feedback</span>
+      </div>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:4px;">
+      <div style="font-size:32px;line-height:1;height:20px;font-weight:500;color:#FA3420;">*</div>
+      <div style="padding-top:1px;font-size:14px;line-height:1.5;font-weight:300;color:#767676;">All mockups represent real, existing assets.</div>
+    </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+    <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Brand development</div>
+    <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+      <p style="margin:0;">The LandLogic team was filled with technical professionals who knew their industry well, but didn't know where to start when it came to branding. Being in-house allowed me to lead them through the process. I worked closely with team members to understand their business goals and develop concepts.</p>
+      <p style="margin:0;">We landed on the overall concept that LandLogic is a tech company developing tools that help people better understand how they can use land. So the identity had to support the tech angle as well as the land-use concept. As a new company, it needed to feel fresh, modern and credible.</p>
+      <p style="margin:0;">I developed core elements to support this goal. Black represents the tech, and green/blue represent land. The icon itself shows two Ls in forward motion to capture the progressive nature of their methodology.</p>
+      
+      
+    </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
+    <div style="grid-column:{{ col.span4 }};aspect-ratio:1/1;display:flex;flex-direction:column;">
+      <div style="flex:0 0 44%;background:#000000;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Black</div><div>#000000</div></div>
+      <div style="flex:0 0 18%;background:#1CD396;color:#000000;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Bright green</div><div>#1CD396</div></div>
+      <div style="flex:0 0 18%;background:#008167;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Accessible Green</div><div>#008167</div></div>
+      <div style="flex:0 0 10%;background:#00AAFF;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Bright blue</div><div>#00AAFF</div></div>
+      <div style="flex:0 0 10%;background:#008DD4;color:#FFFFFF;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Accessible Blue</div><div>#008DD4</div></div>
+    </div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};order:{{ col.logoOrder }};background:#000000;"><img src="img/landlogic-logo-flat.jpg" alt="LandLogic logo" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:{{ col.three }};gap:24px;margin-top:24px;">
+    <video ref="{{ videoRef }}" src="img/ll-logo-together-v4.mp4" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;"></video>
+    <img src="img/ll-typography-03.jpg" alt="LandLogic typography" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/studio-portal-v2.jpg" alt="LandLogic Studio portal" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:left center;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">CORE BRAND MATERIALS</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">The visual language brings in more elements to tell a story. The platform is map-based, so a minimalist mapping pattern is used on select elements. I also worked with marketing and the C-suite to develop a tagline to help define our positioning: Smarter data. Simpler access. Deeper insight.</p>
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Visual language</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Tagline development</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Define and design collateral</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/ll-business-cards-web.jpg" alt="LandLogic business cards" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <img src="img/ll-journal-notebook-web.jpg" alt="LandLogic embossed journal notebook" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+    <img src="img/ll-tote-chair-mockup-web.jpg" alt="LandLogic tote bag on chair" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+    <img src="img/ll-pin-mockup-02-web.jpg" alt="LandLogic pin mockup" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <img src="img/ll-polo-mockup-web.jpg" alt="LandLogic polo mockup" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+    <img src="img/ll-tote-mockup-web.jpg" alt="LandLogic tote bag mockup" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <img src="img/ll-conference-room-web.jpg" alt="LandLogic branding on glass conference room doors" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+    <img src="img/ll-glass-office-web.jpg" alt="LandLogic messaging on glass office entrance" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+    <img src="img/ll-water-bottle-02-web.jpg" alt="LandLogic water bottle" style="grid-column:{{ col.span4 }};display:block;width:100%;height:100%;aspect-ratio:{{ col.ar4 }};object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Social planning</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Communication campaigns</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">SOCIAL MEDIA</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">The social assets allowed me to exercise what the brand really could do. Colour blocking, big typography and clear labelling helped keep a consistent tone. I created dynamic social templates to keep content fresh but easy to produce quickly. I also managed and rolled out the messaging, social planning and campaigns.</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <img src="img/ll-social-web.jpg" alt="LandLogic social media designs" style="display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/ll-social-03-web.jpg" alt="LandLogic social post on a phone" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/ll-social-05-web.jpg" alt="LandLogic newsletter social carousel" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Data visualization</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Editorial layout</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Developer collaboration</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">REPORTS</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">LandLogic offers complex live-data reports for its users. These are content heavy and required careful information layout to ensure clarity. The design made use of secondary colours, graphs, mapping, tables and clear editorial layout. I worked closely with developers to ensure designs were compatible with the constraints of the automatic generation tool.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <img src="img/ll-reports-01-web.jpg" alt="LandLogic report covers" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+    <img src="img/ll-reports-02-web.jpg" alt="LandLogic report spreads" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/ll-reports-06i-web.jpg" alt="LandLogic report chart: dwelling construction year" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/ll-reports-07b-web.jpg" alt="LandLogic report chart: household size" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/ll-reports-03b-web.jpg" alt="LandLogic report pages" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};"><img src="img/ll-reports-04b-web.jpg" alt="LandLogic report on tablet" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:{{ col.textL }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">EXHIBIT DESIGN</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">When it came to trade shows and conferences, we wanted LandLogic to really stand out amongst a sea of exhibit booths. I evolved the blue and green into a gradient to add more energy, and designed a modular backlit setup that would quite literally outshine the competition.</p>
+        <p style="margin:0;">The booth is adaptable, as it can be re-used, repositioned and reprinted, depending upon the conference. Matching brochures and promo material made the booth a full brand experience.</p>
+        
+        
+      </div>
+    </div>
+    <div style="grid-column:9 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Exhibit design</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Marketing materials</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Print production</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-booth-04-web.jpg" alt="LandLogic exhibition booth" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-backlit-display-03-web.jpg" alt="LandLogic backlit fabric display" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/ll-brochure-02-web.jpg" alt="LandLogic brochures" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><img src="img/ll-booth-real-04-web.jpg" alt="LandLogic brochures in display stand" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span4 }};position:relative;aspect-ratio:{{ col.ar4 }};"><video ref="{{ videoRef }}" src="img/ll-booth-video.mp4" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></video></div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
+    <div style="grid-column:1 / span 4;grid-row:1;display:{{ col.scopeDisp }};flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Process</div>
+      <div style="display:flex;flex-direction:column;font-size:14px;font-weight:300;line-height:1.5;color:#767676;">
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Site planning</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Content creation</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Design and layout</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Optimize for SEO/AEO</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Maintain blog</span>
+        <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.89,86.86a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.87l67.88-40.73a8,8,0,1,1,8.23,13.72L143.55,128l68.56,41.14A8,8,0,0,1,214.86,180.12Z"></path></svg>Analytics and performance</span>
+      </div>
+    </div>
+    <div style="grid-column:{{ col.textR }};grid-row:1;display:flex;flex-direction:column;gap:2px;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">WEBSITE DESIGN</div>
+      <div style="display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+        <p style="margin:0;">To compete with the top SaaS brands out there, the LandLogic website had to be sleek, bold and energetic. With a range of dense subject matter to cover, a clean layout and clear messaging was key. Large headings, careful information hierarchy and fresh product imagery got the message across. I brought in textured gradients in a range of primary and secondary colours to support the extensive product imagery.</p>
+        <p style="margin:0;">I developed the site structure, wrote all the content, created all the imagery and published the site without a developer (and without AI). I also managed SEO and AEO, wrote and updated the blog, and reviewed analytics and performance to keep the site optimized.</p>
+      </div>
+    </div>
+  </div>
+
+  <img src="img/ll-phone-01-web.jpg" alt="LandLogic website on mobile phones" style="display:block;width:100%;height:auto;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-website-01-web.jpg" alt="LandLogic website pages on curved laptops" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-api-conversational-web.jpg" alt="LandLogic conversational search prompts" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <img src="img/ll-website-02-web.jpg" alt="LandLogic website on laptops" style="display:block;width:100%;height:auto;margin-top:24px;">
+
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;height:{{ col.rowH }};">
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-studio-site-selection-web.jpg" alt="LandLogic Studio site selection" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+    <div style="grid-column:{{ col.span6 }};position:relative;aspect-ratio:{{ col.ar6 }};"><img src="img/ll-studio-portal-web.jpg" alt="LandLogic Studio portal address search" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;align-items:center;gap:40px;padding:{{ col.accPad }};">
+    <div style="display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;">
+      <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Results and learnings</div>
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">A look behind the project.</h2>
+    </div>
+    <div style="width:{{ col.accW }};display:grid;grid-template-columns:{{ col.accCols }};gap:{{ col.accGap }};align-items:start;">
+      <div style="display:flex;flex-direction:column;border-bottom:{{ col.accLeftBorder }};">
+        <sc-for list="{{ accordionLeft }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <div style="box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; flex: {{ col.accTitleFlex }}"><span style="flex: 1">{{ item.title }}</span></div>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;">{{ item.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;border-bottom:1px solid #D9D9D9;">
+        <sc-for list="{{ accordionRight }}" as="item" hint-placeholder-count="3">
+          <div style="border-top:1px solid #D9D9D9;">
+            <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;">
+              <span style="flex:1;">{{ item.title }}</span>
+              <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+            </button>
+            <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+              <div style="overflow:hidden;min-height:0;">
+                <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">
+                  <p style="margin:0;">{{ item.body }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section style="background:#FFFFFF;color:#000000;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="padding:{{ col.moreTop }} 0 64px;">
+    <div style="max-width:1440px;margin:0 auto 24px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">More projects</h2>
+      <div style="display:flex;gap:12px;">
+        <button onClick="{{ scrollPrev }}" aria-label="Previous projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">←</button>
+        <button onClick="{{ scrollNext }}" aria-label="Next projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">→</button>
+      </div>
+    </div>
+    <div ref="{{ cardsRef }}" onScroll="{{ onCardsScroll }}" style="display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding:0 max(40px, calc((100% - 1440px) / 2 + 40px));">
+      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
+        <a href="{{ card.href }}" style="flex:0 0 {{ col.cardW }};scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;color:#000000;">
+          <img src="{{ card.img }}" alt="{{ card.title }}" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;">
+          <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#000000;">{{ card.title }}</div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { open: [], vw: window.innerWidth, infoOpen: null };
+  items = [
+    { title: 'Are you the solo designer on this project?', body: 'Yes, for this project I directed, developed and designed the assets myself. I met with stakeholders, presented concepts, took feedback and managed the assets from day one. I have collaborated with marketing, UX/UI and development on other deliverables, but I have ongoing ownership over this brand.' },
+    { title: 'What communications are involved?', body: 'Part of owning this brand is also managing its public-facing content. I developed the brand positioning and messaging, and I write the majority of its marketing and communications content. I also manage its presence on LinkedIn and other socials.' },
+    { title: 'What was the biggest challenge on this project?', body: 'There have been a few roadblocks over the years. Firstly, the subject matter is complex to those who aren\'t already land-use professionals. So I had to become very familiar with the platform, terminology and workflows, which took time and dedication.\n\nSecondly, the company itself has pivoted its positioning and target audience over time, and I had to ensure the branding and messaging kept up. This led me to adapt elements, revamping websites and updating palettes. ' },
+    { title: 'How was AI used in this project?', body: 'Everything you see in this project was completed without the use of AI. The only place AI may have occasionally been used was to assist with written content.' },
+    { title: 'Has this brand been successful?', body: 'The main goal of the brand identity was to establish a credible, tech-forward presence. And since launch it has received continuous positive feedback. LandLogic has developed partnerships, completed projects and gained clients. It has become a recognized name in the industry, and the brand has worked hard to help it get there. I\'m also proud to say it won an In-house Branding Award from the RGD.' },
+    { title: 'What has this project taught you?', body: 'After working on the brand for over 3 years, I have learned the importance of establishing clarity and alignment across stakeholders before you start the creative. With complex subject matter, getting sign-off on direction, content and messaging is key. Two executives may not agree on a position, and you can\'t start design if you can\'t get alignment. This important lesson even led me to do a presentation at RGD\'s In-house Design Conference on exactly this topic.' }
+  ];
+  toggle(i) {
+    this.setState(s => ({ open: s.open.includes(i) ? [] : [i] }));
+  }
+  cardsRef = React.createRef();
+  videoRef = (v) => {
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true;
+    v.play().catch(() => {});
+  };
+  projects = [{ title: "LandLogic", img: "img/ll-phones-card.jpg", href: "Project - LandLogic.dc.html" }, { title: "One Ontario", img: "img/oo-brochure-tall.jpg", href: "Project - One Ontario.dc.html" }, { title: "Osler, Hoskin & Harcourt LLP", img: "img/osl-holding-card.jpg", href: "Project - Osler.dc.html" }, { title: "AECO Innovation Lab", img: "img/aeco-cover-card.jpg", href: "Project - AECO Innovation Lab.dc.html" }];
+  setWidth() {
+    const el = this.cardsRef.current;
+    const n = this.projects.length;
+    if (!el || el.children.length < n * 3) return 0;
+    return el.children[n].offsetLeft - el.children[0].offsetLeft;
+  }
+  margin() {
+    const el = this.cardsRef.current;
+    return Math.max(40, (el.clientWidth - 1440) / 2 + 40);
+  }
+  centerCards() {
+    const el = this.cardsRef.current, w = this.setWidth();
+    if (!w) return;
+    el.scrollLeft = el.children[this.projects.length].offsetLeft - el.children[0].offsetLeft - this.margin();
+  }
+  componentDidMount() {
+    requestAnimationFrame(() => this.centerCards());
+    this.onResize = () => { this.centerCards(); this.setState({ vw: window.innerWidth }); };
+    window.addEventListener('resize', this.onResize);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  onCardsScroll = () => {
+    clearTimeout(this.loopT);
+    this.loopT = setTimeout(() => {
+      const el = this.cardsRef.current, w = this.setWidth();
+      if (!w) return;
+      const base = w - this.margin();
+      if (el.scrollLeft < base - w / 2) el.scrollLeft += w;
+      else if (el.scrollLeft > base + w / 2) el.scrollLeft -= w;
+    }, 120);
+  };
+  scrollCards(dir) {
+    const el = this.cardsRef.current;
+    if (!el || !el.children[0]) return;
+    el.scrollBy({ left: dir * (el.children[0].offsetWidth + 24), behavior: 'smooth' });
+  }
+  acc(a, b) {
+    return this.items.slice(a, b).map((it, j) => {
+      const i = a + j, open = this.state.open.includes(i);
+      return { ...it, open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.toggle(i) };
+    });
+  }
+  renderVals() {
+    const m = this.state.vw < 768;
+    const info = {};
+    ['role','employer','services','audience'].forEach(k => {
+      const open = this.state.infoOpen === k;
+      info[k] = { open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.setState(s => ({ infoOpen: s.infoOpen === k ? null : k })) };
+    });
+    return {
+      info, isMobile: m, isDesktop: !m,
+      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0' },
+      cardsRef: this.cardsRef,
+      onCardsScroll: this.onCardsScroll,
+      cards: [...this.projects, ...this.projects, ...this.projects],
+      videoRef: this.videoRef,
+      scrollPrev: () => this.scrollCards(-1),
+      scrollNext: () => this.scrollCards(1),
+      accordionLeft: this.acc(0, 3),
+      accordionRight: this.acc(3, 6)
+    };
+  }
+}
+</script>
+</body>
+</html>

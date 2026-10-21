@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>Heather Stokes - Graphic design, branding and communications</title><meta name="description" content="Creative work driven by strategy and brought to life through design."><meta property="og:title" content="Heather Stokes - Graphic design, branding and communications"><meta property="og:description" content="Creative work driven by strategy and brought to life through design.">
+<meta property="og:image" content="images/social-share.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="images/social-share.png">
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<section data-screen-label="Hero" ref="{{ heroRef }}" style="cursor:{{ heroCursor }};position:relative;isolation:isolate;width:100%;height:100vh;height:100svh;background:#FA3420;color:#320A06;display:flex;align-items:safe center;padding:40px 0 calc(40px + 2.4 * var(--u));box-sizing:border-box;overflow:hidden;--u:min(1vw, 14.4px);">
+<div ref="{{ gridRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:-2;pointer-events:none;"></div>
+<div style="position:absolute;top:0;left:0;right:0;z-index:2;border-bottom:1px solid #320A06;font-family:'museo-sans',sans-serif;font-weight:500;">
+    <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+      <a href="Homepage v3.dc.html" style="cursor:{{ heroCursor }};font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#320A06;" style-hover="color:#FA3420;">Heather Stokes</a>
+      <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuOpen }}" style="display:{{ burgerDisp }};align-items:center;justify-content:center;width:44px;height:44px;margin:-6px -10px -6px 0;padding:0;border:none;background:transparent;color:#320A06;cursor:pointer;"><svg width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="{{ burgerPath }}"></path></svg></button>
+      <div style="display:{{ linksDisp }};align-items:center;gap:24px;">
+        <a href="#work" onClick="{{ goWork }}" style="cursor:{{ heroCursor }};font-size:15px;line-height:1.5;color:#320A06;" style-hover="color:#FA3420;">Work</a>
+        <a href="Contact Page.dc.html" style="cursor:{{ heroCursor }};display:inline-flex;align-items:center;background:#320A06;color:#FA3420;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      </div>
+    </nav>
+    <sc-if value="{{ menuShown }}" hint-placeholder-val="{{ false }}">
+      <div style="position:fixed;inset:0;z-index:-1;background:#FA3420;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:80px 40px 40px;box-sizing:border-box;">
+        <a href="#work" onClick="{{ goWorkMenu }}" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#320A06;">Work</a>
+        <a href="Contact Page.dc.html" style="position:absolute;left:40px;right:40px;bottom:40px;display:flex;align-items:center;justify-content:center;min-height:56px;box-sizing:border-box;background:#320A06;color:#FA3420;font-size:22px;line-height:1;padding:16px 24px;border-radius:999px;">Contact</a>
+      </div>
+    </sc-if>
+</div>
+  <div style="position:relative;width:100%;max-width:1440px;margin:0 auto;padding:0 40px;box-sizing:border-box;display:flex;flex-direction:column;align-items:flex-start;gap:24px;">
+  <h1 aria-label="Design &amp; Direction. Graphic design, branding and communications. Toronto-based designer and creative director." style="align-self:stretch;display:flex;flex-direction:column;margin:0 calc(-40px - 0.06em);font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:calc(22 * var(--u));line-height:0.82;letter-spacing:0.02em;text-transform:uppercase;color:#320A06;"><span style="align-self:flex-start;"><span><sc-for list="{{ letters }}" as="L" hint-placeholder-count="6"><span data-li="{{ L.i }}" style="position:relative;display:inline-block;"><span style="visibility:{{ L.front }};">{{ L.ch }}</span><span aria-hidden="true" style="position:absolute;left:50%;top:0;pointer-events:none;display:{{ L.v0 }};justify-content:center;width:0;font-family:'mencken-std-narrow',serif;font-weight:400;font-style:normal;font-size:calc(var(--sk0, 0.8) * 0.946em);letter-spacing:0;line-height:1;margin-top:calc(var(--tk0, 0px) - 7px);transform:translateY(0.025em);">{{ L.ch }}</span><span aria-hidden="true" style="position:absolute;left:50%;top:0;pointer-events:none;display:{{ L.v1 }};justify-content:center;width:0;font-family:'lores-22-serif',serif;font-weight:700;font-style:normal;font-size:calc(var(--sk1, 0.8) * 1em);letter-spacing:0;line-height:1;margin-top:calc(var(--tk1, 0px) - 4px);">{{ L.ch }}</span><span aria-hidden="true" style="position:absolute;left:50%;top:0;pointer-events:none;display:{{ L.v2 }};justify-content:center;width:0;font-family:'modern-love-caps',serif;font-weight:300;font-style:normal;font-size:calc(var(--sk2, 0.8) * 1em);letter-spacing:0;line-height:1;margin-top:calc(var(--tk2, 0px) - 4px);">{{ L.ch }}</span><span aria-hidden="true" style="position:absolute;left:50%;top:0;pointer-events:none;display:{{ L.v3 }};justify-content:center;width:0;font-family:'hey-eloise',serif;font-weight:400;font-style:normal;font-size:calc(var(--sk3, 0.8) * 1em);letter-spacing:0;line-height:1;margin-top:calc(var(--tk3, 0px) - 4px);">{{ L.ch }}</span><span aria-hidden="true" style="position:absolute;left:50%;top:0;pointer-events:none;display:{{ L.v4 }};justify-content:center;width:0;font-family:'hackney',sans-serif;font-weight:700;font-style:normal;font-size:calc(var(--sk4, 0.8) * 1em);letter-spacing:0;line-height:1;margin-top:calc(var(--tk4, 0px) - 4px);">{{ L.ch }}</span></span></sc-for></span> <span onMouseEnter="{{ ampGo }}" onMouseLeave="{{ ampStop }}" style="display:inline-block;font-family:'guyot-headline',serif;font-weight:300;"><span style="display:inline-block;transform-origin:50% 85%;">&amp;</span></span></span><span style="position:relative;left:{{ dirLeft }};align-self:{{ dirAlign }};font-style:italic;"><span data-di="0" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">D</span></span><span data-di="1" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">I</span></span><span data-di="2" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">R</span></span><span data-di="3" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">E</span></span><span data-di="4" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">C</span></span><span data-di="5" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">T</span></span><span data-di="6" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">I</span></span><span data-di="7" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">O</span></span><span style="position:relative;"><span data-di="8" style="display:inline-block;"><span style="display:inline-block;will-change:transform;">N</span></span><span aria-hidden="true" data-ast="1" style="display:{{ astDisp }};position:absolute;left:calc(-3.8 * var(--u));top:calc(-14.5 * var(--u) + 10px);z-index:-1;font-family:'museo-sans',sans-serif;font-weight:500;font-style:normal;font-size:calc(44 * var(--u));line-height:normal;letter-spacing:0;color:#FFFFFF;pointer-events:none;">*</span></span><span style="position:absolute;left:{{ tagLeft }};top:{{ tagTop }};width:0;height:0;"><p style="position:absolute;left:0;top:0;transform:{{ tagTf }};z-index:1;width:max-content;font-style:normal;text-transform:none;letter-spacing:0;margin:0;font-family:'museo-sans',sans-serif;font-size:calc(clamp(32px, calc(3.4 * var(--u)), 52px) * var(--tagK, 1));line-height:1.1;font-weight:500;color:#FFFFFF;text-wrap:pretty;">Graphic design<br>branding and<br>communications</p></span><span style="display:{{ torDisp }};position:absolute;right:calc(1.32 * var(--u));top:calc(100% + 1.309 * clamp(32px, calc(3.4 * var(--u)), 52px) * var(--tagK, 1) - 0.9585 * clamp(20px, calc(1.9 * var(--u)), 28px));white-space:nowrap;font-family:'farnham-display',serif;font-weight:400;font-style:normal;text-transform:none;letter-spacing:0;font-size:clamp(20px, calc(1.9 * var(--u)), 28px);line-height:1.2;color:#320A06;">Toronto-based designer and creative director.</span></span></h1>
+  </div>
+  <div aria-hidden="true" style="display:{{ torMDisp }};position:absolute;left:40px;bottom:24px;font-family:'farnham-display',serif;font-weight:400;font-size:20px;line-height:1.2;color:#320A06;">Toronto-based designer and creative director.</div>
+  <div aria-hidden="true" style="display:{{ astMDisp }};position:absolute;top:84px;right:24px;z-index:-1;font-family:'museo-sans',sans-serif;font-weight:500;font-size:min(40vw, 45vh);line-height:1;color:#FFFFFF;pointer-events:none;">*</div>
+  <div data-try="1" style="display:{{ tryDisp }};position:absolute;left:0;right:0;top:86px;z-index:2;pointer-events:none;">
+    <div style="max-width:1440px;margin:0 auto;padding:0 40px;box-sizing:border-box;display:flex;justify-content:flex-end;">
+      <div style="position:relative;width:86px;height:86px;color:#320A06;">
+        <svg ref="{{ ringRef }}" width="86" height="86" viewBox="0 0 86 86" aria-label="HOVER" style="position:absolute;inset:0;overflow:visible;"><defs><path id="tryRing" d="M43,10 a33,33 0 1,1 0,66 a33,33 0 1,1 0,-66"></path></defs><text fill="currentColor" style="font-family:'museo-sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.08em;"><textPath href="#tryRing" startOffset="0%">HOVER</textPath><textPath href="#tryRing" startOffset="25%">HOVER</textPath><textPath href="#tryRing" startOffset="50%">HOVER</textPath><textPath href="#tryRing" startOffset="75%">HOVER</textPath></text></svg>
+        <svg ref="{{ arrowRef }}" width="24" height="24" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" style="position:absolute;left:31px;top:31px;transform-origin:50% 50%;"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.320l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+      </div>
+    </div>
+  </div>
+  <div ref="{{ cursorRef }}" aria-hidden="true" style="position:fixed;left:0;top:0;width:0;height:0;z-index:50;pointer-events:none;"><span style="position:absolute;left:0;top:0;font-family:'museo-sans',sans-serif;font-weight:500;font-size:44px;line-height:1;color:#FFFFFF;opacity:0.12;will-change:transform;visibility:hidden;">*</span><span style="position:absolute;left:0;top:0;font-family:'museo-sans',sans-serif;font-weight:500;font-size:44px;line-height:1;color:#FFFFFF;opacity:0.2;will-change:transform;visibility:hidden;">*</span><span style="position:absolute;left:0;top:0;font-family:'museo-sans',sans-serif;font-weight:500;font-size:44px;line-height:1;color:#FFFFFF;opacity:0.3;will-change:transform;visibility:hidden;">*</span><span style="position:absolute;left:0;top:0;font-family:'museo-sans',sans-serif;font-weight:500;font-size:44px;line-height:1;color:#FFFFFF;opacity:1;will-change:transform;visibility:hidden;">*</span></div>
+</section>
+<section data-screen-label="About" ref="{{ floatRef }}" style="position:relative;isolation:isolate;width:100%;background:#FFFFFF;padding-bottom:120px;overflow:clip;">
+  <div aria-hidden="true" style="position:absolute;top:0;left:0;right:0;bottom:120px;z-index:0;pointer-events:none;">
+  <div style="position:sticky;top:0;height:100vh;overflow:hidden;">
+      <div data-depth="1" data-mob="4,4" style="position:absolute;z-index:3;left:6%;top:12%;width:clamp(80px, 9vw, 140px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/aeco-speaker.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" data-mob="70,80" style="position:absolute;z-index:3;left:80%;top:60%;width:clamp(80px, 9vw, 140px);aspect-ratio:4 / 5;background:#D9D9D9 url('img/osl-publication-tall.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" data-mob="8,84" style="position:absolute;z-index:3;left:12%;top:76%;width:clamp(80px, 9vw, 140px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/oo-phone-small.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" style="position:absolute;z-index:3;left:84%;top:128%;width:clamp(80px, 9vw, 140px);aspect-ratio:4 / 5;background:#D9D9D9 url('img/aeco-magazine-small.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" style="position:absolute;z-index:3;left:8%;top:165%;width:clamp(80px, 9vw, 140px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/ll-tote-mockup-web.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" style="position:absolute;z-index:3;left:74%;top:215%;width:clamp(80px, 9vw, 140px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/osl-ads-tall.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="1" style="position:absolute;z-index:3;left:12%;top:262%;width:clamp(80px, 9vw, 140px);aspect-ratio:4 / 5;background:#D9D9D9 url('img/ll-business-cards-web.jpg') center / cover no-repeat;filter:blur(0px);will-change:translate;"></div>
+      <div data-depth="2" data-mob="74,6" style="position:absolute;z-index:2;left:72%;top:9%;width:clamp(60px, 7vw, 110px);aspect-ratio:1 / 1;background:#D9D9D9 url('img/oo-web-small.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="2" style="position:absolute;z-index:2;left:3%;top:42%;width:clamp(60px, 7vw, 110px);aspect-ratio:4 / 5;background:#D9D9D9 url('img/ll-tote-walk.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="2" style="position:absolute;z-index:2;left:89%;top:28%;width:clamp(60px, 7vw, 110px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/oo-brochure-reading.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="2" style="position:absolute;z-index:2;left:20%;top:112%;width:clamp(60px, 7vw, 110px);aspect-ratio:1 / 1;background:#D9D9D9 url('img/ll-reports-02-web.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="2" style="position:absolute;z-index:2;left:90%;top:150%;width:clamp(60px, 7vw, 110px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/aeco-table-medium.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="2" style="position:absolute;z-index:2;left:4%;top:190%;width:clamp(60px, 7vw, 110px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/ll-notebook-web.jpg') center / cover no-repeat;filter:blur(1.5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:22%;top:20%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:4 / 5;background:#D9D9D9 url('img/ll-reports-04-web.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:58%;top:16%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:1 / 1;background:#D9D9D9 url('img/osl-publications-small.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:40%;top:86%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/oo-web-medium.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:86%;top:46%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/ll-social-04-web.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:16%;top:56%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:1 / 1;background:#D9D9D9 url('img/aeco-display-tall.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="4" style="position:absolute;z-index:0;left:66%;top:74%;width:clamp(22px, 2.2vw, 36px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/ll-pin-mockup-web.jpg') center / cover no-repeat;filter:blur(5px);will-change:translate;"></div>
+      <div data-depth="3" data-mob="46,14" style="position:absolute;z-index:1;left:30%;top:5%;width:clamp(40px, 4vw, 64px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/oo-cards-medium.jpg') center / cover no-repeat;filter:blur(3.5px);will-change:translate;"></div>
+      <div data-depth="3" style="position:absolute;z-index:1;left:4%;top:90%;width:clamp(40px, 4vw, 64px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/ll-decal-web.jpg') center / cover no-repeat;filter:blur(3.5px);will-change:translate;"></div>
+      <div data-depth="3" data-mob="50,93" style="position:absolute;z-index:1;left:93%;top:84%;width:clamp(40px, 4vw, 64px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/osl-standards-medium.jpg') center / cover no-repeat;filter:blur(3.5px);will-change:translate;"></div>
+      <div data-depth="3" style="position:absolute;z-index:1;left:62%;top:108%;width:clamp(40px, 4vw, 64px);aspect-ratio:4 / 3;background:#D9D9D9 url('img/ll-polo-mockup-web.jpg') center / cover no-repeat;filter:blur(3.5px);will-change:translate;"></div>
+      <div data-depth="3" style="position:absolute;z-index:1;left:24%;top:138%;width:clamp(40px, 4vw, 64px);aspect-ratio:3 / 4;background:#D9D9D9 url('img/ll-journal-notebook-web.jpg') center / cover no-repeat;filter:blur(3.5px);will-change:translate;"></div>
+  </div>
+  </div>
+  <div data-phr-track="1" style="position:relative;z-index:1;height:360vh;">
+  <div style="position:sticky;top:0;height:100vh;max-width:1440px;margin:0 auto;">
+    <div data-phrase="0" style="position:absolute;inset:0;padding:0 40px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;">
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-bottom:4px;"><div data-rise="1" style="translate:0 140%;"><span aria-hidden="true" style="display:block;height:0.55em;overflow:visible;font-family:'museo-sans',sans-serif;font-weight:500;font-size:clamp(64px, 6vw, 96px);line-height:1;color:#FA3420;">*</span></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:820px;font-family:'farnham-display',serif;font-weight:300;font-size:clamp(36px, 4.6vw, 64px);line-height:1.05;color:#000000;text-wrap:balance;">It's taken me years to accept that <span style="color:#FA3420;font-style:italic;">design isn't art.</span></p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;font-family:'museo-sans',sans-serif;font-weight:500;font-size:22px;line-height:1.5;color:#000000;">(As much as we like to say it is).</p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:20px;"><div data-rise="1" style="translate:0 140%;"><svg aria-hidden="true" width="14" height="28" viewBox="0 0 20 28" fill="none" stroke="#FA3420" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><path d="M10 1 V27 M2 19 L10 27 L18 19"></path></svg></div></div>
+    </div>
+    <div data-phrase="1" style="position:absolute;inset:0;padding:0 40px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;">
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);"><div data-rise="1" style="translate:0 140%;"><div style="font-family:'museo-sans',sans-serif;font-weight:700;font-size:12px;line-height:1.4;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">So what is design?</div></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:720px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:clamp(26px, 6.5vw, 38px);line-height:1.2;color:#000000;text-wrap:balance;">Design isn't about creating something beautiful. It's about delivering on a <span style="color:#FA3420;">strategic objective.</span></p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:540px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">Whether it's market presence,  awareness campaigns, launching an initiative, educating an audience or conveying a message.</p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:20px;"><div data-rise="1" style="translate:0 140%;"><svg aria-hidden="true" width="14" height="28" viewBox="0 0 20 28" fill="none" stroke="#FA3420" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;"><path d="M10 1 V27 M2 19 L10 27 L18 19"></path></svg></div></div>
+    </div>
+    <div data-phrase="2" style="position:absolute;inset:0;padding:0 40px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;">
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);"><div data-rise="1" style="translate:0 140%;"><div style="font-family:'museo-sans',sans-serif;font-weight:700;font-size:12px;line-height:1.4;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">What that means</div></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:720px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:clamp(26px, 6.5vw, 38px);line-height:1.2;color:#000000;text-wrap:balance;">My job is to bring those goals to life through compelling storytelling.</p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:540px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">That's how I approach every project: finding the most creative way to achieve a defined strategic objective. <span style="color:#FA3420;font-weight:700;">Art + Strategy = Design</span></p></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:32px;"><div data-rise="1" style="translate:0 140%;"><a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;text-decoration:none;">Let's talk about it →</a></div></div>
+    </div>
+  </div>
+  </div>
+</section>
+<section id="work" data-screen-label="Project 1 LandLogic" style="width:100%;background:#FFFFFF;">
+  <div style="max-width:1440px;margin:0 auto;padding:100px 40px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
+    <div data-pjnum="1" aria-hidden="true" style="display:{{ pjNumGridDisp }};grid-column:{{ pjTitleCol }};grid-row:1 / 4;align-self:start;position:relative;z-index:0;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pjNumSize }};line-height:1;text-box:trim-both cap alphabetic;color:#F0F0F0;">01</div>
+    <div onClick="{{ pjGo }}" style="translate:{{ pjShift }};cursor:pointer;grid-column:{{ pjImgCol }};grid-row:{{ pjImgRow }};position:relative;background:#D9D9D9;min-height:{{ pjImgMin }};"><img src="img/ll-social-03-web.jpg" alt="LandLogic social post on a phone" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;"></div>
+    <div style="grid-column:{{ pjImg2Col }};grid-row:{{ pjImg3Row }};align-self:stretch;display:{{ pjSideDisp }};flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:24px;">
+      <img onClick="{{ pjGo }}" src="img/ll-tote-walk-web.jpg" alt="Person carrying a black LandLogic tote bag" style="cursor:pointer;display:block;translate:{{ pjShift }};width:85%;flex:1 1 0;min-height:0;object-fit:cover;">
+      <img onClick="{{ pjGo }}" src="img/ll-phones-web.jpg" alt="LandLogic website on several phones" style="cursor:pointer;display:block;width:85%;align-self:flex-end;aspect-ratio:5 / 4;object-fit:cover;">
+    </div>
+    <div style="grid-column:{{ pjTitleCol }};grid-row:{{ pjTitleRow }};align-self:center;position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <div style="background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;font-size:15px;line-height:1;padding:8px 12px;">LandLogic</div>
+      <div style="position:relative;align-self:stretch;">
+        <div aria-hidden="true" style="display:{{ pjNumInDisp }};position:absolute;left:0;bottom:50%;z-index:-1;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pj1CountSize }};line-height:0.74;color:#F0F0F0;">01</div>
+        <h2 onClick="{{ pjGo }}" style="max-width:88%;cursor: pointer; margin: 0; font-family: 'farnham-display',serif; font-weight: 300; font-size: {{ pjTitleSize }}; line-height: 1; color: #000000; transition: color 100ms ease" style-hover="color:#FA3420;text-wrap:pretty;">Building a <br style="display:{{ softBr }};">new proptech brand.</h2>
+      </div>
+      <div style="font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;color:#FA3420;"><span style="font-weight:700;">DaaS / SaaS</span><span style="font-weight:500;margin:0 10px;">|</span><span style="font-weight:500;">Brand identity</span></div>
+    </div>
+    <p style="grid-column:{{ pjParaCol }};grid-row:{{ pjParaRow }};align-self:end;margin:0;padding-right:{{ pjParaPad }};font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">LandLogic needed to define their brand positioning, develop a full identity, roll out the assets and establish a robust communication strategy.</p>
+    <a href="Project - LandLogic.dc.html" aria-label="View the LandLogic project" onMouseEnter="{{ pjEnter }}" onMouseLeave="{{ pjLeave }}" style="grid-column:{{ pjArrowCol }};grid-row:{{ pjArrowRow }};align-self:end;justify-self:start;display:flex;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ pjCircleBg }};transition:background 100ms ease;color:#000000;font-family:'museo-sans',sans-serif;font-size:22px;line-height:1;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ pjArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
+  </div>
+</section>
+<section data-screen-label="Project 2" style="width:100%;background:#FFFFFF;">
+  <div style="max-width:1440px;margin:0 auto;padding:160px 40px 100px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
+    <div data-pjnum="1" aria-hidden="true" style="display:{{ pjNumGridDisp }};grid-column:{{ pjTitleCol }};grid-row:1 / 4;align-self:start;position:relative;z-index:0;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pjNumSize }};line-height:1;text-box:trim-both cap alphabetic;color:#F0F0F0;">02</div>
+    <div onClick="{{ p2Go }}" style="translate:{{ pjShift }};cursor:pointer;grid-column:{{ pjImgCol }};grid-row:{{ pjImgRow }};position:relative;background:#D9D9D9;min-height:{{ pjImgMin }};"><img src="img/oo-brochure-tall.jpg" alt="Person reading the One Ontario brochure on a sofa" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 60%;display:block;"></div>
+    <div style="grid-column:{{ pjImg2Col }};grid-row:{{ pjImg3Row }};align-self:stretch;display:{{ pjSideDisp }};flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:24px;">
+      <img onClick="{{ p2Go }}" src="img/oo-phone-tall-web.jpg" alt="Finger tapping a phone showing the One Ontario research page" style="cursor:pointer;display:block;translate:{{ pjShift }};width:85%;flex:1 1 0;min-height:0;object-fit:cover;object-position:50% 55%;">
+      <img onClick="{{ p2Go }}" src="img/oo-slides-web.jpg" alt="One Ontario presentation slides around a laptop" style="cursor:pointer;display:block;width:85%;align-self:flex-end;aspect-ratio:5 / 4;object-fit:cover;object-position:50% 55%;">
+    </div>
+    <div style="grid-column:{{ pjTitleCol }};grid-row:{{ pjTitleRow }};align-self:center;position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <div style="background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;font-size:15px;line-height:1;padding:8px 12px;">One Ontario</div>
+      <div style="position:relative;align-self:stretch;">
+        <div aria-hidden="true" style="display:{{ pjNumInDisp }};position:absolute;left:0;bottom:50%;z-index:-1;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pj1CountSize }};line-height:0.74;color:#F0F0F0;">02</div>
+        <h2 onClick="{{ p2Go }}" style="max-width:88%;cursor:pointer;margin:0;font-family:'farnham-display',serif;font-weight:300;font-size:{{ pjTitleSize }};line-height:1;color:#000000;transition:color 100ms ease;" style-hover="color:#FA3420;text-wrap:pretty;">An identity <br style="display:{{ softBr }};">for a modern Ontario.</h2>
+      </div>
+      <div style="font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;color:#FA3420;"><span style="font-weight:700;">Not-for-profit</span><span style="font-weight:500;margin:0 10px;">|</span><span style="font-weight:500;">Brand identity</span></div>
+    </div>
+    <p style="grid-column:{{ pjParaCol }};grid-row:{{ pjParaRow }};align-self:end;margin:0;padding-right:{{ pjParaPad }};font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">One Ontario needed a flexible brand to collaborate with government partners, industry professionals and research initiatives.</p>
+    <a href="Project - One Ontario.dc.html" aria-label="View the One Ontario project" onMouseEnter="{{ p2Enter }}" onMouseLeave="{{ p2Leave }}" style="grid-column:{{ pjArrowCol }};grid-row:{{ pjArrowRow }};align-self:end;justify-self:start;display:flex;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p2CircleBg }};transition:background 100ms ease;color:#000000;font-family:'museo-sans',sans-serif;font-size:22px;line-height:1;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p2ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
+  </div>
+</section>
+<section data-screen-label="Project 3" style="width:100%;background:#FFFFFF;">
+  <div style="max-width:1440px;margin:0 auto;padding:160px 40px 100px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
+    <div data-pjnum="1" aria-hidden="true" style="display:{{ pjNumGridDisp }};grid-column:{{ pjTitleCol }};grid-row:1 / 4;align-self:start;position:relative;z-index:0;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pjNumSize }};line-height:1;text-box:trim-both cap alphabetic;color:#F0F0F0;">03</div>
+    <div onClick="{{ p3Go }}" style="translate:{{ pjShift }};cursor:pointer;grid-column:{{ pjImgCol }};grid-row:{{ pjImgRow }};position:relative;background:#D9D9D9;min-height:{{ pjImgMin }};"><img src="img/osl-publication-tall.jpg" alt="Person holding the Osler Legal Year in Review publication" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;"></div>
+    <div style="grid-column:{{ pjImg2Col }};grid-row:{{ pjImg3Row }};align-self:stretch;display:{{ pjSideDisp }};flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:24px;">
+      <img onClick="{{ p3Go }}" src="img/osl-magazine-ad-web.jpg" alt="Osler magazine ad for the St. Joseph's Healthcare Foundation gala" style="cursor:pointer;display:block;translate:{{ pjShift }};width:85%;flex:1 1 0;min-height:0;object-fit:cover;object-position:50% 45%;">
+      <img onClick="{{ p3Go }}" src="img/osl-standards-medium.jpg" alt="Pages from the Osler brand standards guide" style="cursor:pointer;display:block;width:85%;align-self:flex-end;aspect-ratio:5 / 4;object-fit:cover;object-position:45% 50%;">
+    </div>
+    <div style="grid-column:{{ pjTitleCol }};grid-row:{{ pjTitleRow }};align-self:center;position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <div style="background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;font-size:15px;line-height:1;padding:8px 12px;">Osler, Hoskin &amp; Harcourt LLP</div>
+      <div style="position:relative;align-self:stretch;">
+        <div aria-hidden="true" style="display:{{ pjNumInDisp }};position:absolute;left:0;bottom:50%;z-index:-1;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pj1CountSize }};line-height:0.74;color:#F0F0F0;">03</div>
+        <h2 onClick="{{ p3Go }}" style="max-width:88%;cursor:pointer;margin:0;font-family:'farnham-display',serif;font-weight:300;font-size:{{ pjTitleSize }};line-height:1;color:#000000;transition:color 100ms ease;" style-hover="color:#FA3420;text-wrap:pretty;">Crafting a<br style="display: inline;">powerful brand system.</h2>
+      </div>
+      <div style="font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;color:#FA3420;"><span style="font-weight:700;">Law firm</span><span style="font-weight:500;margin:0 10px;">|</span><span style="font-weight:500;">Brand system</span></div>
+    </div>
+    <p style="grid-column:{{ pjParaCol }};grid-row:{{ pjParaRow }};align-self:end;margin:0;padding-right:{{ pjParaPad }};font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">As a large company in the public eye, Osler needed a robust and comprehensive brand system to uphold standards and ensure consistency.</p>
+    <a href="Project - Osler.dc.html" aria-label="View the Osler project" onMouseEnter="{{ p3Enter }}" onMouseLeave="{{ p3Leave }}" style="grid-column:{{ pjArrowCol }};grid-row:{{ pjArrowRow }};align-self:end;justify-self:start;display:flex;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p3CircleBg }};transition:background 100ms ease;color:#000000;font-family:'museo-sans',sans-serif;font-size:22px;line-height:1;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p3ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
+  </div>
+</section>
+<section data-screen-label="Project 4" style="width:100%;background:#FFFFFF;">
+  <div style="max-width:1440px;margin:0 auto;padding:160px 40px 220px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
+    <div data-pjnum="1" aria-hidden="true" style="display:{{ pjNumGridDisp }};grid-column:{{ pjTitleCol }};grid-row:1 / 4;align-self:start;position:relative;z-index:0;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pjNumSize }};line-height:1;text-box:trim-both cap alphabetic;color:#F0F0F0;">04</div>
+    <div onClick="{{ p4Go }}" style="translate:{{ pjShift }};cursor:pointer;grid-column:{{ pjImgCol }};grid-row:{{ pjImgRow }};position:relative;background:#D9D9D9;min-height:{{ pjImgMin }};"><img src="img/aeco-display-screen-web.jpg" alt="Display screen showing the AECO Innovation Lab five-year reflection presentation" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block;"></div>
+    <div style="grid-column:{{ pjImg2Col }};grid-row:{{ pjImg3Row }};align-self:stretch;display:{{ pjSideDisp }};flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:24px;">
+      <img onClick="{{ p4Go }}" src="img/aeco-large-sign-1b.jpg" alt="AECO Innovation Lab 5th anniversary welcome sign" style="cursor:pointer;display:block;translate:{{ pjShift }};width:85%;flex:1 1 0;min-height:0;object-fit:cover;object-position:45% 40%;">
+      <img onClick="{{ p4Go }}" src="img/aeco-name-tag-web.jpg" alt="AECO Innovation Lab 5th anniversary name tag on a lanyard" style="cursor:pointer;display:block;width:85%;align-self:flex-end;aspect-ratio:5 / 4;object-fit:cover;object-position:35% 60%;">
+    </div>
+    <div style="grid-column:{{ pjTitleCol }};grid-row:{{ pjTitleRow }};align-self:center;position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <div style="background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;font-size:15px;line-height:1;padding:8px 12px;">AECO Innovation Lab</div>
+      <div style="position:relative;align-self:stretch;">
+        <div aria-hidden="true" style="display:{{ pjNumInDisp }};position:absolute;left:0;bottom:50%;z-index:-1;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pj1CountSize }};line-height:0.74;color:#F0F0F0;">04</div>
+        <h2 onClick="{{ p4Go }}" style="max-width:88%;cursor:pointer;margin:0;font-family:'farnham-display',serif;font-weight:300;font-size:{{ pjTitleSize }};line-height:1;color:#000000;transition:color 100ms ease;" style-hover="color:#FA3420;text-wrap:pretty;">Creating an identity for disruption.</h2>
+      </div>
+      <div style="font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;color:#FA3420;"><span style="font-weight:700;">Venture lab</span><span style="font-weight:500;margin:0 10px;">|</span><span style="font-weight:500;">Brand &amp; event identity</span></div>
+    </div>
+    <p style="grid-column:{{ pjParaCol }};grid-row:{{ pjParaRow }};align-self:end;margin:0;padding-right:{{ pjParaPad }};font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">AECO Innovation Lab needed an edgy, bold identity to launch, and then 5 years later needed an energetic upgrade for its anniversary event.</p>
+    <a href="Project - AECO Innovation Lab.dc.html" aria-label="View the AECO Innovation Lab project" onMouseEnter="{{ p4Enter }}" onMouseLeave="{{ p4Leave }}" style="grid-column:{{ pjArrowCol }};grid-row:{{ pjArrowRow }};align-self:end;justify-self:start;display:flex;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p4CircleBg }};transition:background 100ms ease;color:#000000;font-family:'museo-sans',sans-serif;font-size:22px;line-height:1;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p4ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
+  </div>
+</section>
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;scrollMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Still&quot;,&quot;Parallax&quot;],&quot;default&quot;:&quot;Still&quot;,&quot;tsType&quot;:&quot;'Still' | 'Parallax'&quot;,&quot;section&quot;:&quot;Floating boxes&quot;}}">
+class Component extends DCLogic {
+  heroRef = React.createRef();
+  cursorRef = React.createRef();
+  ringRef = React.createRef();
+  gridRef = React.createRef();
+  aboutAstRef = React.createRef();
+  floatRef = React.createRef();
+  initFloat = () => {
+    const sec = this.floatRef.current; if (!sec || this.reduceMotionAll) return;
+    const wrap = sec.firstElementChild;
+    const els = [...sec.querySelectorAll('[data-depth]')]; const sp = { 1: 1.15, 2: 0.6, 3: 0.3, 4: 0.15 }; const dr = { 1: 1, 2: 0.75, 3: 0.5, 4: 0.3 };
+    let vis = false, mx = 0, my = 0, cmx = 0, cmy = 0;
+    const lower = els.map(el => parseFloat(el.style.top) >= 100);
+    const home = els.map(el => [el.style.left, el.style.top]); let lastMob = null;
+    const applyMob = () => { const mob = !!this.state.mob; if (mob === lastMob) return; lastMob = mob;
+      els.forEach((el, i) => { const m = el.dataset.mob; if (mob && m) { const [l, t] = m.split(','); el.style.left = l + '%'; el.style.top = t + '%'; } else { el.style.left = home[i][0]; el.style.top = home[i][1]; } }); };
+    if (this.canHover) { this.onFloatMouse = e => { mx = e.clientX / innerWidth * 2 - 1; my = e.clientY / innerHeight * 2 - 1; }; window.addEventListener('pointermove', this.onFloatMouse, { passive: true }); }
+    const step = now => {
+      const still = (this.props.scrollMode ?? 'Still') === 'Still';
+      applyMob(); cmx += (mx - cmx) * 0.06; cmy += (my - cmy) * 0.06;
+      const t = now / 1000; const r = wrap.getBoundingClientRect(); const sc = -r.top; const maxS = Math.max(0, r.height - innerHeight);
+      els.forEach((el, i) => { const k = sp[el.dataset.depth], d = dr[el.dataset.depth];
+        el.style.display = (this.state.mob ? !el.dataset.mob : still && lower[i]) ? 'none' : '';
+        let dy = 0; if (!still) { dy = sc < 0 ? -(k - 1) * sc : -k * sc; if (sc > maxS) dy += sc - maxS; }
+        dy += -cmy * 40 * k;
+        dy += Math.sin(t * 0.6 + i * 1.3) * 22 * d;
+        const dx = Math.cos(t * 0.45 + i * 2.1) * 18 * d - cmx * 60 * k;
+        el.style.translate = dx.toFixed(1) + 'px ' + dy.toFixed(1) + 'px'; });
+      if (vis) this.floatRaf = requestAnimationFrame(step);
+    };
+    this.floatIO = new IntersectionObserver(([en]) => { const was = vis; vis = en.isIntersecting; if (vis && !was) this.floatRaf = requestAnimationFrame(step); });
+    this.floatIO.observe(sec);
+  };
+  placeAboutAst = () => { const el = this.aboutAstRef.current; if (!el) return; const cs = getComputedStyle(el); const S = parseFloat(cs.fontSize);
+    const cx = document.createElement('canvas').getContext('2d'); cx.font = cs.fontWeight + ' ' + S + 'px ' + cs.fontFamily; const m = cx.measureText('*');
+    const base = (S - (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent)) / 2 + m.fontBoundingBoxAscent;
+    const gw = m.actualBoundingBoxLeft + m.actualBoundingBoxRight, gh = m.actualBoundingBoxAscent + m.actualBoundingBoxDescent;
+    let ox = 0, oy = 0; const p = el.parentElement.querySelector('p');
+    if (p) { const rg = document.createRange(); rg.selectNodeContents(p); const r0 = rg.getClientRects()[0], pr = el.parentElement.getBoundingClientRect(); if (r0) { ox = r0.left - pr.left; oy = r0.top - pr.top; } }
+    el.style.left = (ox + m.actualBoundingBoxLeft - gw / 2 - 25) + 'px'; el.style.top = oy - (base - m.actualBoundingBoxAscent) - gh / 2 - gh * 0.15 + 15 + 'px'; };
+  drawGrid = () => {
+    const g = this.gridRef.current, sec = this.heroRef.current; if (!g || !sec) return;
+    const h1 = sec.querySelector('h1');
+    if (h1.getAnimations({ subtree: true }).some(x => x.playState === 'running')) { clearTimeout(this.gridT); this.gridT = setTimeout(this.drawGrid, 150); return; }
+    const cs = getComputedStyle(h1); const cx = document.createElement('canvas').getContext('2d');
+    cx.font = cs.fontWeight + ' 100px ' + cs.fontFamily; const m = cx.measureText('D'); const br = m.fontBoundingBoxAscent / (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent);
+    const baseOf = el => { const rg = document.createRange(); rg.selectNodeContents(el); const t = rg.getBoundingClientRect(); return t.top + br * t.height; };
+    const a = h1.querySelector('[data-li] > span'), b = h1.querySelector('[data-di] > span'); if (!a || !b) return;
+    const sr = sec.getBoundingClientRect();
+    const b1 = baseOf(a) - sr.top, b2 = baseOf(b) - sr.top;
+    const cap = (m.actualBoundingBoxAscent / (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent)) * (() => { const rg = document.createRange(); rg.selectNodeContents(a); return rg.getBoundingClientRect().height; })();
+    const cell = cap / 4; if (!(cell > 4)) return;
+    const vw = document.documentElement.clientWidth; const cL = Math.max(vw - 1440, 0) / 2 + 40;
+    const line = 'rgba(50,10,6,0.12)';
+    const p = h1.querySelector('p');
+    if (p) {
+      const FS = 'clamp(32px, calc(3.4 * var(--u)), 52px)';
+      h1.style.setProperty('--tagK', '1');
+      const pc = getComputedStyle(p); const px = document.createElement('canvas').getContext('2d');
+      px.font = pc.fontWeight + ' 100px ' + pc.fontFamily; const pm = px.measureText('c'); const pr = pm.fontBoundingBoxAscent / (pm.fontBoundingBoxAscent + pm.fontBoundingBoxDescent);
+      const last = p.lastChild; const rg = document.createRange(); rg.selectNodeContents(last); const lt = rg.getBoundingClientRect();
+      const A = p.parentElement.getBoundingClientRect().top - sr.top;
+      const base1 = lt.top + pr * lt.height - sr.top; const B = base1 - A;
+      let best = 1, bestD = Infinity, bestY = base1;
+      for (let n = -40; n <= 40; n++) { const y = b1 + n * cell; const s = (y - A) / B; if (s >= 0.8 && s <= 1) { const d = 1 - s; if (d < bestD) { bestD = d; best = s; bestY = y; } } }
+      h1.style.setProperty('--tagK', best.toFixed(4)); this.commY = bestY;
+    }
+    g.style.backgroundImage = `linear-gradient(to right, ${line} 1px, transparent 1px), linear-gradient(to bottom, ${line} 1px, transparent 1px)`;
+    g.style.backgroundSize = `${cell}px ${cell}px`;
+    g.style.backgroundPosition = `${((cL % cell) + cell) % cell}px ${((b1 % cell) + cell) % cell}px`;
+    const tor = [...h1.querySelectorAll('span')].find(s => s.textContent.startsWith('Toronto'));
+    if (tor && !this.state.mob) {
+      tor.style.translate = '';
+      const tc = getComputedStyle(tor); const tx2 = document.createElement('canvas').getContext('2d');
+      tx2.font = tc.fontWeight + ' 100px ' + tc.fontFamily; const tm = tx2.measureText('c'); const trr = tm.fontBoundingBoxAscent / (tm.fontBoundingBoxAscent + tm.fontBoundingBoxDescent);
+      const rg2 = document.createRange(); rg2.selectNodeContents(tor.firstChild); const tt = rg2.getBoundingClientRect();
+      const tb = tt.top + trr * tt.height - sr.top;
+      const target = this.commY != null ? this.commY : tb;
+      const box = h1.parentElement; const k = box.getBoundingClientRect().width / box.offsetWidth || 1;
+      tor.style.translate = '0 ' + ((target - tb) / k).toFixed(2) + 'px';
+    }
+  };
+  arrowRef = React.createRef();
+  aimArrow = () => { const a = this.arrowRef.current; if (!a) return; a.style.transform = ''; const r = a.getBoundingClientRect();
+    const ang = Math.atan2(window.innerHeight / 2 - (r.top + r.height / 2), window.innerWidth / 2 - (r.left + r.width / 2)) * 180 / Math.PI;
+    a.style.transform = 'rotate(' + ang + 'deg)'; };
+  canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches || !this.canHover;
+  initCursor() {
+    if (this.reduceMotion || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    const wrap = this.cursorRef.current, sec = this.heroRef.current; if (!wrap || !sec) return;
+    this.setState({ customCursor: true });
+    const stars = [...wrap.children].reverse();
+    const cx = document.createElement('canvas').getContext('2d');
+    let ox = 0, oy = 0;
+    const measure = () => { cx.font = "500 44px 'museo-sans', sans-serif"; const m = cx.measureText('*');
+      const base = (44 - (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent)) / 2 + m.fontBoundingBoxAscent;
+      ox = (m.actualBoundingBoxRight - m.actualBoundingBoxLeft) / 2; oy = base - (m.actualBoundingBoxAscent - m.actualBoundingBoxDescent) / 2;
+      stars.forEach(s => { s.style.transformOrigin = ox + 'px ' + oy + 'px'; }); };
+    measure(); if (document.fonts) document.fonts.ready.then(measure);
+    const pts = stars.map(() => ({ x: -100, y: -100 })); let mx = -100, my = -100, inside = false, t0 = performance.now();
+    let running = false, onLink = false;
+    const start = () => { if (!running) { running = true; t0 = performance.now() - this.spinT; this.raf = requestAnimationFrame(tick); } };
+    const stop = () => { running = false; cancelAnimationFrame(this.raf); };
+    this.spinT = 0;
+    this.onMove = e => { mx = e.clientX; my = e.clientY; onLink = !!(e.target.closest && e.target.closest('a, button'));
+      if (!inside) { inside = true; pts.forEach(p => { p.x = mx; p.y = my; }); stars.forEach(s => s.style.visibility = 'visible'); } start(); };
+    this.onOut = () => { inside = false; stars.forEach(s => s.style.visibility = 'hidden'); stop(); };
+    this.io = new IntersectionObserver(([en]) => { if (!en.isIntersecting) this.onOut(); }); this.io.observe(sec);
+    sec.addEventListener('pointermove', this.onMove); sec.addEventListener('pointerleave', this.onOut);
+    const tick = now => {
+      const f = onLink ? 1 : 0.8; pts[0].x += (mx - pts[0].x) * f; pts[0].y += (my - pts[0].y) * f;
+      for (let i = 1; i < pts.length; i++) { pts[i].x += (pts[i - 1].x - pts[i].x) * 0.45; pts[i].y += (pts[i - 1].y - pts[i].y) * 0.45; }
+      
+      this.spinT = now - t0; const a = ((now - t0) / 1000) * 60;
+      stars.forEach((s, i) => { s.style.transform = 'translate(' + (pts[i].x - ox) + 'px,' + (pts[i].y - oy) + 'px) rotate(' + a + 'deg)'; });
+      if (running) this.raf = requestAnimationFrame(tick);
+    };
+  }
+  state = { hov: -1, k: 0, mob: document.documentElement.clientWidth < 768 };
+  FONTS = 5;
+  pick = prev => { let n; do { n = Math.floor(Math.random() * this.FONTS); } while (n === prev); return n; };
+  setHover = i => {
+    if (this.reduceMotion) return;
+    if (i >= 0) {
+      clearTimeout(this.stopT); this.stopT = null;
+      if (!this.cyc) this.cyc = setInterval(() => this.setState(s => ({ k: (s.k + 1) % this.FONTS })), 160);
+      if (this.state.hov !== i) this.setState(s => ({ hov: i, k: s.hov === -1 ? this.pick(-1) : s.k }));
+    } else if (this.state.hov >= 0 && !this.stopT) {
+      this.stopT = setTimeout(() => { this.stopT = null; clearInterval(this.cyc); this.cyc = null; this.setState({ hov: -1, k: 0 }); }, 120);
+    }
+  };
+  ampGo = e => {
+    if (this.reduceMotion) return;
+    const el = e.currentTarget.firstElementChild; this.ampHover = true; if (!el || el._busy) return; el._busy = true;
+    const play = () => { const a = el.animate([
+      { transform: 'translateY(0) scale(1, 1)', easing: 'ease-out' },
+      { transform: 'translateY(0) scale(1.12, 0.86)', offset: 0.12, easing: 'cubic-bezier(.2,.8,.4,1)' },
+      { transform: 'translateY(-0.32em) scale(0.92, 1.1)', offset: 0.4, easing: 'cubic-bezier(.5,0,.8,.4)' },
+      { transform: 'translateY(0) scale(1.18, 0.8)', offset: 0.62, easing: 'cubic-bezier(.2,.8,.4,1)' },
+      { transform: 'translateY(-0.08em) scale(0.97, 1.04)', offset: 0.78, easing: 'cubic-bezier(.5,0,.8,.4)' },
+      { transform: 'translateY(0) scale(1.05, 0.95)', offset: 0.9, easing: 'ease-out' },
+      { transform: 'translateY(0) scale(1, 1)' },
+    ], { duration: 900 });
+    a.onfinish = () => { if (this.ampHover) play(); else el._busy = false; }; a.oncancel = () => { el._busy = false; }; };
+    play();
+  };
+  ampStop = () => { this.ampHover = false; };
+  dirGo = w => {
+    if (this.reduceMotion) return;
+    const el = w.firstElementChild; if (!el || el._busy) return;
+    const n = +w.getAttribute('data-di') % 3; el._busy = true;
+    const box = w.closest('h1').parentElement; const k = box.getBoundingClientRect().width / box.offsetWidth || 1;
+    const r = w.getBoundingClientRect(); const vh = window.innerHeight;
+    const upD = (r.bottom + 40) / k, downD = (vh - r.top + 40) / k, vw = window.innerWidth;
+    const rightD = (vw - r.left + 40) / k, leftD = (r.right + 40) / k;
+    const OUT = 'cubic-bezier(.3,.3,.8,.5)', IN = 'cubic-bezier(.15,.65,.3,1)';
+    const sets = [
+      [{ transform: 'translateX(0)', easing: OUT }, { transform: 'translateX(' + rightD + 'px)', offset: 0.45 }, { transform: 'translateX(' + (-leftD) + 'px)', offset: 0.451, easing: IN }, { transform: 'translateX(0)' }],
+      [{ transform: 'translateY(0)', easing: OUT }, { transform: 'translateY(' + (-upD) + 'px)', offset: 0.45 }, { transform: 'translateY(' + downD + 'px)', offset: 0.451, easing: IN }, { transform: 'translateY(0)' }],
+      [{ transform: 'translateY(0)', easing: OUT }, { transform: 'translateY(' + downD + 'px)', offset: 0.45 }, { transform: 'translateY(' + (-upD) + 'px)', offset: 0.451, easing: IN }, { transform: 'translateY(0)' }],
+    ];
+    const a = el.animate(sets[n], { duration: 800 });
+    a.onfinish = a.oncancel = () => { el._busy = false; };
+    if (getComputedStyle(w).position === 'static') w.style.position = 'relative';
+    [0.28, 0.14].forEach((op, gi) => {
+      const g = el.cloneNode(true); g.setAttribute('aria-hidden', 'true');
+      g.style.cssText += ';position:absolute;left:0;top:0;pointer-events:none;opacity:0;';
+      w.appendChild(g);
+      const kf = sets[n].map(f => ({ ...f, opacity: f.offset === 0.45 || f.offset === 0.451 ? op : (f.offset == null ? 0 : op) }));
+      kf[0].opacity = 0; kf[kf.length - 1].opacity = 0;
+      kf.splice(1, 0, { opacity: op, offset: 0.06 }); kf.splice(kf.length - 1, 0, { opacity: op, offset: 0.9 });
+      const ga = g.animate(kf, { duration: 800, delay: (gi + 1) * 28, fill: 'backwards' });
+      ga.onfinish = ga.oncancel = () => g.remove();
+    });
+  };
+  onLetterMove = e => {
+    const els = this.heroRef.current ? this.heroRef.current.querySelectorAll('[data-li]') : [];
+    let hit = -1; const cur = this.state.hov;
+    if (!this.capM) { const h1 = this.heroRef.current.querySelector('h1'); const cs = getComputedStyle(h1); const cx = document.createElement('canvas').getContext('2d'); cx.font = cs.fontWeight + ' 100px ' + cs.fontFamily; const m = cx.measureText('D'); const fh = m.fontBoundingBoxAscent + m.fontBoundingBoxDescent; this.capM = { base: m.fontBoundingBoxAscent / fh, cap: m.actualBoundingBoxAscent / fh }; }
+    els.forEach(el => { const n = +el.getAttribute('data-li'); const r = el.getBoundingClientRect();
+      const rg = document.createRange(); rg.selectNodeContents(el.firstElementChild); const t = rg.getBoundingClientRect();
+      const base = t.top + this.capM.base * t.height, top = base - this.capM.cap * t.height;
+      const g = n === cur ? 5 : -5;
+      if (e.clientX >= r.left - g && e.clientX < r.right + g && e.clientY >= top && e.clientY <= base + 4) { if (hit === -1 || n === cur) hit = n; } });
+    this.setHover(hit);
+    let dh = null;
+    this.heroRef.current.querySelectorAll('[data-di]').forEach(w => { const r = w.getBoundingClientRect();
+      const rg = document.createRange(); rg.selectNodeContents(w.firstElementChild); const t = rg.getBoundingClientRect();
+      if (w.firstElementChild._busy) { if (e.clientX >= r.left && e.clientX < r.right && e.clientY >= r.top && e.clientY <= r.bottom) dh = w; return; }
+      const base = t.top + this.capM.base * t.height, top = base - this.capM.cap * t.height;
+      if (e.clientX >= r.left && e.clientX < r.right && e.clientY >= top && e.clientY <= base + 4) dh = w; });
+    if (dh && dh !== this.lastDir) this.dirGo(dh);
+    this.lastDir = dh;
+  };
+  componentDidMount() {
+    this.reduceMotionAll = window.matchMedia('(prefers-reduced-motion: reduce)').matches; setTimeout(this.initFloat, 0);
+    this.fit = () => {
+      const sec = this.heroRef.current; if (!sec) return;
+      const h1 = sec.querySelector('h1'); const box = h1 && h1.parentElement; if (!box) return;
+      box.style.transform = '';
+      { const cx = document.createElement('canvas').getContext('2d');
+        cx.font = "700 100px 'barlow-condensed'"; const a1 = cx.measureText('H').actualBoundingBoxAscent;
+        const fsH = parseFloat(getComputedStyle(h1).fontSize), lhH = 0.82;
+        const bm = cx.measureText('H'); const bA = bm.fontBoundingBoxAscent, bD = bm.fontBoundingBoxDescent;
+        const baseB = (lhH * 100 - (bA + bD)) / 2 + bA;
+        [["400 100px 'mencken-std-narrow', serif", 0, 0.946], ["700 100px 'lores-22-serif', serif", 1, 1], ["300 100px 'modern-love-caps', serif", 2, 1], ["400 100px 'hey-eloise', serif", 3, 1], ["700 100px 'hackney', sans-serif", 4, 1]].forEach(([f, n, mul]) => {
+          cx.font = f; const m = cx.measureText('H'); const a2 = m.actualBoundingBoxAscent; if (!a1 || !a2) return;
+          const sk = a1 / a2; h1.style.setProperty('--sk' + n, sk.toFixed(4));
+          const s = sk * mul; const baseF = (100 * s - (m.fontBoundingBoxAscent + m.fontBoundingBoxDescent) * s) / 2 + m.fontBoundingBoxAscent * s;
+          h1.style.setProperty('--tk' + n, ((baseB - baseF) / 100 * fsH).toFixed(2) + 'px');
+        }); }
+      const rr = n => { const r = document.createRange(); r.selectNodeContents(n); return r.getBoundingClientRect(); };
+      const dis = h1.querySelectorAll('[data-di]');
+      const parts = [h1.children[0], dis[0], dis[dis.length - 1], h1.querySelector('p')].filter(Boolean).map(rr);
+      const ast = h1.querySelector('[data-ast]');
+      if (ast && ast.offsetParent) {
+        const acs = getComputedStyle(ast); const ax = document.createElement('canvas').getContext('2d');
+        ax.font = acs.fontWeight + ' ' + acs.fontSize + ' ' + acs.fontFamily;
+        const am = ax.measureText('*'); const al = rr(ast).left;
+        parts.push({ left: al - am.actualBoundingBoxLeft, right: al + am.actualBoundingBoxRight });
+      }
+      const dL = Math.min(...parts.map(p => p.left)), nR = Math.max(...parts.map(p => p.right));
+      const vw = document.documentElement.clientWidth;
+      const cL = Math.max(vw - 1440, 0) / 2 + 40, cR = vw - cL;
+      const eL = box.getBoundingClientRect().left;
+      const mob = vw < 768; if (mob !== this.state.mob) { this.setState({ mob }, () => this.onResize && this.onResize()); return; }
+      const shrink = mob ? 1 : 0.9;
+      const k = (cR - cL) / (nR - dL) * shrink;
+      const tL = cL + (cR - cL) * (1 - shrink) / 2;
+      const tx = tL - eL - (dL - eL) * k;
+      box.style.transformOrigin = '0 50%';
+      let ty = Math.round(sec.clientHeight * 0.03);
+      if (mob) { const p = h1.querySelector('p'); const fs0 = parseFloat(getComputedStyle(h1).fontSize); const tyNew = -Math.round(k * ((p ? p.offsetHeight : 0) + 0.24 * fs0) / 2) - Math.round(sec.clientHeight * 0.04); ty = Math.round((ty + tyNew) / 2); }
+      box.style.transform = 'translate(' + tx + 'px, ' + ty + 'px) scale(' + k + ')';
+    };
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = () => {
+      const sec = this.heroRef.current; const h1 = sec.querySelector('h1');
+      const tag = h1.querySelector('p'); const ast = h1.querySelector('[data-ast]');
+      const toronto = [...h1.querySelectorAll('span')].find(s => s.textContent.startsWith('Toronto'));
+      return { tryB: sec.querySelector('[data-try]'), nav: sec.firstElementChild, l1: h1.children[0], l2: h1.children[1], ast, tag: tag && tag.parentElement, toronto };
+    };
+    if (!reduce && this.heroRef.current) { const tg = targets(); [tg.nav, tg.l1, tg.l2, tg.tag, tg.toronto, tg.tryB].forEach(el => el && (el.style.opacity = '0')); }
+    this.intro = () => {
+      if (this.introStarted) return; this.introStarted = true;
+      const tg = targets(); const E = 'cubic-bezier(.2,.7,.2,1)';
+      const fadeUp = (el, delay, dur = 300, dy = 12) => { if (!el) return; el.style.opacity = ''; el.animate([{ opacity: 0, transform: 'translateY(' + dy + 'px)' }, { opacity: 1, transform: 'none' }], { duration: dur, delay, easing: E, fill: 'backwards' }); };
+      const rise = (el, delay, dur = 420) => { if (!el) return; el.style.opacity = ''; const hpx = el.offsetHeight;
+        el.animate([{ transform: 'translateY(' + hpx + 'px)', clipPath: 'inset(-200vh -200vw ' + hpx + 'px -200vw)' }, { transform: 'translateY(0)', clipPath: 'inset(-200vh -200vw 0px -200vw)' }], { duration: dur, delay, easing: E, fill: 'backwards' }); };
+      fadeUp(tg.nav, 0);
+      rise(tg.l1, 150);
+      rise(tg.l2, 300);
+      if (tg.ast) tg.ast.animate([{ opacity: 0, transform: 'scale(.85)' }, { opacity: 1, transform: 'none' }], { duration: 500, delay: 820, easing: E, fill: 'backwards' });
+      fadeUp(tg.tag, 820, 500);
+      fadeUp(tg.toronto, 820, 500, 8);
+      fadeUp(tg.tryB, 820, 500, 8);
+    };
+    this.onResize = () => { this.capM = null; this.fit(); this.aimArrow(); this.drawGrid(); this.placeAboutAst(); };
+    this.placeAboutAst(); if (document.fonts) document.fonts.ready.then(this.placeAboutAst);
+    if (this.ringRef.current && !this.reduceMotion) this.ringAnim = this.ringRef.current.animate([{ transform: 'rotate(0deg)' }, { transform: 'rotate(360deg)' }], { duration: 24000, iterations: Infinity });
+    this.aimArrow();
+    this.fit();
+    const go = () => { this.fit(); if (!this.introStarted) this.drawGrid(); if (!reduce) this.intro(); else { const tg = targets(); [tg.nav, tg.l1, tg.l2, tg.tag, tg.toronto, tg.tryB].forEach(el => el && (el.style.opacity = '')); } this.aimArrow(); };
+    if (document.fonts) { document.fonts.ready.then(go); setTimeout(go, 1500); } else go();
+    window.addEventListener('resize', this.onResize);
+    if (location.hash === '#work') { history.scrollRestoration = 'manual'; const go = () => { const t = document.getElementById('work'); if (t) window.scrollTo(0, t.getBoundingClientRect().top + window.scrollY); }; requestAnimationFrame(go); (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => setTimeout(go, 50)); window.addEventListener('load', () => setTimeout(go, 50), { once: true }); }
+    window.addEventListener('resize', this.fitFoot); if (document.fonts) document.fonts.ready.then(this.fitFoot); this.fitFoot();
+    this.initPjAnim = () => {
+      if (this.reduceMotionAll || !('IntersectionObserver' in window)) return;
+      const HID = 'inset(-100% -100% 140% -100%)', VIS = 'inset(-100% -100% -0.3em -100%)';
+      const secs = [...document.querySelectorAll('section[data-screen-label^="Project"]')];
+      const sets = secs.map(sec => {
+        const g = sec.firstElementChild, h2 = g.querySelector('h2'); if (!h2) return null;
+        const tb = h2.parentElement.parentElement;
+        const nums = [...g.querySelectorAll('[aria-hidden="true"]')].filter(e => /^0\d$/.test(e.textContent.trim()));
+        const first = [...nums, h2, g.querySelector('p')].filter(Boolean);
+        const second = [tb.firstElementChild, tb.lastElementChild, g.querySelector('a[aria-label]')].filter(Boolean);
+        const fades = [...g.querySelectorAll('img')].map(im => im.style.position === 'absolute' ? im.parentElement : im);
+        [...first, ...second].forEach(el => { el.style.transition = 'none'; el.style.clipPath = HID; el.style.translate = '0 140%'; });
+        fades.forEach(el => { el.style.transition = 'none'; el.style.transform = 'translateY(100%)'; el.style.clipPath = 'inset(0 0 100% 0)'; });
+        return { sec, first, second, fades };
+      }).filter(Boolean);
+      const rise = (el, d) => { el.style.transition = 'translate 900ms cubic-bezier(.16,1,.3,1) ' + d + 'ms, clip-path 900ms cubic-bezier(.16,1,.3,1) ' + d + 'ms'; el.style.translate = ''; el.style.clipPath = VIS; setTimeout(() => { el.style.clipPath = ''; el.style.transition = ''; }, 900 + d + 50); };
+      this.pjIO = new IntersectionObserver(ents => ents.forEach(en => {
+        if (!en.isIntersecting) return; const st = sets.find(s => s.sec === en.target); if (!st) return; this.pjIO.unobserve(en.target);
+        st.first.forEach((el, k) => rise(el, k * 90));
+        st.fades.forEach((el, k) => { const d = 300 + k * 120, E = ' 1100ms cubic-bezier(.16,1,.3,1) ' + d + 'ms'; el.style.transition = 'transform' + E + ', clip-path' + E; el.style.transform = ''; el.style.clipPath = 'inset(0 0 0 0)'; setTimeout(() => { el.style.clipPath = ''; el.style.transition = ''; }, 1100 + d + 50); });
+        st.second.forEach((el, k) => rise(el, 500 + k * 90));
+      }), { threshold: 0.25 });
+      sets.forEach(s => this.pjIO.observe(s.sec));
+    };
+    this.initPjAnim();
+    this.phrTick = () => {
+      this.phrRaf = 0;
+      const tr = document.querySelector('[data-phr-track]'); if (!tr) return;
+      const vh = window.innerHeight, r = tr.getBoundingClientRect(), D = r.height - vh;
+      let a = -1;
+      if (r.top <= vh * 0.5) a = Math.min(2, Math.max(0, Math.floor(-r.top / (D / 3))));
+      const rm = this.reduceMotionAll;
+      tr.querySelectorAll('[data-phrase]').forEach(el => {
+        const i = +el.dataset.phrase, st = i === a ? 'in' : (a > i ? 'above' : 'below');
+        if (el._st === st) return; el._st = st;
+        el.style.pointerEvents = st === 'in' ? 'auto' : 'none';
+        el.querySelectorAll('[data-rise]').forEach((it, k) => {
+          if (rm) { it.style.transition = 'opacity 200ms ease'; it.style.translate = '0 0'; it.style.opacity = st === 'in' ? '1' : '0'; return; }
+          if (st === 'in') { const d = k * 90; if (it.style.translate !== '0px 140%' && it.style.translate !== '0 140%') { it.style.transition = 'none'; it.style.translate = '0 140%'; it.style.opacity = '1'; void it.offsetHeight; } it.style.transition = 'translate 900ms cubic-bezier(.16,1,.3,1) ' + d + 'ms'; it.style.translate = '0 0'; it.style.opacity = '1'; }
+          else if (st === 'above') { it.style.transition = 'opacity 250ms ease, translate 0ms linear 250ms'; it.style.translate = '0 0'; it.style.opacity = '0'; }
+          else { it.style.transition = 'opacity 250ms ease, translate 0ms linear 250ms'; it.style.translate = '0 140%'; it.style.opacity = '0'; }
+        });
+      });
+    };
+    this.onPhrScroll = () => { if (!this.phrRaf) this.phrRaf = requestAnimationFrame(this.phrTick); };
+    window.addEventListener('scroll', this.onPhrScroll, { passive: true });
+    window.addEventListener('resize', this.onPhrScroll);
+    this.phrTick();
+    this.fitNums = () => {
+      const n = document.querySelector('[data-pjnum]'); if (!n || n.offsetParent === null) return;
+      const sec = n.parentElement, h2 = sec.querySelector('h2'); if (!h2) return;
+      const fs = parseFloat(getComputedStyle(n).fontSize), cap = n.getBoundingClientRect().height / fs;
+      const hr = h2.getBoundingClientRect(), target = hr.top + hr.height / 2 - n.getBoundingClientRect().top;
+      const size = Math.round(target / (cap || 0.7));
+      if (size > 0 && Math.abs(size - (this.state.numSize || 0)) > 1) this.setState({ numSize: size });
+    };
+    this.onNumResize = () => requestAnimationFrame(this.fitNums);
+    window.addEventListener('resize', this.onNumResize);
+    if (document.fonts) document.fonts.ready.then(() => { this.fitNums(); setTimeout(this.fitNums, 300); }); else this.fitNums();
+    if (document.fonts) setTimeout(() => Promise.all(["400 1em 'mencken-std-narrow'", "700 1em 'lores-22-serif'", "300 1em 'modern-love-caps'", "400 1em 'hey-eloise'", "700 1em 'hackney'"].map(f => document.fonts.load(f, 'DESIGN').catch(() => {}))).then(() => { if (this.heroRef.current) this.onResize(); }), 1500);
+    this.initCursor();
+    this.heroRef.current.addEventListener('pointermove', this.onLetterMove);
+    this.heroRef.current.addEventListener('pointerleave', this.onLetterOut = () => this.setHover(-1));
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.fitFoot); if (this.pjIO) this.pjIO.disconnect(); window.removeEventListener('scroll', this.onPhrScroll); window.removeEventListener('resize', this.onPhrScroll); window.removeEventListener('resize', this.onNumResize); cancelAnimationFrame(this.floatRaf); if (this.floatIO) this.floatIO.disconnect(); if (this.onFloatMouse) window.removeEventListener('pointermove', this.onFloatMouse); window.removeEventListener('resize', this.onResize); clearInterval(this.cyc); clearTimeout(this.stopT); clearTimeout(this.gridT); cancelAnimationFrame(this.raf); if (this.io) this.io.disconnect(); const sec = this.heroRef.current; if (sec && this.onMove) { sec.removeEventListener('pointermove', this.onMove); sec.removeEventListener('pointerleave', this.onOut); } }
+  footBigRef = React.createRef();
+  fitFoot = () => { const el = this.footBigRef.current; if (!el) return; el.style.fontSize = ''; const cs = getComputedStyle(el.parentElement), avail = el.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight), w = el.getBoundingClientRect().width; if (w > 0) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * avail / w * (window.innerWidth < 768 ? 1.6 : 1)) + 'px'; };
+  scrollWork = () => { const t = document.getElementById('work'); if (!t) return; const y = t.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: y, behavior: this.reduceMotionAll ? 'auto' : 'smooth' }); };
+  renderVals() {
+    return {
+      softBr: this.state.mob ? 'none' : 'inline',
+      footBigRef: this.footBigRef, footPad: this.state.mob ? '48px 0 24px' : '96px 0 40px', footGap: this.state.mob ? '40px' : '96px', footRowGap: this.state.mob ? '24px' : '40px', footTagCol: this.state.mob ? '1 / -1' : '1 / 6', footLinksCol: this.state.mob ? '1 / -1' : '6 / 13',
+      goWork: e => { e.preventDefault(); this.scrollWork(); },
+      goWorkMenu: e => { e.preventDefault(); this.setState({ menu: false }); setTimeout(this.scrollWork, 50); },
+      copyJustify: this.state.mob ? 'flex-start' : 'flex-end',
+      tryDisp: this.canHover && !this.state.mob ? 'block' : 'none',
+      pjCountCol: this.state.mob ? '1 / -1' : '1 / 4', pjCountRow: this.state.mob ? '1' : '1',
+      pjListCol: this.state.mob ? '1 / -1' : '9 / 13', pjListRow: this.state.mob ? '4' : '1',
+      pjTitleCol: this.state.mob ? '1 / -1' : '1 / 6', pjTitleRow: this.state.mob ? '2' : '2',
+      pjImgCol: this.state.mob ? '1 / -1' : '6 / 10', pjImgRow: this.state.mob ? '3' : '1 / 4', pjImgMin: this.state.mob ? '420px' : '600px',
+      pjImg2Col: this.state.mob ? '1 / -1' : '10 / 13', pjImg2Row: this.state.mob ? '7' : '2 / 4',
+      pjImg3Col: this.state.mob ? '1 / -1' : '9 / 11', pjImg3Row: this.state.mob ? '7' : '1 / 4',
+      pjTitleSize: this.state.mob ? '48px' : 'clamp(40px, calc((100vw - 80px) * 0.05294), 72px)', pjCircle: this.state.mob ? '48px' : '64px',
+      p2CountCol: this.state.mob ? '1 / -1' : '8 / 12', p2Shift: this.state.mob ? 'none' : 'calc(-0.75 * (min(100vw, 1440px) - 344px) / 12 - 12px) 0', p2ImgCol: this.state.mob ? '1 / -1' : '4 / 8', p2Pad: this.state.mob ? '0px' : 'calc(26px - 0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px))', p2ImgShift: this.state.mob ? 'none' : 'calc(-1 * 0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px)) 0',
+      p2Offset: this.state.mob ? '0px' : 'calc(2 * ((min(100vw, 1440px) - 344px) / 12) + 74px - 0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px))', p2HeadOffset: this.state.mob ? '0px' : 'calc(2 * ((min(100vw, 1440px) - 344px) / 12) - 26px)', p2Align: this.state.mob ? 'left' : 'right', p2Items: this.state.mob ? 'flex-start' : 'flex-end',
+      p2SideCol: '1 / 4', p2TitleCol: this.state.mob ? '1 / -1' : '6 / 13', p2ParaCol: this.state.mob ? '1 / -1' : '8 / 12', p2ArrowCol: this.state.mob ? '1 / -1' : '12 / 13',
+      p2Enter: () => this.setState({ p2Hover: true }), p2Leave: () => this.setState({ p2Hover: false }), p2Go: () => { window.location.href = 'Project - One Ontario.dc.html'; },
+      p2CircleBg: this.state.p2Hover ? '#FA3420' : 'transparent', p2ArrowStroke: this.state.p2Hover ? '#FFFFFF' : '#FA3420',
+      pj1CountSize: this.state.mob ? '180px' : '320px', pjNumInDisp: this.state.mob ? 'block' : 'none', pjNumGridDisp: this.state.mob ? 'none' : 'block', pjNumSize: this.state.numSize ? this.state.numSize + 'px' : '480px', p3Enter: () => this.setState({ p3Hover: true }), p3Leave: () => this.setState({ p3Hover: false }), p3Go: () => { window.location.href = 'Project - Osler.dc.html'; },
+      p3CircleBg: this.state.p3Hover ? '#FA3420' : 'transparent', p3ArrowStroke: this.state.p3Hover ? '#FFFFFF' : '#FA3420',
+      pjShift: this.state.mob ? 'none' : 'calc(0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px)) 0', p4Enter: () => this.setState({ p4Hover: true }), p4Leave: () => this.setState({ p4Hover: false }), p4Go: () => { window.location.href = 'Project - AECO Innovation Lab.dc.html'; },
+      p4CircleBg: this.state.p4Hover ? '#FA3420' : 'transparent', p4ArrowStroke: this.state.p4Hover ? '#FFFFFF' : '#FA3420',
+      pjCountSize: this.state.mob ? '32px' : '48px', pjSideDisp: this.state.mob ? 'none' : 'flex', pjArrowJustify: this.state.mob ? 'start' : 'end',
+      pjEnter: () => this.setState({ pjHover: true }), pjLeave: () => this.setState({ pjHover: false }),
+      pjGo: () => { window.location.href = 'Project - LandLogic.dc.html'; },
+      pjCircleBg: this.state.pjHover ? '#FA3420' : 'transparent', pjArrowStroke: this.state.pjHover ? '#FFFFFF' : '#FA3420',
+      pjParaCol: this.state.mob ? '1 / -1' : '1 / 5', pjParaPad: this.state.mob ? '0px' : '26px', pjParaRow: this.state.mob ? '4' : '3',
+      pjArrowCol: this.state.mob ? '1 / -1' : '5 / 6', pjArrowRow: this.state.mob ? '5' : '3',
+      aboutP2Row: this.state.mob ? '3' : '2', aboutTxtCol: this.state.mob ? '1 / -1' : '2 / span 10',
+      aboutTxtRow: '1', aboutP2Col: this.state.mob ? '1 / -1' : '7 / span 5', aboutP3Col: this.state.mob ? '1 / -1' : '9 / span 4', aboutP3Row: this.state.mob ? '4' : '2', aboutTxtTop: '0px',
+      burgerDisp: this.state.mob ? 'inline-flex' : 'none', linksDisp: this.state.mob ? 'none' : 'flex',
+      menuOpen: !!this.state.menu, menuShown: this.state.mob && !!this.state.menu,
+      toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
+      burgerPath: this.state.menu ? 'M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z' : 'M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z',
+      astDisp: this.state.mob ? 'none' : 'inline', astMDisp: this.state.mob ? 'block' : 'none',
+      dirLeft: this.state.mob ? '0px' : 'calc(-6 * var(--u))', dirAlign: this.state.mob ? 'flex-start' : 'flex-end',
+      tagLeft: this.state.mob ? '0.06em' : 'calc(0.12em + 4 * var(--u) + 8px)', tagTop: this.state.mob ? 'calc(100% + 0.24em)' : '100%',
+      tagTf: this.state.mob ? 'none' : 'translate(-50%,-54%)',
+      torDisp: this.state.mob ? 'none' : 'inline', torMDisp: this.state.mob ? 'block' : 'none',
+      aboutAstRef: this.aboutAstRef, floatRef: this.floatRef, gridCols: [0,1,2,3,4,5,6,7,8,9,10,11],
+      heroRef: this.heroRef, cursorRef: this.cursorRef, gridRef: this.gridRef, ringRef: this.ringRef, arrowRef: this.arrowRef, ampGo: this.ampGo, ampStop: this.ampStop,
+      heroCursor: this.state.customCursor ? 'none' : 'auto',
+      letters: 'Design'.split('').map((ch, i) => { const on = this.state.hov === i, k = this.state.k; return {
+        ch, front: on ? 'hidden' : 'visible',
+        v0: on && k === 0 ? 'flex' : 'none', v2: on && k === 1 ? 'flex' : 'none', v1: on && k === 2 ? 'flex' : 'none', v3: on && k === 3 ? 'flex' : 'none', v4: on && k === 4 ? 'flex' : 'none',
+        i,
+      }; }),
+    };
+  }
+}
+</script>
+</body>
+</html>

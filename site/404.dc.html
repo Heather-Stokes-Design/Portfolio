@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Page not found - Heather Stokes</title>
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<div style="border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+  <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+    <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+    <div style="display:flex;align-items:center;gap:24px;">
+      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
+      <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+    </div>
+  </nav>
+</div>
+<main data-screen-label="Not found" style="max-width:1440px;margin:0 auto;padding:{{ mainPad }};box-sizing:border-box;display:flex;flex-direction:column;gap:32px;">
+  <div style="font-family:'museo-sans',sans-serif;font-weight:700;font-size:12px;line-height:1.4;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Error 404</div>
+  <h1 style="margin:0;position:relative;isolation:isolate;font-family:'barlow-condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:{{ h1Size }};line-height:0.82;white-space:nowrap;letter-spacing:0.02em;color:#000000;">Not <span style="font-family:'farnham-display',serif;font-weight:300;font-style:italic;text-transform:none;letter-spacing:-0.01em;">her<span style="position:relative;display:inline-block;">e<span aria-hidden="true" style="position:absolute;z-index:-1;right:-0.3em;top:-0.2em;font-style:normal;font-family:'museo-sans',sans-serif;font-weight:500;font-size:1em;line-height:1;color:#FA3420;pointer-events:none;">*</span></span></h1>
+  <p style="margin:0;max-width:880px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:clamp(22px, 2.4vw, 32px);line-height:1.4;color:#000000;text-wrap:pretty;">That page doesn't exist or has moved. Take a look at the work instead.</p>
+  <div><a href="Homepage v3.dc.html#work" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">See the work →</a></div>
+</main>
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { mob: window.innerWidth < 768, wide: window.innerWidth >= 1200 };
+  onResize = () => { const mob = window.innerWidth < 768, wide = window.innerWidth >= 1200; if (mob !== this.state.mob || wide !== this.state.wide) this.setState({ mob, wide }); };
+  componentDidMount() { window.addEventListener('resize', this.onResize); }
+  componentWillUnmount() { window.removeEventListener('resize', this.onResize); }
+  renderVals() {
+    return {
+      h1Size: this.state.wide ? '200px' : '16vw',
+      mainPad: this.state.mob ? '80px 40px 64px' : '120px 40px 160px'
+    };
+  }
+}
+</script>
+</body>
+</html>
