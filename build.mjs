@@ -137,7 +137,7 @@ function headFor(page, helmet) {
   const resources = {
     [REACT_URL]: RT + "/react.production.min.js",
     [REACT_DOM_URL]: RT + "/react-dom.production.min.js",
-    "./Footer.dc.html": RT + "/Footer.dc.html",
+    "./Footer.dc.html": RT + "/Footer.dc.txt",
   };
   return `<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -221,7 +221,7 @@ fs.copyFileSync(path.join(SITE, "form.js"), path.join(OUT, RT, "form.js"));
 // Shared components pulled in with <dc-import> (e.g. the footer).
 const footer = findFile("Footer*.dc.html");
 if (!footer) throw new Error("No Footer.dc.html in /design");
-fs.writeFileSync(path.join(OUT, RT, "Footer.dc.html"), rewrite(fs.readFileSync(path.join(DESIGN, footer), "utf8")).src);
+fs.writeFileSync(path.join(OUT, RT, "Footer.dc.txt"), rewrite(fs.readFileSync(path.join(DESIGN, footer), "utf8")).src);
 
 // Pages.
 const used = new Set([footer]);
