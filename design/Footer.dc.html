@@ -14,7 +14,7 @@
   <div style="max-width:1440px;margin:0 auto;padding:0 40px;box-sizing:border-box;display:grid;position:relative;">
     <div style="grid-area:1 / 1;align-self:stretch;position:relative;z-index:1;padding:{{ footPad }};display:flex;flex-direction:column;justify-content:space-between;gap:{{ footGap }};">
     <div style="display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));column-gap:24px;row-gap:{{ footRowGap }};align-items:start;">
-      <div style="grid-column:{{ footTagCol }};font-size:32px;line-height:1.25;color:#FFFFFF;">Graphic design, branding<br>and communications.</div>
+      <div style="grid-column:{{ footTagCol }};font-size:{{ footTagSize }};line-height:1.25;color:#FFFFFF;">Graphic design, branding<br>and communications.</div>
       <div style="grid-column:{{ footLinksCol }};translate:{{ pjShift }};display:flex;gap:64px;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;gap:4px;">
           <div style="font-size:15px;line-height:1.5;font-weight:700;color:#FFFFFF;">Explore</div>
@@ -48,7 +48,7 @@ class Component extends DCLogic {
     return {
       footBigRef: this.footBigRef,
       footPad: mob ? '48px 0 24px' : '96px 0 40px', footGap: mob ? '40px' : '96px', footRowGap: mob ? '24px' : '40px',
-      footTagCol: mob ? '1 / -1' : '1 / 6', footLinksCol: mob ? '1 / -1' : '6 / 13',
+      footTagCol: mob ? '1 / -1' : '1 / 6', footTagSize: mob ? '24px' : '32px', footLinksCol: mob ? '1 / -1' : '6 / 13',
       pjShift: mob ? 'none' : 'calc(0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px)) 0',
       goWork: e => { const t = document.getElementById('work'); if (!t) return; e.preventDefault(); window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' }); }
     };
