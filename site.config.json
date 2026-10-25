@@ -9,10 +9,35 @@
     "city": "Toronto",
     "region": "ON",
     "country": "CA",
-    "sameAs": ["https://www.linkedin.com/in/heather-stokes-725b9426/"],
-    "knowsAbout": ["Graphic design", "Brand identity", "Branding", "Communications design", "Creative direction", "Event identity", "Brand systems"]
+    "sameAs": [
+      "https://www.linkedin.com/in/heather-stokes-725b9426/"
+    ],
+    "knowsAbout": [
+      "Graphic design",
+      "Brand identity",
+      "Branding",
+      "Communications design",
+      "Creative direction",
+      "Event identity",
+      "Brand systems"
+    ],
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Ryerson University"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "George Brown College"
+      }
+    ]
   },
-  "shareImage": { "path": "/images/social-share.png", "width": 1200, "height": 630, "alt": "Heather Stokes - red square with a white asterisk" },
+  "shareImage": {
+    "path": "/images/social-share.png",
+    "width": 1200,
+    "height": 630,
+    "alt": "Heather Stokes - red square with a white asterisk"
+  },
   "pages": [
     {
       "file": "Homepage*.dc.html",
@@ -20,6 +45,13 @@
       "type": "home",
       "title": "Heather Stokes - Graphic design, branding and communications",
       "description": "Heather Stokes is a Toronto-based graphic designer and creative director. Creative work driven by strategy and brought to life through design."
+    },
+    {
+      "file": "About*.dc.html",
+      "route": "/about/",
+      "type": "about",
+      "title": "About - Heather Stokes",
+      "description": "About Heather Stokes, Toronto creative director and graphic designer: from agency work on McDonald's Canada and Osler to in-house brand leadership for startups, ventures and not-for-profits."
     },
     {
       "file": "Project - LandLogic*.dc.html",
@@ -70,5 +102,8 @@
       "description": "Get in touch with Heather Stokes, Toronto-based graphic designer and creative director. Email hello@heatherstokes.ca or send a message."
     }
   ],
-  "ignore": ["Style Guide*.dc.html", "Footer*.dc.html"]
+  "ignore": [
+    "Style Guide*.dc.html",
+    "Footer*.dc.html"
+  ]
 }

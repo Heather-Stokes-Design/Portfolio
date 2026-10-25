@@ -22,12 +22,14 @@
       <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuOpen }}" style="display:{{ burgerDisp }};align-items:center;justify-content:center;width:44px;height:44px;margin:-6px -10px -6px 0;padding:0;border:none;background:transparent;color:#320A06;cursor:pointer;"><svg width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="{{ burgerPath }}"></path></svg></button>
       <div style="display:{{ linksDisp }};align-items:center;gap:24px;">
         <a href="#work" onClick="{{ goWork }}" style="cursor:{{ heroCursor }};font-size:15px;line-height:1.5;color:#320A06;" style-hover="color:#FA3420;">Work</a>
+        <a href="About Page.dc.html" style="cursor:{{ heroCursor }};font-size:15px;line-height:1.5;color:#320A06;" style-hover="color:#FA3420;">About</a>
         <a href="Contact Page.dc.html" style="cursor:{{ heroCursor }};display:inline-flex;align-items:center;background:#320A06;color:#FA3420;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
       </div>
     </nav>
     <sc-if value="{{ menuShown }}" hint-placeholder-val="{{ false }}">
       <div style="position:fixed;inset:0;z-index:-1;background:#FA3420;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:80px 40px 40px;box-sizing:border-box;">
         <a href="#work" onClick="{{ goWorkMenu }}" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#320A06;">Work</a>
+        <a href="About Page.dc.html" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#320A06;">About</a>
         <a href="Contact Page.dc.html" style="position:absolute;left:40px;right:40px;bottom:40px;display:flex;align-items:center;justify-content:center;min-height:56px;box-sizing:border-box;background:#320A06;color:#FA3420;font-size:22px;line-height:1;padding:16px 24px;border-radius:999px;">Contact</a>
       </div>
     </sc-if>
@@ -94,7 +96,7 @@
       <div style="clip-path:inset(-100% -100% -0.3em -100%);"><div data-rise="1" style="translate:0 140%;"><div style="font-family:'museo-sans',sans-serif;font-weight:700;font-size:12px;line-height:1.4;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">What that means</div></div></div>
       <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:720px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:clamp(26px, 6.5vw, 38px);line-height:1.2;color:#000000;text-wrap:balance;">My job is to bring those goals to life through compelling storytelling.</p></div></div>
       <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:16px;"><div data-rise="1" style="translate:0 140%;"><p style="margin:0;max-width:540px;font-family:'museo-sans',sans-serif;font-weight:500;font-size:16px;line-height:1.5;color:#000000;text-wrap:pretty;">That's how I approach every project: finding the most creative way to achieve a defined strategic objective. <span style="color:#FA3420;font-weight:700;">Art + Strategy = Design</span></p></div></div>
-      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:32px;"><div data-rise="1" style="translate:0 140%;"><a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;text-decoration:none;">Let's talk about it →</a></div></div>
+      <div style="clip-path:inset(-100% -100% -0.3em -100%);margin-top:32px;"><div data-rise="1" style="translate:0 140%;"><a href="About Page.dc.html" style="display:inline-flex;align-items:center;background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;text-decoration:none;">More about my story →</a></div></div>
     </div>
   </div>
   </div>
@@ -249,9 +251,11 @@ class Component extends DCLogic {
       for (let n = -40; n <= 40; n++) { const y = b1 + n * cell; const s = (y - A) / B; if (s >= 0.8 && s <= 1) { const d = 1 - s; if (d < bestD) { bestD = d; best = s; bestY = y; } } }
       h1.style.setProperty('--tagK', best.toFixed(4)); this.commY = bestY;
     }
-    g.style.backgroundImage = `linear-gradient(to right, ${line} 1px, transparent 1px), linear-gradient(to bottom, ${line} 1px, transparent 1px)`;
+    const pz = Math.max(8, Math.round(cell * 0.28)), pc = cell / 2, pu = 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="' + cell + '" height="' + cell + '"><path d="M' + (pc - pz / 2) + ' ' + pc + 'H' + (pc + pz / 2) + 'M' + pc + ' ' + (pc - pz / 2) + 'V' + (pc + pz / 2) + '" stroke="' + line + '" stroke-width="2.5"/></svg>') + '")';
+    const gx = ((cL % cell) + cell) % cell, gy = ((b1 % cell) + cell) % cell;
+    g.style.backgroundImage = `${pu}, linear-gradient(to right, ${line} 1px, transparent 1px), linear-gradient(to bottom, ${line} 1px, transparent 1px)`;
     g.style.backgroundSize = `${cell}px ${cell}px`;
-    g.style.backgroundPosition = `${((cL % cell) + cell) % cell}px ${((b1 % cell) + cell) % cell}px`;
+    g.style.backgroundPosition = `${gx + 0.5 - pc}px ${gy + 0.5 - pc}px, ${gx}px ${gy}px, ${gx}px ${gy}px`;
     const tor = [...h1.querySelectorAll('span')].find(s => s.textContent.startsWith('Toronto'));
     if (tor && !this.state.mob) {
       tor.style.translate = '';

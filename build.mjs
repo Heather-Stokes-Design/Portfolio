@@ -49,6 +49,7 @@ const linkRules = config.pages.map((p) => ({ re: globToRegex(p.file, "g"), route
 function rewrite(src) {
   for (const { re, route } of linkRules) src = src.replace(re, route);
   src = src.replace(/(["'(])(img|images)\//g, "$1/$2/"); // image paths work from any page depth
+  src = src.replace(/(["'])([\w-]+\.json)\1/g, "$1/$2$1"); // data files (e.g. about-sketches.json) too
   const leftover = src.match(/[^"'/<>]*\.dc\.html/g)?.filter((m) => !/^Footer|^\.\//.test(m));
   return { src, leftover: leftover || [] };
 }
@@ -100,7 +101,7 @@ const person = {
   "@type": "Person", "@id": personId, name: P.name, url: SITE_URL + "/", jobTitle: P.jobTitle,
   description: P.description, email: "mailto:" + P.email, image: abs(config.shareImage.path),
   address: { "@type": "PostalAddress", addressLocality: P.city, addressRegion: P.region, addressCountry: P.country },
-  sameAs: P.sameAs, knowsAbout: P.knowsAbout,
+  sameAs: P.sameAs, knowsAbout: P.knowsAbout, alumniOf: P.alumniOf,
 };
 const website = { "@type": "WebSite", "@id": SITE_URL + "/#website", url: SITE_URL + "/", name: config.siteName, publisher: { "@id": personId }, inLanguage: "en-CA" };
 
@@ -121,6 +122,8 @@ function jsonLd(page) {
       { "@type": "ListItem", position: 1, name: "Work", item: SITE_URL + "/#work" },
       { "@type": "ListItem", position: 2, name: page.client || page.title, item: url },
     ] });
+  } else if (page.type === "about") {
+    graph.push({ "@type": ["WebPage", "AboutPage"], "@id": url, url, name: page.title, description: page.description, about: { "@id": personId }, mainEntity: { "@id": personId }, isPartOf: { "@id": website["@id"] } });
   } else if (page.type === "contact") {
     graph.push({ "@type": "ContactPage", "@id": url, url, name: page.title, description: page.description, about: { "@id": personId }, isPartOf: { "@id": website["@id"] } });
   }
@@ -213,6 +216,7 @@ fs.mkdirSync(path.join(OUT, RT.slice(1)), { recursive: true });
 // Assets: everything in the design export except the page files themselves.
 for (const entry of fs.readdirSync(DESIGN, { withFileTypes: true })) {
   if (entry.isDirectory()) copyDir(path.join(DESIGN, entry.name), path.join(OUT, entry.name));
+  else if (entry.name.endsWith(".json")) fs.copyFileSync(path.join(DESIGN, entry.name), path.join(OUT, entry.name));
 }
 fs.copyFileSync(path.join(DESIGN, "support.js"), path.join(OUT, RT, "support.js"));
 for (const f of fs.readdirSync(path.join(SITE, "vendor"))) fs.copyFileSync(path.join(SITE, "vendor", f), path.join(OUT, RT, f));
