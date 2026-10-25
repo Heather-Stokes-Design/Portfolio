@@ -136,7 +136,8 @@ function headFor(page, helmet) {
   const img = page.image || config.shareImage.path;
   const shareImg = config.shareImage;
   // Keep the design's own page styles (the <style> in its <helmet>).
-  const styles = (helmet.match(/<style>[\s\S]*?<\/style>/g) || []).join("\n");
+  const styles = (helmet.match(/<style>[\s\S]*?<\/style>/g) || []).join("\n") +
+    `\n<style>\n${fs.readFileSync(path.join(SITE, "overrides.css"), "utf8")}</style>`;
   const resources = {
     [REACT_URL]: RT + "/react.production.min.js",
     [REACT_DOM_URL]: RT + "/react-dom.production.min.js",

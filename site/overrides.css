@@ -1,0 +1,12 @@
+/* Site-wide tweaks applied on top of the Claude Design export.
+   These live outside /design so they survive every new export. */
+
+/* Nav: Work and About underline on hover instead of turning red. */
+nav a[href="#work"]:hover,
+nav a[href="/#work"]:hover,
+nav a[href="/about/"]:hover {
+  color: inherit !important;
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px !important;
+}
