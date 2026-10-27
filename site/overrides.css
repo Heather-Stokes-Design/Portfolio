@@ -10,15 +10,3 @@ nav a[href="/about/"]:hover {
   text-decoration-thickness: 1px !important;
   text-underline-offset: 4px !important;
 }
-
-/* About: career timeline bleeds off the browser edges instead of stopping at the
-   page margin. It still starts (and ends) in line with the 40px margin. */
-[data-screen-label="About history"] { overflow-x: clip; }
-[data-screen-label="About history"] > div > div:has(> div[style*="repeating-linear-gradient"]) {
-  --bleed: calc((100vw - min(100vw, 1440px)) / 2 + 40px);
-  width: 100vw !important;
-  max-width: none !important;
-  margin-left: calc(-1 * var(--bleed)) !important;
-  padding: 0 var(--bleed) !important;
-  box-sizing: border-box !important;
-}

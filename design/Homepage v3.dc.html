@@ -488,7 +488,7 @@ class Component extends DCLogic {
         const i = +el.dataset.phrase, st = i === a ? 'in' : (a > i ? 'above' : 'below');
         if (el._st === st) return; el._st = st;
         el.style.pointerEvents = st === 'in' ? 'auto' : 'none';
-        (el._chT || []).forEach(clearTimeout); el._chT = [];
+        (el._chT || []).forEach(clearTimeout); el._chT = []; cancelAnimationFrame(el._raf); if (el._cur) el._cur.style.opacity = '0';
         const chs = [...el.querySelectorAll('[data-ch]')], T = (f, ms) => el._chT.push(setTimeout(f, ms)), all = f => chs.forEach(f);
         const reset = () => all(c => { c.style.color = ''; c.style.fontStyle = ''; c.style.backgroundColor = ''; });
         if (st === 'in') { reset(); el.querySelectorAll('[data-lb]').forEach(b => b.remove()); el.querySelectorAll('[data-swap]').forEach(sw => {
@@ -497,8 +497,29 @@ class Component extends DCLogic {
             words.forEach(w => { const t = w.getBoundingClientRect().top; if (prevTop != null && t - prevTop > 4) { const br = document.createElement('br'); br.setAttribute('data-lb', '1'); const sp = w.previousSibling; (sp && sp.hasAttribute && sp.hasAttribute('data-ch') ? sp : w).before(br); } prevTop = t; });
           });
           if (rm) all(c => { c.style.color = '#FA3420'; c.style.fontStyle = 'italic'; });
-          else { const base = 1000, step = 30, end = base + chs.length * step;
-            chs.forEach((c, j) => T(() => { c.style.backgroundColor = 'rgba(250, 52, 32, 0.18)'; }, base + j * step));
+          else { const base = 2000, step = 45, end = base + 200 + chs.length * step;
+            T(() => {
+              if (getComputedStyle(el).position === 'static') el.style.position = 'relative';
+              let cur = el._cur; if (!cur) { cur = el._cur = document.createElement('div'); cur.setAttribute('aria-hidden', 'true'); cur.style.cssText = 'position:absolute;left:0;top:0;width:24px;height:36px;pointer-events:none;opacity:0;z-index:5;transition:opacity 200ms ease;will-change:transform;'; cur.innerHTML = '<svg width="24" height="36" viewBox="0 0 16 24" style="display:block;overflow:visible;"><path d="M1 1 L1 18.5 L5.2 14.6 L8 21.2 L10.9 20 L8.1 13.5 L13.8 13.5 Z" fill="#FA3420" stroke="#FA3420" stroke-width="1.2" stroke-linejoin="round"></path></svg>'; el.appendChild(cur); }
+              const pr = el.getBoundingClientRect(), lines = [];
+              chs.forEach(c => { const r = c.getBoundingClientRect(), L = lines[lines.length - 1]; if (!L || Math.abs(r.top - L.top) > 4) lines.push({ top: r.top, chs: [c], x0: r.left - pr.left, x1: r.right - pr.left, first: c }); else { L.chs.push(c); L.x1 = r.right - pr.left; } });
+              lines.forEach(L => { const m = document.createElement('span'); m.style.cssText = 'display:inline-block;width:0;height:0;'; L.first.before(m); L.y = m.getBoundingClientRect().top - pr.top; m.remove(); L.cx = L.chs.map(c => { const r = c.getBoundingClientRect(); return (r.left + r.right) / 2 - pr.left; }); });
+              const total = lines.reduce((s, L) => s + L.x1 - L.x0, 0) || 1, dur = chs.length * step, inT = 650, hop = 90;
+              const at = (x, y) => { cur.style.transform = 'translate(' + (x - 1.5) + 'px,' + (y - 1.5) + 'px)'; };
+              const ease = t => 1 - Math.pow(1 - t, 3), t0 = performance.now(), sx = lines[0].x0 + 70, sy = lines[0].y + 60;
+              cur.style.opacity = '1'; at(sx, sy);
+              const frame = now => {
+                let t = now - t0;
+                if (t < inT) { const k = ease(t / inT); at(sx + (lines[0].x0 - sx) * k, sy + (lines[0].y - sy) * k); el._raf = requestAnimationFrame(frame); return; }
+                t -= inT; let budget = t / dur * total + 0, done = true;
+                for (let i = 0; i < lines.length; i++) { const L = lines[i], w = L.x1 - L.x0;
+                  if (budget >= w) { L.chs.forEach(c => { c.style.backgroundColor = 'rgba(250, 52, 32, 0.18)'; }); budget -= w; if (i === lines.length - 1) at(L.x1, L.y); continue; }
+                  const x = L.x0 + Math.max(0, budget); at(x, L.y); L.chs.forEach((c, j) => { if (L.cx[j] <= x) c.style.backgroundColor = 'rgba(250, 52, 32, 0.18)'; }); done = false; break; }
+                if (!done) el._raf = requestAnimationFrame(frame);
+                else { const L = lines[lines.length - 1], e0 = now; const away = n => { const k = ease(Math.min(1, (n - e0) / 800)); at(L.x1 + 50 * k, L.y + 60 * k); if (k < 1) el._raf = requestAnimationFrame(away); }; T(() => { cur.style.opacity = '0'; el._raf = requestAnimationFrame(away); }, 250); }
+              };
+              el._raf = requestAnimationFrame(frame);
+            }, base - 450);
             T(() => all(c => { c.style.color = '#FA3420'; }), end + 550);
             T(() => all(c => { c.style.fontStyle = 'italic'; }), end + 1450);
             T(() => all(c => { c.style.backgroundColor = ''; }), end + 2500); } }
