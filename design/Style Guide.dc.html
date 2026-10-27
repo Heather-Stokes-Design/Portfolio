@@ -24,7 +24,9 @@
       <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#4A4A4A;"></div><div style="font-size:15px;line-height:1.5;">Dark text grey #4A4A4A — P1 (8.9:1 on white)</div></div>
       <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#767676;"></div><div style="font-size:15px;line-height:1.5;">Light text grey #767676 — P2 (4.5:1 on white, lightest accessible)</div></div>
       <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#D9D9D9;"></div><div style="font-size:15px;line-height:1.5;">Grey #D9D9D9 — outlines, graphics, nav divider</div></div>
-      <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#EDEDED;"></div><div style="font-size:15px;line-height:1.5;">Light grey #EDEDED — image placeholders</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#EDEDED;"></div><div style="font-size:15px;line-height:1.5;">Light grey #EDEDED — image placeholders, outline-button hover</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:rgba(250, 52, 32, 0.18);border:1px solid #D9D9D9;box-sizing:border-box;"></div><div style="font-size:15px;line-height:1.5;">Highlight red rgba(250,52,32,0.18) — homepage text highlight sweep</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px;"><div style="width:160px;height:96px;background:#1C1C1C;"></div><div style="font-size:15px;line-height:1.5;">Footer type #1C1C1C — large "Design &amp; Direction" on black</div></div>
     </div>
   </div>
 
@@ -67,6 +69,26 @@
   </div>
 
   <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-size:22px;line-height:1.3;">Popup</div>
+    <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap;">
+      <div style="width:100%;max-width:440px;background:#FFFFFF;color:#000000;padding:40px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px;border:1px solid #D9D9D9;">
+        <div style="font-size:20px;line-height:1.3;font-weight:500;">Who is this doodle from?</div>
+        <div style="height:56px;padding:0 20px;border:1.5px solid #000000;border-radius:999px;box-sizing:border-box;display:flex;align-items:center;font-size:15px;color:#767676;">Email</div>
+        <div style="display:flex;align-items:center;justify-content:center;height:56px;border-radius:999px;background:#000000;color:#FFFFFF;font-size:15px;font-weight:500;">Send doodle</div>
+      </div>
+      <div style="font-size:15px;line-height:1.5;max-width:360px;">White panel, max width 440, padding 40, 24 gap · black text · heading Museo 500 · 20 · input + button 56px pills, 1.5px black outline · black filled button with icon · × top right · backdrop black 50%, click to close · input not auto-focused</div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:24px;">
+    <div style="font-size:22px;line-height:1.3;">Info dot</div>
+    <div style="display:flex;gap:24px;align-items:center;">
+      <div style="display:flex;align-items:center;gap:10px;"><div style="width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;box-sizing:border-box;display:flex;align-items:center;justify-content:center;color:#FA3420;font-family:'farnham-display',serif;font-style:italic;font-size:12px;line-height:1;">i</div><div style="background:#000000;color:#FFFFFF;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;white-space:nowrap;">Became Certified RGD</div></div>
+      <div style="font-size:15px;line-height:1.5;">18px circle · white fill · 1.5px red outline · red italic Farnham "i" 12 · tooltip: black pill, white Museo 500 14, padding 8 × 12, 10 above dot · hover on desktop, tap on touch (tap elsewhere closes)</div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:24px;">
     <div style="font-size:22px;line-height:1.3;">Client tag</div>
     <div style="display:flex;gap:24px;align-items:center;">
       <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FFFFFF;background:#FA3420;padding:2px 4px;">LandLogic</div>
@@ -76,7 +98,7 @@
 
   <div style="display:flex;flex-direction:column;gap:24px;">
     <div style="font-size:22px;line-height:1.3;">Layout</div>
-    <div style="font-size:15px;line-height:1.5;max-width:640px;">Max width 1440, centred · page margin 40 · 12-column grid, 24 gutter · Services top-left, cols 1–6 · Type + Duration cols 7–9 · Role + Employer cols 10–12 · client label + title bottom-left, cols 1–6, level with Summary · 150px fixed space above client label + H1 · Summary & description start col 7 · Nav: name Museo 500 · 22 left; Work, About + Contact right, 24 gap; 1px #D9D9D9 bottom line, full browser width · nav padding 14 top/bottom · label-to-content gap 2 · paragraph gap 10 · all image rows sit on the 12-column grid so gaps align · image pair: 4 + 8 columns, equal height · image row: 3 × 4 columns, 4:3 · footnote: red * at 32px, weight 500, inline before P2 sentence, 4 gap, cols 1–4, anchored to bottom of its section · text sections 64 above/below · two-column text: cols 1–8, 2 × 4 columns, 24 gap · full-width image: margin to margin, 16:9 · half pair: 2 × 6 columns, 4:3 · callout + text: callout cols 1–6, label + P1 cols 7–12, 64 above/below · accordion: label cols 1–6, rows cols 7–12, P1 header, red + / − at right (22px), 16 row padding, 1px #D9D9D9 above, between and below rows · opens/closes with 350ms ease · more-projects carousel: full-width black, 64 above/below, 6 cards, 3 + part of 4th visible, 4th bleeds off right browser edge, first card aligns to page margin, swipe/scroll with snap, 24 gap, 4:3 image + white label 8 below · arrows: 44px outline circles, 1px white, white ← →, fill white on hover, right-aligned 24 below cards, 12 gap · footer: full-width black, white text, name (nav style) left, links right (Work, About, Contact, LinkedIn), © line 12px bottom right, padding 48 top / 24 bottom, 64 between rows, 24 gap · 24 between image rows · stacked meta gap 24 · image placeholders square-cornered.</div>
+    <div style="font-size:15px;line-height:1.5;max-width:640px;">Max width 1440, centred · page margin 40 · 12-column grid, 24 gutter · Services top-left, cols 1–6 · Type + Duration cols 7–9 · Role + Employer cols 10–12 · client label + title bottom-left, cols 1–6, level with Summary · 150px fixed space above client label + H1 · Summary & description start col 7 · Nav: name Museo 500 · 22 left; Work, About + Contact right, 24 gap; 1px #D9D9D9 bottom line, full browser width · nav padding 14 top/bottom · label-to-content gap 2 · paragraph gap 10 · all image rows sit on the 12-column grid so gaps align · image pair: 4 + 8 columns, equal height · image row: 3 × 4 columns, 4:3 · footnote: red * at 32px, weight 500, inline before P2 sentence, 4 gap, cols 1–4, anchored to bottom of its section · text sections 64 above/below · two-column text: cols 1–8, 2 × 4 columns, 24 gap · full-width image: margin to margin, 16:9 · half pair: 2 × 6 columns, 4:3 · callout + text: callout cols 1–6, label + P1 cols 7–12, 64 above/below · accordion: label cols 1–6, rows cols 7–12, P1 header, red + / − at right (22px), 16 row padding, 1px #D9D9D9 above, between and below rows · opens/closes with 350ms ease · more-projects carousel: full-width black, 64 above/below, 6 cards, 3 + part of 4th visible, 4th bleeds off right browser edge, first card aligns to page margin, swipe/scroll with snap, 24 gap, 4:3 image + white label 8 below · arrows: 44px outline circles, 1px white, white ← →, fill white on hover, right-aligned 24 below cards, 12 gap · footer: full-width black, white text, name (nav style) left, links right (Work, About, Contact, LinkedIn), © line 12px bottom right, padding 48 top / 24 bottom, 64 between rows, 24 gap · 24 between image rows · stacked meta gap 24 · image placeholders square-cornered · homepage floating images: 12px rounded corners, some partly off the viewport edge.</div>
   </div>
 </div>
 </x-dc>
