@@ -491,11 +491,7 @@ class Component extends DCLogic {
         (el._chT || []).forEach(clearTimeout); el._chT = [];
         const chs = [...el.querySelectorAll('[data-ch]')], T = (f, ms) => el._chT.push(setTimeout(f, ms)), all = f => chs.forEach(f);
         const reset = () => all(c => { c.style.color = ''; c.style.fontStyle = ''; c.style.backgroundColor = ''; });
-        if (st === 'in') { reset(); el.querySelectorAll('[data-lb]').forEach(b => b.remove()); el.querySelectorAll('[data-swap]').forEach(sw => {
-            const words = [...sw.children].filter(w => !w.hasAttribute('data-ch')); let prevTop = null; const pv = sw.previousSibling;
-            if (pv) { const rg = document.createRange(); rg.selectNodeContents(pv); const rs = rg.getClientRects(); if (rs.length) prevTop = rs[rs.length - 1].top; }
-            words.forEach(w => { const t = w.getBoundingClientRect().top; if (prevTop != null && t - prevTop > 4) { const br = document.createElement('br'); br.setAttribute('data-lb', '1'); const sp = w.previousSibling; (sp && sp.hasAttribute && sp.hasAttribute('data-ch') ? sp : w).before(br); } prevTop = t; });
-          });
+        if (st === 'in') { reset(); el.querySelectorAll('[data-swap]').forEach(sw => { const p = sw.closest('p'); if (p) this.lockLines(p); });
           if (rm) all(c => { c.style.color = '#FA3420'; c.style.fontStyle = 'italic'; });
           else { const base = 1000, step = 30, end = base + chs.length * step;
             chs.forEach((c, j) => T(() => { c.style.backgroundColor = 'rgba(250, 52, 32, 0.18)'; }, base + j * step));
@@ -511,6 +507,25 @@ class Component extends DCLogic {
         });
       });
     };
+    // Lock every line break of a phrase as first laid out (regular style), so the highlight/italic
+    // swap never reflows lines. Lines only ever get shorter after the swap, so nothing re-wraps.
+    this.lockLines = p => {
+      p.querySelectorAll('[data-lb]').forEach(b => b.remove()); p.normalize(); p.style.textWrap = '';
+      const gap = parseFloat(getComputedStyle(p).fontSize) * 0.5, starts = []; let prevTop = null;
+      const mark = (top, s) => { if (prevTop != null && top - prevTop > gap) starts.push(s); prevTop = top; };
+      const walk = node => { for (const n of [...node.childNodes]) {
+        if (n.nodeType === 3) { const re = /\S+/g; let m; while ((m = re.exec(n.data))) { const r = document.createRange(); r.setStart(n, m.index); r.setEnd(n, m.index + m[0].length); const rc = r.getClientRects()[0]; if (rc) mark(rc.top, { node: n, offset: m.index }); } }
+        else if (n.nodeType === 1 && n.style && n.style.whiteSpace === 'nowrap') { const r = document.createRange(); r.selectNodeContents(n); const rc = r.getClientRects()[0]; if (rc) mark(rc.top, { el: n }); }
+        else if (n.nodeType === 1 && n.tagName !== 'BR') walk(n);
+      } };
+      walk(p);
+      starts.reverse().forEach(st => { const br = document.createElement('br'); br.setAttribute('data-lb', '1');
+        if (st.el) { const sp = st.el.previousSibling; (sp && sp.hasAttribute && sp.hasAttribute('data-ch') ? sp : st.el).before(br); }
+        else st.node.splitText(st.offset).before(br); });
+      p.style.textWrap = 'wrap';
+    };
+    this.onPhrResize = () => { document.querySelectorAll('[data-phrase] p[style*="text-wrap: wrap"]').forEach(p => { p.querySelectorAll('[data-lb]').forEach(b => b.remove()); p.normalize(); p.style.textWrap = ''; }); document.querySelectorAll('[data-phrase]').forEach(el => { if (el._st === 'in') el.querySelectorAll('[data-swap]').forEach(sw => { const p = sw.closest('p'); if (p) this.lockLines(p); }); }); };
+    window.addEventListener('resize', this.onPhrResize);
     this.phrGo = i => { const tr = document.querySelector('[data-phr-track]'); if (!tr) return; const D = tr.offsetHeight - innerHeight, top = tr.getBoundingClientRect().top + scrollY; clearTimeout(this.phrForceT); this.phrForce = i; this.phrTick(); this.phrForceT = setTimeout(() => { this.phrForce = null; this.phrTick(); }, 1200); scrollTo({ top: top + i * (D / 3.6) + 2, behavior: 'smooth' }); };
     this.onPhrScroll = () => { if (!this.phrRaf) this.phrRaf = requestAnimationFrame(this.phrTick); };
     window.addEventListener('scroll', this.onPhrScroll, { passive: true });
@@ -532,7 +547,7 @@ class Component extends DCLogic {
     this.heroRef.current.addEventListener('pointermove', this.onLetterMove);
     this.heroRef.current.addEventListener('pointerleave', this.onLetterOut = () => this.setHover(-1));
   }
-  componentWillUnmount() { window.removeEventListener('resize', this.fitFoot); if (this.pjIO) this.pjIO.disconnect(); window.removeEventListener('scroll', this.onPhrScroll); window.removeEventListener('resize', this.onPhrScroll); window.removeEventListener('resize', this.onNumResize); cancelAnimationFrame(this.floatRaf); if (this.floatIO) this.floatIO.disconnect(); if (this.onFloatMouse) window.removeEventListener('pointermove', this.onFloatMouse); window.removeEventListener('resize', this.onResize); clearInterval(this.cyc); clearTimeout(this.stopT); clearTimeout(this.gridT); cancelAnimationFrame(this.raf); if (this.io) this.io.disconnect(); const sec = this.heroRef.current; if (sec && this.onMove) { sec.removeEventListener('pointermove', this.onMove); sec.removeEventListener('pointerleave', this.onOut); } }
+  componentWillUnmount() { window.removeEventListener('resize', this.fitFoot); if (this.pjIO) this.pjIO.disconnect(); window.removeEventListener('scroll', this.onPhrScroll); window.removeEventListener('resize', this.onPhrScroll); window.removeEventListener('resize', this.onPhrResize); window.removeEventListener('resize', this.onNumResize); cancelAnimationFrame(this.floatRaf); if (this.floatIO) this.floatIO.disconnect(); if (this.onFloatMouse) window.removeEventListener('pointermove', this.onFloatMouse); window.removeEventListener('resize', this.onResize); clearInterval(this.cyc); clearTimeout(this.stopT); clearTimeout(this.gridT); cancelAnimationFrame(this.raf); if (this.io) this.io.disconnect(); const sec = this.heroRef.current; if (sec && this.onMove) { sec.removeEventListener('pointermove', this.onMove); sec.removeEventListener('pointerleave', this.onOut); } }
   footBigRef = React.createRef();
   fitFoot = () => { const el = this.footBigRef.current; if (!el) return; el.style.fontSize = ''; const cs = getComputedStyle(el.parentElement), avail = el.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight), w = el.getBoundingClientRect().width; if (w > 0) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * avail / w * (window.innerWidth < 768 ? 1.6 : 1)) + 'px'; };
   scrollWork = () => { const t = document.getElementById('work'); if (!t) return; const y = t.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: y, behavior: this.reduceMotionAll ? 'auto' : 'smooth' }); };
