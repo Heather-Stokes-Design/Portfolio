@@ -16,12 +16,12 @@
 </helmet>
 <div style="position:relative;z-index:20;background:#FFFFFF;border-bottom:1px solid #000000;font-family:'museo-sans',sans-serif;font-weight:500;">
   <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
-    <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Heather Stokes</a>
+    <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Heather Stokes</a>
     <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuOpen }}" style="display:{{ burgerDisp }};align-items:center;justify-content:center;width:44px;height:44px;margin:-6px -10px -6px 0;padding:0;border:none;background:transparent;color:#000000;cursor:pointer;"><svg width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="{{ burgerPath }}"></path></svg></button>
     <div style="display:{{ linksDisp }};align-items:center;gap:24px;">
-      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;">Work</a>
-      <a href="About Page.dc.html" style="font-size:15px;line-height:1.5;">About</a>
-      <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;">Contact</a>
+      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Work</a>
+      <a href="About Page.dc.html" style="font-size:15px;line-height:1.5;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">About</a>
+      <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;" style-hover="color:#FFFFFF;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Contact</a>
     </div>
   </nav>
   <sc-if value="{{ menuShown }}" hint-placeholder-val="{{ false }}">
@@ -100,7 +100,7 @@
     <h2 style="margin: 0; font-family: 'barlow-condensed',sans-serif; font-weight: 700; font-size: clamp(48px, 6vw, 96px); line-height: 0.95; color: #000000; display: flex; flex-direction: column; gap: 12px">A brief history of<br>my career in design.</h2>
     <p style="margin:0;max-width:640px;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#4A4A4A;">I started out in communications and writing before shifting gears into graphic design. After I spent time working in an agency environment, I moved into in-house creative direction, where I now build brands from the ground up and manage them across their many touchpoints.</p>
     <div style="width:100%;overflow-x:auto;overflow-y:hidden;margin-top:32px;">
-      <div style="position:relative;margin-left:16px;width:2113px;height:356px;background:repeating-linear-gradient(to right, #D9D9D9 0 1px, transparent 1px 96px);">
+      <div style="position:relative;margin-left:16px;width:2209px;height:356px;background:repeating-linear-gradient(to right, #D9D9D9 0 1px, transparent 1px 96px);">
         <div style="position:absolute;bottom:16px;left:0px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2004</div>
         <div style="position:absolute;bottom:16px;left:96px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2005</div>
         <div style="position:absolute;bottom:16px;left:192px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2006</div>
@@ -124,56 +124,62 @@
         <div style="position:absolute;bottom:16px;left:1920px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2024</div>
         <div style="position:absolute;bottom:16px;left:2016px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2025</div>
         <div style="position:absolute;bottom:16px;left:2112px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2026</div>
+        <div style="position:absolute;bottom:16px;left:2208px;transform:translateX(calc(-100% - 4px)) rotate(180deg);writing-mode:vertical-rl;font-family:'museo-sans',sans-serif;font-size:12px;line-height:1;font-weight:500;color:#767676;">2027</div>
+        <button type="button" data-tip="1" aria-label="2012: Internship: Graphic Designer @ 108 Ideaspace" onClick="{{ tipTap1 }}" onMouseEnter="{{ tipShow1 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow1 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:807px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY1 }});opacity:{{ tipOp1 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Internship: Graphic Designer @ 108 Ideaspace</span></button>
+        <button type="button" data-tip="1" aria-label="2013: Graphic Design work placement in Havana, Cuba" onClick="{{ tipTap0 }}" onMouseEnter="{{ tipShow0 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow0 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:855px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY0 }});opacity:{{ tipOp0 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Graphic Design work placement in Havana, Cuba</span></button>
+        <button type="button" data-tip="1" aria-label="2026: Became Certified RGD" onClick="{{ tipTap2 }}" onMouseEnter="{{ tipShow2 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow2 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:2151px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY2 }});opacity:{{ tipOp2 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Became Certified RGD</span></button>
+        <button type="button" data-tip="1" aria-label="2009: Freelance copywriting and editing" onClick="{{ tipTap3 }}" onMouseEnter="{{ tipShow3 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow3 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:519px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY3 }});opacity:{{ tipOp3 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Freelance copywriting and editing</span></button>
         <div style="position:absolute;left:0;top:48px;width:385px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Bachelor of Arts – Degree</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Bachelor of Arts</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">Honours Degree</div>
             <div style="font-size:14px;font-weight:300;color:#FA3420;">English Literature</div>
           </div>
         </div>
-        <div style="position:absolute;left:384px;top:128px;width:193px;display:flex;flex-direction:column;gap:12px;">
+        <div style="position:absolute;left:384px;top:96px;width:193px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Book Publishing – Graduate Certificate</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Book Publishing</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">Graduate Certificate</div>
             <div style="font-size:14px;font-weight:300;color:#FA3420;">Ryerson University</div>
           </div>
         </div>
         <div style="position:absolute;left:576px;top:48px;width:337px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Graphic Design – Diploma</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Graphic Design</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">Advanced Diploma</div>
             <div style="font-size:14px;font-weight:300;color:#FA3420;">George Brown College</div>
           </div>
         </div>
-        <div style="position:absolute;left:912px;top:128px;width:193px;display:flex;flex-direction:column;gap:12px;">
+        <div style="position:absolute;left:912px;top:96px;width:193px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Designer – Watt International</div>
-            <div style="font-size:14px;font-weight:300;color:#FA3420;">Brand and marketing agency</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Designer</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">Watt International</div>
+            <div style="font-size:14px;font-weight:300;color:#FA3420;">Brand &amp; marketing agency</div>
           </div>
         </div>
         <div style="position:absolute;left:1104px;top:48px;width:385px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Senior Designer – Zync Agency</div>
-            <div style="font-size:14px;font-weight:300;color:#FA3420;">Brand and marketing agency</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Senior Designer</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">Zync Agency</div>
+            <div style="font-size:14px;font-weight:300;color:#FA3420;">Brand &amp; marketing agency</div>
           </div>
         </div>
-        <div style="position:absolute;left:1584px;top:128px;width:529px;display:flex;flex-direction:column;gap:12px;">
+        <div style="position:absolute;left:1584px;top:96px;width:625px;display:flex;flex-direction:column;gap:12px;">
           <div style="position:relative;height:4px;background:#FA3420;"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#FA3420;"></span></div>
-          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;">
-            <div style="font-size:14px;font-weight:700;color:#FA3420;">Creative Director – AECO Innovation Lab &amp; LandLogic</div>
+          <div style="display:flex;flex-direction:column;gap:2px;font-family:'museo-sans',sans-serif;line-height:1.4;width:max-content;padding-left:12px;">
+            <div style="font-size:14px;font-weight:700;color:#FA3420;">Creative Director</div>
+            <div style="font-size:14px;font-weight:500;font-style:italic;color:#FA3420;">AECO Innovation Lab &amp; LandLogic</div>
             <div style="font-size:14px;font-weight:300;color:#FA3420;">Venture Studio</div>
           </div>
         </div>
-        <div style="position:absolute;left:1488px;top:216px;width:97px;display:flex;flex-direction:column;gap:12px;">
-          <div style="position:relative;height:4px;background:repeating-linear-gradient(to right, #767676 0 8px, transparent 8px 14px);"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#767676;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#767676;"></span></div>
-          <div style="font-family:'museo-sans',sans-serif;font-size:14px;line-height:1.4;font-weight:700;color:#767676;width:max-content;">Maternity leave</div>
-        </div>
-        <div style="position:absolute;left:1776px;top:216px;width:97px;display:flex;flex-direction:column;gap:12px;">
-          <div style="position:relative;height:4px;background:repeating-linear-gradient(to right, #767676 0 8px, transparent 8px 14px);"><span aria-hidden="true" style="position:absolute;left:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#767676;"></span><span aria-hidden="true" style="position:absolute;right:-4px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:#767676;"></span></div>
-          <div style="font-family:'museo-sans',sans-serif;font-size:14px;line-height:1.4;font-weight:700;color:#767676;width:max-content;">Maternity leave</div>
-        </div>
+        <button type="button" data-tip="1" aria-label="2019: Maternity leave" onClick="{{ tipTap4 }}" onMouseEnter="{{ tipShow4 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow4 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:1527px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY4 }});opacity:{{ tipOp4 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Maternity leave</span></button>
+        <button type="button" data-tip="1" aria-label="2022: Maternity leave" onClick="{{ tipTap5 }}" onMouseEnter="{{ tipShow5 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow5 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:1815px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY5 }});opacity:{{ tipOp5 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">Maternity leave</span></button>
+        <button type="button" data-tip="1" aria-label="2018: RGD Volunteer: Student mentorship" onClick="{{ tipTap6 }}" onMouseEnter="{{ tipShow6 }}" onMouseLeave="{{ tipHide }}" onFocus="{{ tipShow6 }}" onBlur="{{ tipHide }}" style="all:unset;box-sizing:border-box;position:absolute;left:1383px;top:241px;width:18px;height:18px;border-radius:50%;border:1.5px solid #FA3420;background:#FFFFFF;color:#FA3420;display:flex;align-items:center;justify-content:center;cursor:pointer;font-family:'farnham-display',serif;font-style:italic;font-weight:400;font-size:12px;line-height:1;z-index:2;">i<span role="tooltip" style="position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%, {{ tipY6 }});opacity:{{ tipOp6 }};transition:opacity 200ms ease, transform 300ms cubic-bezier(.16,1,.3,1);pointer-events:none;white-space:nowrap;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-style:normal;font-size:14px;line-height:1.4;font-weight:500;padding:8px 12px;border-radius:999px;">RGD Volunteer: Student mentorship</span></button>
       </div>
     </div>
   </div>
@@ -226,12 +232,12 @@
       </div>
       <div style="display:grid;grid-template-columns:{{ clientCols }};gap:{{ rowGap }};padding:20px 0;border-bottom:1px solid #000000;">
         <button onClick="{{ acc5.toggle }}" aria-expanded="{{ acc5.open }}" disabled="{{ accOff }}" style="all:unset;box-sizing:border-box;width:100%;align-self:start;display:flex;align-items:center;gap:12px;cursor:{{ accCursor }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:700;color:#000000;"><span style="flex:1;">AECO Innovation Lab</span><span style="display:{{ accIconDisp }};width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#000000;">{{ acc5.icon }}</span></button>
-        <div style="display:grid;grid-template-rows:{{ acc5.rows }};opacity:{{ acc5.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;grid-column:{{ descSpan }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;max-width:640px;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">I began at this venture studio acting as in-house Creative Director to design and manage both the house brand, as well as the venture projects it fostered.</div></div></div>
+        <div style="display:grid;grid-template-rows:{{ acc5.rows }};opacity:{{ acc5.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;grid-column:{{ descSpan }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;max-width:640px;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">I began with this venture studio as in-house Creative Director to design and manage both the house brand, as well as the venture projects it fostered and launched.</div></div></div>
         <div style="display:grid;grid-template-rows:{{ acc5.rows }};opacity:{{ acc5.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;font-style:italic;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">AECO Innovation Lab</div></div></div>
       </div>
       <div style="display:grid;grid-template-columns:{{ clientCols }};gap:{{ rowGap }};padding:20px 0;border-bottom:1px solid #000000;">
         <button onClick="{{ acc6.toggle }}" aria-expanded="{{ acc6.open }}" disabled="{{ accOff }}" style="all:unset;box-sizing:border-box;width:100%;align-self:start;display:flex;align-items:center;gap:12px;cursor:{{ accCursor }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:700;color:#000000;"><span style="flex:1;">LandLogic</span><span style="display:{{ accIconDisp }};width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#000000;">{{ acc6.icon }}</span></button>
-        <div style="display:grid;grid-template-rows:{{ acc6.rows }};opacity:{{ acc6.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;grid-column:{{ descSpan }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;max-width:640px;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">LandLogic was the biggest venture to come out of AECO Innovation Lab, and I lead the branding and communications on the entire project.</div></div></div>
+        <div style="display:grid;grid-template-rows:{{ acc6.rows }};opacity:{{ acc6.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;grid-column:{{ descSpan }};font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;max-width:640px;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">LandLogic was the biggest venture to come out of AECO Innovation Lab, and I currently lead the branding, design and communications on the entire project.</div></div></div>
         <div style="display:grid;grid-template-rows:{{ acc6.rows }};opacity:{{ acc6.op }};transition:grid-template-rows 350ms ease, opacity 350ms ease;font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;font-weight:500;color:#000000;font-style:italic;"><div style="overflow:hidden;min-height:0;"><div style="padding-top:{{ accPadT }};">AECO Innovation Lab</div></div></div>
       </div>
       <div style="display:grid;grid-template-columns:{{ clientCols }};gap:{{ rowGap }};padding:20px 0;border-bottom:1px solid #000000;">
@@ -247,7 +253,17 @@
     </div>
   </div>
 </section>
-<form name="doodle" data-netlify="true" netlify-honeypot="bot-field" hidden="hidden"><input type="file" name="doodle"><input type="text" name="bot-field"></form>
+<form name="doodle" data-netlify="true" netlify-honeypot="bot-field" hidden="hidden"><input type="file" name="doodle"><input type="email" name="email"><input type="text" name="bot-field"></form>
+<sc-if value="{{ modalOpen }}" hint-placeholder-val="{{ false }}">
+  <div onClick="{{ closeModal }}" style="position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;">
+    <form onClick="{{ stop }}" onSubmit="{{ confirmSend }}" role="dialog" aria-modal="true" aria-label="Who is this doodle from?" style="position:relative;width:100%;max-width:440px;background:#FFFFFF;color:#000000;padding:40px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px;margin:0;">
+      <button type="button" onClick="{{ closeModal }}" aria-label="Close" style="position:absolute;top:12px;right:12px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;background:transparent;border:0;cursor:pointer;color:#000000;font-size:22px;line-height:1;">×</button>
+      <label for="doodle-email" style="font-family:'museo-sans',sans-serif;font-size:20px;line-height:1.3;font-weight:500;color:#000000;">Who is this doodle from?</label>
+      <input id="doodle-email" type="email" required="required" placeholder="Email" value="{{ email }}" onChange="{{ setEmail }}" ref="{{ emailRef }}" style="width:100%;height:56px;padding:0 20px;border:1.5px solid #000000;border-radius:999px;box-sizing:border-box;font-family:'museo-sans',sans-serif;font-size:15px;color:#000000;background:#FFFFFF;outline:none;">
+      <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;width:100%;height:56px;padding:0 24px;border:1.5px solid #000000;border-radius:999px;box-sizing:border-box;cursor:pointer;background:#000000;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-size:15px;line-height:1;font-weight:500;gap:10px;white-space:nowrap;"><svg width="22" height="22" fill="currentColor" viewBox="0 0 256 256" style="display:block;"><path d="M237.66,106.35l-80-80A8,8,0,0,0,144,32V72.35c-25.94,2.22-54.590,14.92-78.16,34.91-28.38,24.080-46.050,55.110-49.760,87.370a12,12,0,0,0,20.680,9.580h0c11-11.710,50.140-48.740,107.240-52V192a8,8,0,0,0,13.660,5.650l80-80A8,8,0,0,0,237.66,106.35ZM160,172.690V144a8,8,0,0,0-8-8c-28.080,0-55.430,7.330-81.290,21.800a196.170,196.170,0,0,0-36.570,26.520c5.800-23.840,20.420-46.510,42.050-64.860C99.410,99.770,127.750,88,152,88a8,8,0,0,0,8-8V51.320L220.690,112Z"></path></svg><span>Send doodle</span></button>
+    </form>
+  </div>
+</sc-if>
 <dc-import name="Footer" hint-size="100%,520px"></dc-import>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;speed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:40,&quot;min&quot;:10,&quot;max&quot;:150,&quot;step&quot;:5,&quot;unit&quot;:&quot;px/s&quot;,&quot;tsType&quot;:&quot;number&quot;},&quot;script&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Salted&quot;,&quot;Filmotype Lucky&quot;],&quot;default&quot;:&quot;Salted&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
@@ -274,10 +290,16 @@ class Component extends DCLogic {
   sendDoodle = async () => {
     if (this.state.sendState === 'sending' || this.state.sendState === 'sent') return;
     if (!this.userDrew) { clearTimeout(this.nudgeT); this.setState({ nudge: true }); this.nudgeT = setTimeout(() => this.setState({ nudge: false }), 2500); return; }
+    this.setState({ modalOpen: true });
+  };
+  emailRef = React.createRef();
+  confirmSend = async (e) => {
+    e.preventDefault();
+    this.setState({ modalOpen: false });
     this.setState({ sendState: 'sending' });
     try {
       const blob = await this.renderShot();
-      const fd = new FormData(); fd.append('form-name', 'doodle'); fd.append('bot-field', ''); fd.append('doodle', blob, 'doodle.jpg');
+      const fd = new FormData(); fd.append('form-name', 'doodle'); fd.append('bot-field', ''); fd.append('email', this.state.email || ''); fd.append('doodle', blob, 'doodle.jpg');
       const res = await fetch('/', { method: 'POST', body: fd }); if (!res.ok) throw new Error(res.status);
       clearTimeout(this.sentT); this.setState({ sendState: 'idle', sentToast: true }); this.sentT = setTimeout(() => this.setState({ sentToast: false }), 2500);
     } catch (e) { this.setState({ sendState: 'error' }); }
@@ -310,11 +332,12 @@ class Component extends DCLogic {
       ctx.globalCompositeOperation = ers ? 'destination-out' : 'source-over'; ctx.lineWidth = ers ? 24 : 4; ctx.strokeStyle = '#FA3420';
       ctx.beginPath(); ctx.arc(last[0], last[1], ctx.lineWidth / 2, 0, Math.PI * 2); ctx.fillStyle = '#FA3420'; ctx.fill();
     });
-    c.addEventListener('pointermove', e => { if (!last) return; const p = pt(e), ctx = c.getContext('2d'); ctx.beginPath(); ctx.moveTo(last[0], last[1]); ctx.lineTo(p[0], p[1]); ctx.stroke(); last = p; });
-    const end = () => { last = null; }; c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
-    const overImg = e => { const img = c.closest('section') && c.closest('section').querySelector('img[src*="about-portrait"]'); if (!img) return false; const r = img.getBoundingClientRect(); return e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; };
-    c.addEventListener('pointermove', e => { const o = overImg(e); if (o !== !!this.state.overImg) this.setState({ overImg: o }); });
+    c.addEventListener('pointermove', e => {
+      const img = this.drawSecRef.current && this.drawSecRef.current.querySelector('img');
+      if (img) { const r = img.getBoundingClientRect(), o = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom; if (o !== !!this.state.overImg) this.setState({ overImg: o }); }
+      if (!last) return; const p = pt(e), ctx = c.getContext('2d'); ctx.beginPath(); ctx.moveTo(last[0], last[1]); ctx.lineTo(p[0], p[1]); ctx.stroke(); last = p; });
     c.addEventListener('pointerleave', () => { if (this.state.overImg) this.setState({ overImg: false }); });
+    const end = () => { last = null; }; c.addEventListener('pointerup', end); c.addEventListener('pointercancel', end);
   };
   lines = ["Graphic design, branding & communications —", "Hello, I'm Heather Stokes —", "Toronto-based design & direction —"];
   dirs = [-1, 1, -1];
@@ -379,6 +402,7 @@ class Component extends DCLogic {
     this.raf = requestAnimationFrame(this.tick);
   };
   componentDidMount() {
+    this.onTipOutside = e => { if (this.state.tip != null && !e.target.closest('[data-tip]')) this.setState({ tip: null }); }; document.addEventListener('pointerdown', this.onTipOutside);
     this.measure();
     if (document.fonts) document.fonts.ready.then(this.measure);
     window.addEventListener('resize', this.measure);
@@ -389,16 +413,17 @@ class Component extends DCLogic {
     const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!reduce) this.raf = requestAnimationFrame(this.tick);
   }
-  componentWillUnmount() { cancelAnimationFrame(this.raf); if (this.ro) this.ro.disconnect(); if (this.dro) this.dro.disconnect(); window.removeEventListener('resize', this.measure); }
+  componentWillUnmount() { document.removeEventListener('pointerdown', this.onTipOutside); cancelAnimationFrame(this.raf); if (this.ro) this.ro.disconnect(); if (this.dro) this.dro.disconnect(); window.removeEventListener('resize', this.measure); }
   renderVals() {
     const m = this.state.mob;
     return {
+      tipHide: () => { if (matchMedia('(hover: hover)').matches) this.setState({ tip: null }); }, ...Object.fromEntries([0, 1, 2, 3, 4, 5, 6].flatMap(i => [['tipShow' + i, () => { if (matchMedia('(hover: hover)').matches) this.setState({ tip: i }); }], ['tipTap' + i, () => { if (!matchMedia('(hover: hover)').matches) this.setState(s => ({ tip: s.tip === i ? null : i })); }], ['tipOp' + i, this.state.tip === i ? 1 : 0], ['tipY' + i, this.state.tip === i ? '0px' : '4px']])),
       heroRef: this.heroRef, gridRef: this.gridRef, howRef: this.howRef, eRef: this.eRef, ringRef: this.ringRef, frontRef: this.frontRef, frontRefB: this.frontRefB, filmRef: this.filmRef, nameRef: this.nameRef, starRef: this.starRef,
       backRows: this.backRows, frontRows: this.frontRows, frontRowsB: this.frontRowsB,
       sketchCols: m ? 'minmax(0,1fr)' : 'repeat(2, minmax(0,1fr))', inkW: m ? '100%' : '50%',
       canvasRef: this.canvasRef, drawSecRef: this.drawSecRef, tool: this.state.tool,
       drawDisp: this.state.canDraw && !m ? 'block' : 'none', toolsDisp: this.state.canDraw && !m ? 'flex' : 'none', redDisp: m ? 'none' : 'flex', vennTop: this.state.narrow ? '0px' : '96px', vennRight: this.state.narrow ? '0px' : '40px', vennPos: this.state.narrow ? 'relative' : 'absolute', paraIndent: '0px', hIndent: m ? '0px' : '0.7em', hWrap: m ? 'wrap' : 'nowrap', vennW: m ? '250px' : '25em', vennDisp: m ? 'none' : 'block', vennFS: m ? '12px' : '0.05em', vennMB: m ? '0px' : '1em', paraPadR: '0px', clientCols: m ? 'minmax(0,1fr)' : 'minmax(0,0.75fr) minmax(0,1.5fr) minmax(0,0.75fr)', descSpan: 'auto', hdrDisp: m ? 'none' : 'block', accOff: !m, accPadT: m ? '8px' : '0px', rowGap: m ? '0 24px' : '8px 24px', accCursor: m ? 'pointer' : 'default', accIconDisp: m ? 'block' : 'none',
-      ...Object.fromEntries([0,1,2,3,4,5,6,7,8].map(k => { const o = !!(this.state.acc && this.state.acc[k]); return ['acc' + k, { open: o, icon: o ? '\u2212' : '+', rows: !m || o ? '1fr' : '0fr', op: !m || o ? 1 : 0, toggle: () => this.setState(s => ({ acc: { ...(s.acc || {}), [k]: !(s.acc && s.acc[k]) } })) }]; })),
+      ...Object.fromEntries([0,1,2,3,4,5,6,7,8].map(k => { const o = !!(this.state.acc && this.state.acc[k]); return ['acc' + k, { open: o, icon: o ? '\u2212' : '+', rows: !m || o ? '1fr' : '0fr', op: !m || o ? 1 : 0, toggle: () => this.setState(s => ({ acc: { [k]: !(s.acc && s.acc[k]) } })) }]; })),
       burgerDisp: m ? 'inline-flex' : 'none', linksDisp: m ? 'none' : 'flex',
       menuOpen: !!this.state.menu, menuShown: m && !!this.state.menu,
       toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
@@ -412,11 +437,13 @@ class Component extends DCLogic {
       ...Object.fromEntries(['pen','eraser','idea','clear','send'].map(k => ['hov_' + k, () => this.setState({ hov: k })])), unhov: () => this.setState({ hov: null }),
       ...Object.fromEntries(['pen','eraser','idea','clear','send'].map(k => ['bg_' + k, this.state.tool === k ? '#000000' : (this.state.hov === k ? '#D92A18' : 'transparent')])), idleHover: '#EDEDED',
       ...Object.fromEntries(['pen','eraser','idea','clear','send'].map(k => ['fg_' + k, this.state.tool === k ? '#FA3420' : '#000000'])), penHover: this.state.tool === 'pen' ? '#000000' : '#EDEDED', eraserHover: this.state.tool === 'eraser' ? '#000000' : '#EDEDED', sendDoodle: this.sendDoodle, sentOp: this.state.sentToast ? 1 : 0, sentY: this.state.sentToast ? '0px' : '-8px', sentHidden: !this.state.sentToast,
+      modalOpen: !!this.state.modalOpen, email: this.state.email || '', emailRef: this.emailRef,
+      setEmail: (e) => this.setState({ email: e.target.value }), closeModal: () => this.setState({ modalOpen: false }), stop: (e) => e.stopPropagation(), confirmSend: this.confirmSend,
       nudgeOp: this.state.nudge ? 1 : 0, nudgeY: this.state.nudge ? '0px' : '-8px', nudgeHidden: !this.state.nudge,
       sendLabel: { idle: 'Send me a doodle', sending: 'Sending…', sent: 'You sent a doodle!', error: 'Couldn’t send. Try again' }[this.state.sendState || 'idle'],
       sendDisabled: this.state.sendState === 'sending' || this.state.sendState === 'sent',
       sendCursor: this.state.sendState === 'sent' || this.state.sendState === 'sending' ? 'default' : 'pointer',
-      cursor: this.state.tool === 'eraser' ? (this.state.overImg ? "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2726%27%20height%3D%2726%27%20viewBox%3D%270%200%2026%2026%27%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2712%27%20fill%3D%27none%27%20stroke%3D%27%23FFFFFF%27%20stroke-width%3D%271.5%27%2F%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2711%27%20fill%3D%27none%27%20stroke%3D%27%23FFFFFF%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E) 13 13, crosshair" : "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2726%27%20height%3D%2726%27%20viewBox%3D%270%200%2026%2026%27%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2712%27%20fill%3D%27none%27%20stroke%3D%27%23000000%27%20stroke-width%3D%271.5%27%2F%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2711%27%20fill%3D%27none%27%20stroke%3D%27%23000000%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E) 13 13, crosshair") : (this.state.overImg ? "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2732%27%20height%3D%2732%27%20fill%3D%27%23FFFFFF%27%20viewBox%3D%270%200%20256%20256%27%3E%3Cpath%20d%3D%27M227.31%2C73.37%2C182.63%2C28.68a16%2C16%2C0%2C0%2C0-22.63%2C0L36.69%2C152A15.86%2C15.86%2C0%2C0%2C0%2C32%2C163.31V208a16%2C16%2C0%2C0%2C0%2C16%2C16H92.69A15.86%2C15.86%2C0%2C0%2C0%2C104%2C219.31L227.31%2C96a16%2C16%2C0%2C0%2C0%2C0-22.63ZM51.31%2C160%2C136%2C75.31%2C152.69%2C92%2C68%2C176.68ZM48%2C179.31%2C76.69%2C208H48Zm48%2C25.38L79.31%2C188%2C164%2C103.31%2C180.69%2C120Zm96-96L147.31%2C64l24-24L216%2C84.68Z%27%2F%3E%3C%2Fsvg%3E) 4 28, crosshair" : "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2732%27%20height%3D%2732%27%20fill%3D%27%23000000%27%20viewBox%3D%270%200%20256%20256%27%3E%3Cpath%20d%3D%27M227.31%2C73.37%2C182.63%2C28.68a16%2C16%2C0%2C0%2C0-22.63%2C0L36.69%2C152A15.86%2C15.86%2C0%2C0%2C0%2C32%2C163.31V208a16%2C16%2C0%2C0%2C0%2C16%2C16H92.69A15.86%2C15.86%2C0%2C0%2C0%2C104%2C219.31L227.31%2C96a16%2C16%2C0%2C0%2C0%2C0-22.63ZM51.31%2C160%2C136%2C75.31%2C152.69%2C92%2C68%2C176.68ZM48%2C179.31%2C76.69%2C208H48Zm48%2C25.38L79.31%2C188%2C164%2C103.31%2C180.69%2C120Zm96-96L147.31%2C64l24-24L216%2C84.68Z%27%2F%3E%3C%2Fsvg%3E) 4 28, crosshair")
+      cursor: this.state.tool === 'eraser' ? (this.state.overImg ? "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2726%27%20height%3D%2726%27%20viewBox%3D%270%200%2026%2026%27%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2712%27%20fill%3D%27none%27%20stroke%3D%27%23FFFFFF%27%20stroke-width%3D%272.5%27%2F%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2711%27%20fill%3D%27none%27%20stroke%3D%27%23FFFFFF%27%20stroke-width%3D%271.5%27%2F%3E%3C%2Fsvg%3E) 13 13, crosshair" : "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2726%27%20height%3D%2726%27%20viewBox%3D%270%200%2026%2026%27%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2712%27%20fill%3D%27none%27%20stroke%3D%27%23000000%27%20stroke-width%3D%271.5%27%2F%3E%3Ccircle%20cx%3D%2713%27%20cy%3D%2713%27%20r%3D%2711%27%20fill%3D%27none%27%20stroke%3D%27%23000000%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E) 13 13, crosshair") : (this.state.overImg ? "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2732%27%20height%3D%2732%27%20fill%3D%27%23FFFFFF%27%20viewBox%3D%270%200%20256%20256%27%3E%3Cpath%20d%3D%27M227.31%2C73.37%2C182.63%2C28.68a16%2C16%2C0%2C0%2C0-22.63%2C0L36.69%2C152A15.86%2C15.86%2C0%2C0%2C0%2C32%2C163.31V208a16%2C16%2C0%2C0%2C0%2C16%2C16H92.69A15.86%2C15.86%2C0%2C0%2C0%2C104%2C219.31L227.31%2C96a16%2C16%2C0%2C0%2C0%2C0-22.63ZM51.31%2C160%2C136%2C75.31%2C152.69%2C92%2C68%2C176.68ZM48%2C179.31%2C76.69%2C208H48Zm48%2C25.38L79.31%2C188%2C164%2C103.31%2C180.69%2C120Zm96-96L147.31%2C64l24-24L216%2C84.68Z%27%2F%3E%3C%2Fsvg%3E) 4 28, crosshair" : "url(data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2732%27%20height%3D%2732%27%20fill%3D%27%23000000%27%20viewBox%3D%270%200%20256%20256%27%3E%3Cpath%20d%3D%27M227.31%2C73.37%2C182.63%2C28.68a16%2C16%2C0%2C0%2C0-22.63%2C0L36.69%2C152A15.86%2C15.86%2C0%2C0%2C0%2C32%2C163.31V208a16%2C16%2C0%2C0%2C0%2C16%2C16H92.69A15.86%2C15.86%2C0%2C0%2C0%2C104%2C219.31L227.31%2C96a16%2C16%2C0%2C0%2C0%2C0-22.63ZM51.31%2C160%2C136%2C75.31%2C152.69%2C92%2C68%2C176.68ZM48%2C179.31%2C76.69%2C208H48Zm48%2C25.38L79.31%2C188%2C164%2C103.31%2C180.69%2C120Zm96-96L147.31%2C64l24-24L216%2C84.68Z%27%2F%3E%3C%2Fsvg%3E) 4 28, crosshair")
     };
   }
 }
