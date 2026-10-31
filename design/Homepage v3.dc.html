@@ -190,9 +190,9 @@
       <a href="Small Projects.dc.html" aria-label="View smaller projects" onMouseEnter="{{ p5Enter }}" onMouseLeave="{{ p5Leave }}" style="display:{{ spArrowBelow }};align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p5CircleBg }};transition:background 100ms ease;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p5ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
     </div>
     <div style="grid-column:{{ spImgCol }};display:{{ spImgDisp }};gap:24px;overflow:hidden;margin-right:calc(-1 * (100vw - min(100vw, 1440px)) / 2 - {{ spSidePad }});">
-      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-ghost.png" alt="Ghost business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
-      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-devnex.png" alt="DevNex business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
-      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-tws.png" alt="Together We Stand business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-ghost.jpg" alt="Ghost business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-devnex.jpg" alt="DevNex business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-tws.jpg" alt="Together We Stand business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
     </div>
   </div>
 </section>
@@ -204,7 +204,6 @@ class Component extends DCLogic {
   cursorRef = React.createRef();
   ringRef = React.createRef();
   spMqRef = React.createRef();
-  SP_IMGS = ['img/hp-sp-tws-card.png','img/hp-sp-ghost-card.png','img/hp-sp-devnex-card.png','img/hp-sp-extremepay-card.jpg','img/hp-sp-tws-logo.jpg','img/hp-sp-devnex-laptop.png'];
   gridRef = React.createRef();
   aboutAstRef = React.createRef();
   floatRef = React.createRef();
