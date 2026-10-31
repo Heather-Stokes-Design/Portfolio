@@ -201,10 +201,16 @@ function addMissingH1(template, page) {
   return at < 0 ? h1 + template : template.slice(0, at) + h1 + template.slice(at);
 }
 
+// Scrolling marquee lines repeat the same words many times; hide them from screen readers
+// (the page's heading already says it once).
+function hideMarquees(template) {
+  return template.replace(/<div ref="\{\{ mq\d+ \}\}"(?![^>]*aria-hidden)/g, (m) => m + ' aria-hidden="true"');
+}
+
 function buildPage(page, file, dir) {
   const parsed = parseDc(fs.readFileSync(path.join(dir, file), "utf8"));
   if (!parsed) throw new Error(`${file} has no <x-dc> block — is it a Claude Design file?`);
-  const t = rewrite(lazyImages(addMissingH1(parsed.template, page)));
+  const t = rewrite(lazyImages(hideMarquees(addMissingH1(parsed.template, page))));
   const s = rewrite(parsed.script);
   for (const l of new Set([...t.leftover, ...s.leftover])) warn(`${file} links to "${l}", which isn't in site.config.json`);
   const html = `<!DOCTYPE html>
