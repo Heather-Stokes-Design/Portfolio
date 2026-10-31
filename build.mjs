@@ -190,10 +190,21 @@ const NETLIFY_FORM = `<form name="contact" data-netlify="true" netlify-honeypot=
 </form>
 <script src="${RT}/form.js"></script>`;
 
+// Every page needs one main heading for Google and screen readers. If the design has none,
+// add an invisible one (it stops automatically once the design adds its own <h1>).
+const HIDDEN = "position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;";
+function addMissingH1(template, page) {
+  if (/<h1\b/i.test(template)) return template;
+  const h1 = `<h1 style="${HIDDEN}">${page.headline || page.title}</h1>\n`;
+  const at = template.search(/<[a-z]+[^>]*data-screen-label="Hero"/);
+  warn(`${page.route} has no main heading in the design, so an invisible "${page.headline || page.title}" heading was added`);
+  return at < 0 ? h1 + template : template.slice(0, at) + h1 + template.slice(at);
+}
+
 function buildPage(page, file, dir) {
   const parsed = parseDc(fs.readFileSync(path.join(dir, file), "utf8"));
   if (!parsed) throw new Error(`${file} has no <x-dc> block — is it a Claude Design file?`);
-  const t = rewrite(lazyImages(parsed.template));
+  const t = rewrite(lazyImages(addMissingH1(parsed.template, page)));
   const s = rewrite(parsed.script);
   for (const l of new Set([...t.leftover, ...s.leftover])) warn(`${file} links to "${l}", which isn't in site.config.json`);
   const html = `<!DOCTYPE html>
