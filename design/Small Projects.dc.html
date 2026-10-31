@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png"><link rel="icon" type="image/png" sizes="100x100" href="images/favicon.png"><link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<title>Small Projects - Heather Stokes</title>
+<link rel="stylesheet" href="https://use.typekit.net/jys7gci.css">
+<style>body{margin:0;background:#FFFFFF;color:#000000;font-family:"museo-sans",sans-serif;}a{color:#000000;text-decoration:none;}a:hover{color:#FA3420;}</style>
+</helmet>
+<div style="position:absolute;top:0;left:0;right:0;z-index:5;border-bottom:1px solid #000000;color:#000000;font-family:'museo-sans',sans-serif;font-weight:500;">
+  <nav style="display:flex;justify-content:space-between;align-items:center;gap:24px;max-width:1440px;margin:0 auto;padding:14px 40px;box-sizing:border-box;">
+    <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Heather Stokes</a>
+    <div style="display:flex;align-items:center;gap:24px;">
+      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Work</a>
+      <a href="About Page.dc.html" style="font-size:15px;line-height:1.5;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">About</a>
+      <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;" style-hover="color:#FFFFFF;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Contact</a>
+    </div>
+  </nav>
+</div>
+<div data-screen-label="Hero" ref="{{ heroRef }}" style="position:relative;isolation:isolate;overflow:hidden;padding:calc(102px + clamp(100px,17vw,300px) * 0.1) 0 calc(48px + clamp(100px,17vw,300px) * 0.1);margin-bottom:48px;">
+  <div ref="{{ gridRef }}" aria-hidden="true" style="position:absolute;inset:0;z-index:-1;pointer-events:none;"></div>
+  <div style="position:relative;">
+    
+    <div ref="{{ mq1 }}" style="position:relative;z-index:1;display:flex;align-items:baseline;gap:0.4em;white-space:nowrap;will-change:transform;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:calc(clamp(100px,17vw,300px) * 0.6);line-height:0.9;color:#000000;"><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-tws-cards.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-tws-leaf.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-logo.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'lores-22-serif',serif;font-weight:400;">projects</span><img src="img/hero-extremepay-bizcard.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-tws-cards.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-tws-leaf.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-logo.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'lores-22-serif',serif;font-weight:400;">projects</span><img src="img/hero-extremepay-bizcard.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-tws-cards.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-tws-leaf.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-logo.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'lores-22-serif',serif;font-weight:400;">projects</span><img src="img/hero-extremepay-bizcard.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-tws-cards.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-tws-leaf.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-logo.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'lores-22-serif',serif;font-weight:400;">projects</span><img src="img/hero-extremepay-bizcard.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span></div>
+    <div ref="{{ mq2 }}" style="position:relative;z-index:1;display:flex;align-items:baseline;gap:0.4em;white-space:nowrap;will-change:transform;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:calc(clamp(100px,17vw,300px) * 0.6);line-height:0.9;color:#000000;"><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'guyot-headline',serif;font-weight:400;">projects</span><img src="img/hero-devnex-laptop.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-extremepay-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'guyot-headline',serif;font-weight:400;">projects</span><img src="img/hero-devnex-laptop.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-extremepay-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'guyot-headline',serif;font-weight:400;">projects</span><img src="img/hero-devnex-laptop.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-extremepay-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'guyot-headline',serif;font-weight:400;">projects</span><img src="img/hero-devnex-laptop.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-extremepay-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'hackney',sans-serif;font-weight:400;">smaller</span><span style="font-family:'hey-eloise',cursive;font-weight:400;">projects</span><img src="img/hero-ghost-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'guyot-headline',serif;font-weight:400;">projects</span><img src="img/hero-devnex-laptop.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'farnham-display',serif;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-extremepay-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span></div>
+    <div ref="{{ mq3 }}" style="position:relative;z-index:1;display:flex;align-items:baseline;gap:0.4em;white-space:nowrap;will-change:transform;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:calc(clamp(100px,17vw,300px) * 0.6);line-height:0.9;color:#000000;"><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'farnham-display',serif;font-weight:400;">projects</span><img src="img/hero-devnex-bag.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hey-eloise',cursive;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-devnex-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-extremepay-banner.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'farnham-display',serif;font-weight:400;">projects</span><img src="img/hero-devnex-bag.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hey-eloise',cursive;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-devnex-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-extremepay-banner.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'farnham-display',serif;font-weight:400;">projects</span><img src="img/hero-devnex-bag.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hey-eloise',cursive;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-devnex-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-extremepay-banner.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'farnham-display',serif;font-weight:400;">projects</span><img src="img/hero-devnex-bag.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hey-eloise',cursive;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-devnex-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-extremepay-banner.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span><span style="display:inline-flex;align-items:baseline;gap:0.3em;"><span style="font-family:'guyot-headline',serif;font-weight:400;">smaller</span><span style="font-family:'farnham-display',serif;font-weight:400;">projects</span><img src="img/hero-devnex-bag.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'hey-eloise',cursive;font-weight:400;">smaller</span><span style="font-family:'filmotype-lucky',cursive;font-weight:400;">projects</span><img src="img/hero-devnex-card.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"><span style="font-family:'lores-22-serif',serif;font-weight:400;">smaller</span><span style="font-family:'hackney',sans-serif;font-weight:400;">projects</span><img src="img/hero-extremepay-banner.png" alt="" style="display:block;height:0.66em;width:0.66em;object-fit:cover;margin-left:0.1em;"></span></div>
+    
+  </div>
+</div>
+<div data-screen-label="Intro" style="max-width:1440px;margin:0 auto;padding:48px 40px 96px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:32px;align-items:start;grid-auto-flow:dense;">
+  <p style="grid-row:{{ col.introBigRow }};grid-column:{{ col.introBig }};margin:0;font-family:'farnham-display',serif;font-weight:400;font-size:clamp(28px,2.9vw,40px);line-height:1.15;letter-spacing:-0.01em;color:#000000;text-wrap:pretty;">Sometimes clients just need the basic elements of an identity to get started — a logo, palette, and a small website. These projects can be just as intensive as the larger ones, except at the end, you hand over the files to let them continue their growth without you.</p>
+  <div style="grid-row:{{ col.introSmallRow }};grid-column:{{ col.introSmall }};display:flex;flex-direction:column;gap:4px;"><div style="font-family:'museo-sans',sans-serif;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">Smaller projects</div><p style="margin:0;font-family:'museo-sans',sans-serif;font-weight:300;font-size:15px;line-height:1.5;color:#000000;">A collection of small but mighty client projects with limited scope. They may have shorter timelines, but still require thorough research and development.</p></div>
+</div>
+<div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;font-family:'museo-sans',sans-serif;font-weight:400;">
+
+  <sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
+    <div data-screen-label="Small project" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.projPad }};align-items:start;">
+      <div ref="{{ p.imgRef }}" style="grid-column:{{ col.imgs }};grid-row:1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:24px;align-items:stretch;">
+        <div style="grid-column:1 / span 4;display:flex;flex-direction:column;align-items:flex-end;gap:24px;">
+          <div data-anim="tile" style="width:100%;position:relative;aspect-ratio:3/4;background:#EDEDED;"><sc-if value="{{ p.imgL }}" hint-placeholder-val="{{ false }}"><img src="{{ p.imgL }}" alt="{{ p.imgLAlt }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></sc-if></div>
+          <sc-if value="{{ p.vidL }}" hint-placeholder-val="{{ false }}">
+            <video data-anim="tile" ref="{{ videoRef }}" src="{{ p.vidL }}" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="display:block;width:{{ col.subW }};height:auto;aspect-ratio:{{ p.vidAspect }};object-fit:{{ p.vidFit }};padding:{{ p.vidPad }};box-sizing:border-box;background:{{ p.vidBg }};"></video>
+          </sc-if>
+          <sc-if value="{{ p.noVidL }}" hint-placeholder-val="{{ true }}">
+            <div data-anim="tile" style="position:relative;width:{{ col.subW }};aspect-ratio:4/3;background:#EDEDED;"><sc-if value="{{ p.imgBL }}" hint-placeholder-val="{{ false }}"><img src="{{ p.imgBL }}" alt="{{ p.imgBLAlt }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></sc-if></div>
+          </sc-if>
+        </div>
+        <div style="grid-column:5 / span 3;display:flex;flex-direction:column;gap:24px;padding-top:{{ col.rPad }};box-sizing:border-box;">
+          <div data-anim="tile" style="position:relative;width:100%;aspect-ratio:3/4;background:#EDEDED;"><sc-if value="{{ p.imgR }}" hint-placeholder-val="{{ false }}"><img src="{{ p.imgR }}" alt="{{ p.imgRAlt }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></sc-if></div>
+          <div data-anim="tile" style="position:relative;flex:{{ col.brFlex }};width:{{ col.brW }};min-height:0;align-self:flex-start;max-width:100%;aspect-ratio:{{ col.brAR }};background:#EDEDED;"><sc-if value="{{ p.imgBR }}" hint-placeholder-val="{{ false }}"><img src="{{ p.imgBR }}" alt="{{ p.imgBRAlt }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></sc-if></div>
+        </div>
+      </div>
+      <div ref="{{ p.textRef }}" style="grid-column:{{ col.text }};grid-row:{{ col.textRow }};align-self:start;margin-top:{{ p.textTop }};position:relative;z-index:1;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));column-gap:24px;row-gap:32px;">
+        <h2 data-anim="text" ref="{{ p.h2Ref }}" style="grid-column:1 / -1;margin:0 0 0 -3px;padding-left:{{ col.h2Pad }};white-space:{{ col.h2Wrap }};font-family:'farnham-display',serif;font-size:{{ p.h2Size }};line-height:1;letter-spacing:-0.01em;font-weight:300;color:#000000;text-wrap:{{ col.h2Wrap }};">{{ p.line1 }}<br style="display:{{ col.br }};"> {{ p.line2 }}<br style="display:{{ col.br }};"> {{ p.line3 }}</h2>
+        <p data-anim="text" style="grid-column:{{ col.inner }};margin:0;font-size:16px;line-height:1.5;font-weight:500;color:#000000;text-wrap:pretty;">{{ p.body }}</p>
+        <div data-anim="acc" style="grid-column:{{ col.inner }};">
+        <div ref="{{ p.accRef }}" style="display:flex;flex-direction:column;border-bottom:1px solid #D9D9D9;">
+          <sc-for list="{{ p.acc }}" as="item" hint-placeholder-count="2">
+            <div style="border-top:1px solid #D9D9D9;">
+              <button onClick="{{ item.toggle }}" aria-expanded="{{ item.open }}" style="all:unset;box-sizing:border-box;width:100%;display:flex;align-items:center;gap:12px;padding:16px 0;cursor:pointer;font-family:'museo-sans',sans-serif;">
+                <span style="flex:1;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#FA3420;">{{ item.title }}</span>
+                <span style="width:16px;flex:none;text-align:right;font-size:22px;line-height:1;font-weight:500;color:#FA3420;">{{ item.icon }}</span>
+              </button>
+              <div style="display:grid;grid-template-rows:{{ item.rows }};opacity:{{ item.opacity }};transition:grid-template-rows 350ms ease, opacity 350ms ease;">
+                <div style="overflow:hidden;min-height:0;">
+                  <div style="padding:0 28px 16px 0;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.5;font-weight:300;color:#767676;text-wrap:pretty;">
+                    <sc-if value="{{ item.hasCols }}" hint-placeholder-val="{{ false }}">
+                      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;">
+                        <sc-for list="{{ item.cols }}" as="list" hint-placeholder-count="2">
+                          <div style="display:flex;flex-direction:column;">
+                            <sc-for list="{{ list }}" as="li" hint-placeholder-count="4">
+                              <span style="display:flex;align-items:center;gap:5px;"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#FA3420" viewBox="0 0 256 256" style="flex:none;"><path d="M214.86,180.12a8,8,0,0,1-11,2.74L136,142.13V216a8,8,0,0,1-16,0V142.13L52.12,182.86a8,8,0,1,1-8.23-13.72L112.450,128,43.890,86.860a8,8,0,1,1,8.23-13.72L120,113.870V40a8,8,0,0,1,16,0v73.870l67.880-40.730a8,8,0,1,1,8.230,13.720L143.550,128l68.560,41.140A8,8,0,0,1,214.86,180.12Z"></path></svg>{{ li }}</span>
+                            </sc-for>
+                          </div>
+                        </sc-for>
+                      </div>
+                    </sc-if>
+                    <sc-for list="{{ item.paras }}" as="para" hint-placeholder-count="1">
+                      <p style="margin:0;"><strong style="font-weight:700;">{{ para.label }}</strong>{{ para.text }}</p>
+                    </sc-for>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        </div>
+      </div>
+    </div>
+  </sc-for>
+</div>
+<section style="background:#FFFFFF;color:#000000;font-family:'museo-sans',sans-serif;font-weight:400;">
+  <div style="padding:{{ moreTop }} 0 64px;">
+    <div style="max-width:1440px;margin:0 auto 24px;padding:0 40px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-size:clamp(26px,3vw,36px);line-height:1.15;font-weight:500;color:#000000;">More projects</h2>
+      <div style="display:flex;gap:12px;">
+        <button onClick="{{ scrollPrev }}" aria-label="Previous projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">←</button>
+        <button onClick="{{ scrollNext }}" aria-label="Next projects" style="all:unset;box-sizing:border-box;width:44px;height:44px;border:1px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#000000;font-family:'museo-sans',sans-serif;font-size:18px;line-height:1;" style-hover="background:#000000;color:#FFFFFF;">→</button>
+      </div>
+    </div>
+    <div ref="{{ cardsRef }}" onScroll="{{ onCardsScroll }}" style="display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-padding:0 max(40px, calc((100% - 1440px) / 2 + 40px));">
+      <sc-for list="{{ cards }}" as="card" hint-placeholder-count="6">
+        <a href="{{ card.href }}" style="flex:0 0 {{ cardW }};scroll-snap-align:start;display:flex;flex-direction:column;gap:8px;color:#000000;">
+          <img src="{{ card.img }}" alt="{{ card.title }}" loading="lazy" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#EDEDED;">
+          <div style="font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#000000;">{{ card.title }}</div>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+</section>
+<dc-import name="Footer" hint-size="100%,520px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;marqueeSpeed&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:60,&quot;min&quot;:10,&quot;max&quot;:200,&quot;step&quot;:5,&quot;unit&quot;:&quot;px/s&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = { open: null, vw: window.innerWidth };
+  data = [1, 2, 4, 3].map(n => n === 4 ? ({
+    line1: 'Digital', line2: 'payment', line3: 'solutions.',
+    imgR: 'img/extremepay-business-card-v4.jpg', imgRAlt: 'Extreme Pay business cards', imgL: 'img/extremepay-card.jpg', imgLAlt: 'Extreme Pay card being pulled from a jacket pocket', vidL: 'img/extremepay-logo-animation-03-v2.mp4', noVidL: false, vidAspect: '4 / 3', vidFit: 'cover', vidPad: '0', vidBg: '#EDEDED', imgBL: null, imgBLAlt: '', imgBR: 'img/extremepay-banner-02-v2.jpg', imgBRAlt: 'Extreme Pay pull-up banner', imgRAlt: '',
+    body: 'Extreme Pay is an all-in-one financial solution delivering digital banking and real-time payments. As the company was getting close to launching its card and app, it needed an energetic brand to capture the attention of its audience.',
+    acc: [
+      { title: 'The project', paras: [
+        { label: 'Client: ', text: 'Extreme Pay' },
+        { label: 'Studio: ', text: 'AECO Innovation Lab' },
+        { label: 'Role: ', text: 'Creative Director & Designer' },
+        { label: 'Support: ', text: 'Project Manager' }
+      ], body: '' },
+      { title: 'The brand', paras: [
+        { label: 'Logo: ', text: 'This company is about fast payments and easy transactions. The chosen logo displays a P with a swiping card as the negative space. The angles on the stem give it forward motion.' },
+        { label: 'Colours: ', text: 'We chose a vibrant combination of green for finance and purple for youthful energy. Together they represent a very modern finance brand.' },
+        { label: 'Pattern: ', text: 'I used variations of halftone patterns to give a feeling of movement and excitement while also encompassing the digital tone of the brand.' }
+      ], body: '' },
+      { title: 'The scope', cols: [
+        ['Logo suite', 'Fonts & colours', 'Patterns & image direction', 'Brand guide', 'Business cards'],
+        ['Payment card design', 'Gift card design', 'Website', 'Pull-up banners', 'Presentation templates']
+      ], body: 'This client needed branding and marketing assets to launch this fintech company. I worked carefully to ensure strict constraints were met. Once approved, all items were packaged up for the in-house team.' }
+    ]
+  }) : ({
+    line1: n === 1 ? 'Launching' : n === 2 ? 'Total' : 'Canadian',
+    line2: n === 1 ? 'development' : n === 2 ? 'white' : 'military',
+    line3: n === 1 ? 'expertise.' : n === 2 ? 'labelling.' : 'families.',
+    imgR: n === 1 ? 'img/devnex-logo-meaning-v3.jpg' : n === 2 ? 'img/ghost-website-v2.jpg' : 'img/tws-logo-02-v7.jpg',
+    imgL: n === 1 ? 'img/devnex-business-card.jpg' : n === 2 ? 'img/ghost-business-card-v2.jpg' : 'img/tws-business-card-v3.jpg',
+    imgLAlt: n === 2 ? 'Ghost business cards' : n === 3 ? 'Together We Stand Foundation business cards' : 'DevNex business cards',
+    vidL: n === 1 ? 'img/devnex-website-01-v2.mp4' : n === 2 ? 'img/ghost-logo-animation_06.mp4' : 'img/tws-logo-animation.mp4',
+    noVidL: false, vidFit: 'cover', vidPad: '0', vidBg: '#EDEDED',
+    vidAspect: n === 3 ? '3120 / 2304' : 'auto',
+    imgBL: n === 3 ? 'img/tws-logo.jpg' : null,
+    imgBLAlt: 'Together We Stand logo',
+    imgBR: n === 1 ? 'img/devnex-bag-v4.jpg' : n === 2 ? 'img/ghost-tshirt-v2.jpg' : 'img/tws-website-01.jpg',
+    imgBRAlt: n === 2 ? 'Ghost t-shirt' : n === 3 ? 'Together We Stand website on a laptop' : 'DevNex tote bag',
+    imgRAlt: n === 2 ? 'Ghost website on laptop and phone' : n === 3 ? 'Together We Stand maple leaf mark' : 'DevNex logo meaning over a building under construction',
+    body: n === 1 ? 'DEVNEX is a real estate development firm specializing in complex projects across Ontario. They were close to launching the company, and needed branding. I worked with the owner to set goals, assess competition and define how his brand would stand out.' : n === 2 ? 'Ghost was a small development studio that specialized in complete white labelling. They developed projects without credit, and also didn\'t list any of their clients publicly. They were practically invisible, and wanted branding to match that minimal, almost "non-existent" tone.' : 'Together We Stand (TWS) is Canada\'s national not-for-profit foundation dedicated to supporting Canadian Armed Forces military families. At launch, they needed just the branding basics to get the foundation started.',
+    acc: [
+      { title: 'The project', paras: n === 2 ? [
+        { label: 'Client: ', text: 'Ghost Dev Studio Inc. (aka Ghost)' },
+        { label: 'Studio: ', text: 'Zync Agency' },
+        { label: 'Role: ', text: 'Lead Designer' },
+        { label: 'Support: ', text: 'Creative Director, Developers, Project Manager' }
+      ] : n === 1 ? [
+        { label: 'Client: ', text: 'DEVNEX' },
+        { label: 'Studio: ', text: 'AECO Innovation Lab' },
+        { label: 'Role: ', text: 'Creative Director & Designer' },
+        { label: 'Support: ', text: 'Project Manager' }
+      ] : n === 3 ? [
+        { label: 'Client: ', text: 'Together We Stand' },
+        { label: 'Studio: ', text: 'Zync Agency' },
+        { label: 'Role: ', text: 'Lead Designer' },
+        { label: 'Support: ', text: 'Creative Director, Developers, Project Manager' }
+      ] : null, body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+      { title: 'The brand', paras: n === 1 ? [
+        { label: 'Naming: ', text: 'I ran brainstorm sessions with the team, cross-checking URL availability, to land on a name that would encompass both development and technology.' },
+        { label: 'Logo: ', text: 'The logo itself represents irregular parcels of land, as "difficult" projects are their specialty. They are arranged in a spinning X to create movement. Each parcel represents one of four areas of their expertise.' },
+        { label: 'Colour: ', text: 'The owner wanted a bold, modern presence, so we chose a bright red, even leaning a little towards pink.' }
+      ] : n === 2 ? [
+        { label: 'Logo: ', text: 'The logo is simple, direct and minimalist. Two brackets symbolize development. No embellishments needed.' },
+        { label: 'Colour: ', text: 'In keeping with the theme, we used black, white and grey. No accent colour. Everything was plain and simple.' }
+      ] : n === 3 ? [
+        { label: 'Logo: ', text: 'The logo concept here was a powerful combination of symbols: the iconic support ribbon folded in the shape of a Canadian maple leaf.' },
+        { label: 'Colours: ', text: 'The colour palette speaks for itself in this project. It could be nothing but red and white.' },
+        { label: 'Font: ', text: 'We settled on slightly condensed, strong letterforms that felt like they were standing tall together.' }
+      ] : null, body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' },
+      { title: 'The scope', cols: n === 1 ? [
+        ['Naming', 'Logo suite', 'Fonts & colours', 'Patterns & image direction'],
+        ['Website', 'Business cards', 'Brand guide', 'Print production']
+      ] : n === 2 ? [
+        ['Logo suite', 'Colour palette', 'Fonts'],
+        ['Website', 'Business cards', 'Print production']
+      ] : n === 3 ? [
+        ['Logo suite', 'Fonts & palette'],
+        ['Website', 'Business cards']
+      ] : null, body: n === 1 ? 'The client needed the essentials to get the company launched. Once these materials were complete, I handed over the brand to his in-house staff. We still maintain communications so I can assist when necessary.' : n === 2 ? 'This business just needed the bare minimum to get started. Once the materials were done, the developers worked mainly by referrals, and didn\'t require much other design work.' : n === 3 ? 'This was a small scope project with a very simple site. Once approved, final files were packaged and handed over to the client to take to their internal team.' : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' }
+    ]
+  }));
+  videoRef = (v) => {
+    if (!v) return;
+    v.muted = true; v.loop = true; v.playsInline = true;
+    if (!v._retry) {
+      v._retry = 0;
+      const recover = () => { if (v._retry++ > 5) return; const t = v.currentTime; setTimeout(() => { v.load(); v.currentTime = t; v.play().catch(() => {}); }, 500); };
+      v.addEventListener('error', recover);
+      v.addEventListener('stalled', () => { if (v.error) recover(); });
+    }
+    v.play().catch(() => {});
+  };
+  cardsRef = React.createRef();
+  moreProjects = [{ title: "LandLogic", img: "img/ll-phones-card.jpg", href: "Project - LandLogic.dc.html" }, { title: "One Ontario", img: "img/oo-brochure-tall.jpg", href: "Project - One Ontario.dc.html" }, { title: "Osler, Hoskin & Harcourt LLP", img: "img/osl-holding-card.jpg", href: "Project - Osler.dc.html" }, { title: "AECO Innovation Lab", img: "img/aeco-cover-card.jpg", href: "Project - AECO Innovation Lab.dc.html" }, { title: "Smaller project collection", img: "img/sp-collection-card.jpg", href: "Small Projects.dc.html" }];
+  cardsSetWidth() { const el = this.cardsRef.current, n = this.moreProjects.length; if (!el || el.children.length < n * 3) return 0; return el.children[n].offsetLeft - el.children[0].offsetLeft; }
+  cardsMargin() { const el = this.cardsRef.current; return Math.max(40, (el.clientWidth - 1440) / 2 + 40); }
+  centerCards = () => { const el = this.cardsRef.current, w = this.cardsSetWidth(); if (!w) return; el.scrollLeft = el.children[this.moreProjects.length].offsetLeft - el.children[0].offsetLeft - this.cardsMargin(); };
+  onCardsScroll = () => { clearTimeout(this.loopT); this.loopT = setTimeout(() => { const el = this.cardsRef.current, w = this.cardsSetWidth(); if (!w) return; const base = w - this.cardsMargin(); if (el.scrollLeft < base - w / 2) el.scrollLeft += w; else if (el.scrollLeft > base + w / 2) el.scrollLeft -= w; }, 120); };
+  scrollCards(dir) { const el = this.cardsRef.current; if (!el || !el.children[0]) return; el.scrollBy({ left: dir * (el.children[0].offsetWidth + 24), behavior: 'smooth' }); }
+  imgRefs = this.data.map(() => React.createRef());
+  textRefs = this.data.map(() => React.createRef());
+  accRefs = this.data.map(() => React.createRef());
+  h2Refs = this.data.map(() => React.createRef());
+  baseSize() { const w = window.innerWidth; return w >= 1024 ? 88 : Math.max(48, w * 88 / 1024); }
+  fit() {
+    const base = this.baseSize();
+    const sizes = this.h2Refs.map(r => {
+      const h = r.current;
+      if (!h) return base;
+      const cur = parseFloat(getComputedStyle(h).fontSize) || base;
+      const pad = parseFloat(getComputedStyle(h).paddingLeft) || 0;
+      const avail = h.clientWidth - pad;
+      if (window.innerWidth < 768) return base;
+      const need = h.scrollWidth - pad;
+      return Math.min(base, Math.floor(cur * avail / need * 10) / 10);
+    });
+    const prev = this.state.sizes || [];
+    if (sizes.some((s, i) => Math.abs(s - (prev[i] || 0)) > 0.5)) this.setState({ sizes }, this.measure);
+  }
+  measure = () => {
+    if (window.innerWidth < 768) { if (this.state.tops) this.setState({ tops: null }); return; }
+    const tops = this.data.map((_, i) => {
+      const img = this.imgRefs[i].current, h2 = this.h2Refs[i].current;
+      const tile = img && img.children[1] && img.children[1].children[0];
+      if (!img || !h2 || !tile) return 0;
+      return Math.max(0, Math.round(tile.offsetTop - img.offsetTop + tile.offsetHeight / 2 - h2.offsetHeight / 2));
+    });
+    const prev = this.state.tops || [];
+    if (tops.some((t, i) => t !== prev[i])) this.setState({ tops });
+  };
+  componentDidMount() {
+    this.onResize = () => this.setState({ vw: window.innerWidth, sizes: null }, () => { this.fit(); this.measure(); });
+    if (document.fonts) document.fonts.ready.then(() => { this.fit(); this.measure(); });
+    setTimeout(() => this.fit(), 50);
+    window.addEventListener('resize', this.onResize);
+    this.ro = new ResizeObserver(() => this.measure());
+    this.imgRefs.forEach(r => r.current && this.ro.observe(r.current));
+    setTimeout(this.measure, 100);
+    requestAnimationFrame(() => this.initAnim());
+    requestAnimationFrame(this.centerCards); window.addEventListener('resize', this.centerCards);
+    this.startHero();
+    this.drawGrid(); if (document.fonts) document.fonts.ready.then(this.drawGrid);
+    this.onGridResize = () => this.drawGrid(); window.addEventListener('resize', this.onGridResize);
+  }
+  mq1 = React.createRef(); mq2 = React.createRef(); mq3 = React.createRef(); mq4 = React.createRef(); heroRef = React.createRef(); gridRef = React.createRef();
+  drawGrid = () => {
+    const g = this.gridRef.current, sec = this.heroRef.current, a = this.mq1.current; if (!g || !sec || !a) return;
+    const sp = a.firstElementChild; const cs = getComputedStyle(sp);
+    const cx = document.createElement('canvas').getContext('2d'); cx.font = cs.fontWeight + ' 100px ' + cs.fontFamily;
+    const m = cx.measureText('D'); const fb = m.fontBoundingBoxAscent + m.fontBoundingBoxDescent; const br = m.fontBoundingBoxAscent / fb;
+    const rg = document.createRange(); rg.selectNodeContents(sp); const t = rg.getBoundingClientRect(); const sr = sec.getBoundingClientRect();
+    const b1 = t.top + br * t.height - sr.top;
+    const vw = document.documentElement.clientWidth;
+    const hx = document.createElement('canvas').getContext('2d'); hx.font = "700 100px 'barlow-condensed', sans-serif";
+    const homeFS = 22 * Math.min(vw / 100, 14.4);
+    const cell = hx.measureText('D').actualBoundingBoxAscent / 100 * homeFS / 4; if (!(cell > 4)) return; const cL = Math.max(vw - 1440, 0) / 2 + 40;
+    const line = '#EDEDED';
+    const pz = Math.max(8, Math.round(cell * 0.28)), pc = cell / 2, pu = 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="' + cell + '" height="' + cell + '"><path d="M' + (pc - pz / 2) + ' ' + pc + 'H' + (pc + pz / 2) + 'M' + pc + ' ' + (pc - pz / 2) + 'V' + (pc + pz / 2) + '" stroke="' + line + '" stroke-width="2.5"/></svg>') + '")';
+    const gx = ((cL % cell) + cell) % cell, gy = ((b1 % cell) + cell) % cell;
+    g.style.backgroundImage = pu + ', linear-gradient(to right, ' + line + ' 1px, transparent 1px), linear-gradient(to bottom, ' + line + ' 1px, transparent 1px)';
+    g.style.backgroundSize = cell + 'px ' + cell + 'px';
+    g.style.backgroundPosition = (gx + 0.5 - pc) + 'px ' + (gy + 0.5 - pc) + 'px, ' + gx + 'px ' + gy + 'px, ' + gx + 'px ' + gy + 'px';
+  };
+  startHero() {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    let xs = null, last = performance.now();
+    const w = el => { const c = el.firstElementChild; return c ? c.offsetWidth + (parseFloat(getComputedStyle(el).columnGap) || 0) : 0; };
+    const tick = now => {
+      const dt = Math.min(0.1, (now - last) / 1000); last = now;
+      const v = this.props.marqueeSpeed ?? 60;
+      const els = [this.mq1, this.mq2, this.mq3].map(r => r.current);
+      if (els.every(Boolean)) {
+        const ws = els.map(w);
+        if (!xs) xs = ws.map((wd, k) => -wd * [0, 0.37, 0.71, 0.18][k]);
+        els.forEach((el, k) => {
+          const wd = ws[k]; if (!wd) return;
+          xs[k] += (k % 2 ? 1 : -1) * v * [0.85, 0.75, 1.5, 1.45][k] * dt;
+          if (xs[k] <= -wd) xs[k] += wd; if (xs[k] > 0) xs[k] -= wd;
+          el.style.transform = 'translateX(' + xs[k] + 'px)';
+        });
+      }
+      this.raf = requestAnimationFrame(tick);
+    };
+    this.raf = requestAnimationFrame(tick);
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this.centerCards); window.removeEventListener('resize', this.onGridResize); cancelAnimationFrame(this.raf); window.removeEventListener('resize', this.onResize); this.ro && this.ro.disconnect(); this.pjIO && this.pjIO.disconnect(); }
+  initAnim() {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const HID = 'inset(-100% -100% 140% -100%)', VIS = 'inset(-100% -100% -0.3em -100%)';
+    const secs = [...document.querySelectorAll('[data-screen-label="Small project"]')];
+    const sets = secs.map(sec => {
+      const first = [...sec.querySelectorAll('[data-anim="text"]')];
+      const second = [...sec.querySelectorAll('[data-anim="acc"]')];
+      const fades = [...sec.querySelectorAll('[data-anim="tile"]')];
+      [...first, ...second].forEach(el => { el.style.transition = 'none'; el.style.clipPath = HID; el.style.translate = '0 140%'; });
+      fades.forEach(el => { el.style.transition = 'none'; el.style.transform = 'translateY(100%)'; el.style.clipPath = 'inset(0 0 100% 0)'; });
+      return { sec, first, second, fades };
+    });
+    const rise = (el, d) => { el.style.transition = 'translate 900ms cubic-bezier(.16,1,.3,1) ' + d + 'ms, clip-path 900ms cubic-bezier(.16,1,.3,1) ' + d + 'ms'; el.style.translate = ''; el.style.clipPath = VIS; setTimeout(() => { el.style.clipPath = ''; el.style.transition = ''; }, 900 + d + 50); };
+    this.pjIO = new IntersectionObserver(ents => ents.forEach(en => {
+      if (!en.isIntersecting) return; const st = sets.find(x => x.sec === en.target); if (!st) return; this.pjIO.unobserve(en.target);
+      st.first.forEach((el, k) => rise(el, k * 90));
+      st.fades.forEach((el, k) => { const d = 300 + k * 120, E = ' 1100ms cubic-bezier(.16,1,.3,1) ' + d + 'ms'; el.style.transition = 'transform' + E + ', clip-path' + E; el.style.transform = ''; el.style.clipPath = 'inset(0 0 0 0)'; setTimeout(() => { el.style.clipPath = ''; el.style.transition = ''; }, 1100 + d + 50); });
+      st.second.forEach((el, k) => rise(el, 500 + k * 90));
+    }), { threshold: 0.25 });
+    sets.forEach(x => this.pjIO.observe(x.sec));
+  }
+  renderVals() {
+    const m = this.state.vw < 768;
+    return {
+      videoRef: this.videoRef,
+      cardsRef: this.cardsRef, onCardsScroll: this.onCardsScroll, cards: [...this.moreProjects, ...this.moreProjects, ...this.moreProjects],
+      scrollPrev: () => this.scrollCards(-1), scrollNext: () => this.scrollCards(1),
+      moreTop: m ? '32px' : '64px', cardW: m ? 'calc((100vw - 64px) / 1.5)' : 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)',
+      mq1: this.mq1, mq2: this.mq2, mq3: this.mq3, mq4: this.mq4, heroRef: this.heroRef, gridRef: this.gridRef,
+      col: m ? { introBig: '1 / -1', introBigRow: '2', introSmall: '1 / -1', introSmallRow: '1', subW: '100%', brFlex: '1 1 0', brW: '100%', brAR: 'auto', rPad: '0', projPad: '48px 0', h2Wrap: 'wrap', br: 'none', imgs: '1 / -1', text: '1 / -1', textRow: '2', inner: '1 / -1', h2Pad: '0', accH: 'auto' } : { introBig: '5 / span 8', introBigRow: '1', introSmall: '1 / span 3', introSmallRow: '1', subW: '75%', brFlex: '1 1 0', brW: 'auto', brAR: '4/5', rPad: '48px', projPad: '96px 0', h2Wrap: 'nowrap', br: 'inline', imgs: '1 / span 7', text: '7 / span 6', textRow: '1', inner: '2 / span 5', h2Pad: 'calc((100% - 120px) / 12 + 22px)', accH: '115px' },
+      projects: this.data.map((p, pi) => ({
+        ...p,
+        h2Ref: this.h2Refs[pi],
+        h2Size: ((this.state.sizes && this.state.sizes[pi]) || this.baseSize()) + 'px',
+        imgRef: this.imgRefs[pi], textRef: this.textRefs[pi], accRef: this.accRefs[pi],
+        textTop: !m && this.state.tops ? this.state.tops[pi] + 'px' : '0px',
+        acc: p.acc.map((a, ai) => {
+          const k = pi + '-' + ai, open = this.state.open === k;
+          return { ...a, paras: a.paras || [{ label: '', text: a.body }], hasCols: !!a.cols, cols: a.cols || [], open, icon: open ? '−' : '+', rows: open ? '1fr' : '0fr', opacity: open ? 1 : 0, toggle: () => this.setState(s => ({ open: s.open === k ? null : k })) };
+        })
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -94,6 +94,15 @@
       "description": "Brand and event identity for AECO Innovation Lab, a venture lab: an edgy launch identity and an energetic 5th-anniversary upgrade, by designer Heather Stokes."
     },
     {
+      "file": "Small Projects*.dc.html",
+      "route": "/work/small-projects/",
+      "type": "collection",
+      "title": "Small Projects - Heather Stokes",
+      "headline": "Smaller projects",
+      "image": "/img/sp-collection-card.jpg",
+      "description": "Smaller identity projects by Toronto designer Heather Stokes: logos, palettes and small websites for DevNex, Ghost, Extreme Pay and Together We Stand."
+    },
+    {
       "file": "Contact*.dc.html",
       "route": "/contact/",
       "type": "contact",

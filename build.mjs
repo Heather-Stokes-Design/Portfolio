@@ -122,6 +122,12 @@ function jsonLd(page) {
       { "@type": "ListItem", position: 1, name: "Work", item: SITE_URL + "/#work" },
       { "@type": "ListItem", position: 2, name: page.client || page.title, item: url },
     ] });
+  } else if (page.type === "collection") {
+    graph.push({ "@type": "CollectionPage", "@id": url, url, name: page.headline || page.title, description: page.description, image: page.image ? abs(page.image) : undefined, author: { "@id": personId }, isPartOf: { "@id": website["@id"] } });
+    graph.push({ "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Work", item: SITE_URL + "/#work" },
+      { "@type": "ListItem", position: 2, name: page.headline || page.title, item: url },
+    ] });
   } else if (page.type === "about") {
     graph.push({ "@type": ["WebPage", "AboutPage"], "@id": url, url, name: page.title, description: page.description, about: { "@id": personId }, mainEntity: { "@id": personId }, isPartOf: { "@id": website["@id"] } });
   } else if (page.type === "contact") {

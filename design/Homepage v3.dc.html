@@ -159,7 +159,7 @@
   </div>
 </section>
 <section data-screen-label="Project 4" style="width:100%;background:#FFFFFF;">
-  <div style="max-width:1440px;margin:0 auto;padding:160px 40px 220px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
+  <div style="max-width:1440px;margin:0 auto;padding:160px 40px 60px;box-sizing:border-box;display:grid;grid-template-columns:repeat(12, minmax(0, 1fr));grid-template-rows:auto 1fr auto;column-gap:24px;row-gap:32px;">
     <div data-pjnum="1" aria-hidden="true" style="display:{{ pjNumGridDisp }};grid-column:{{ pjTitleCol }};grid-row:1 / 4;align-self:start;position:relative;z-index:0;pointer-events:none;user-select:none;font-family:'barlow-condensed',sans-serif;font-weight:700;font-size:{{ pjNumSize }};line-height:1;text-box:trim-both cap alphabetic;color:#F0F0F0;">04</div>
     <div onClick="{{ p4Go }}" style="translate:{{ pjShift }};cursor:pointer;grid-column:{{ pjImgCol }};grid-row:{{ pjImgRow }};position:relative;background:#D9D9D9;min-height:{{ pjImgMin }};"><img src="img/aeco-display-screen-web.jpg" alt="Display screen showing the AECO Innovation Lab five-year reflection presentation" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block;"></div>
     <div style="grid-column:{{ pjImg2Col }};grid-row:{{ pjImg3Row }};align-self:stretch;display:{{ pjSideDisp }};flex-direction:column;align-items:flex-start;justify-content:flex-end;gap:24px;">
@@ -178,6 +178,24 @@
     <a href="Project - AECO Innovation Lab.dc.html" aria-label="View the AECO Innovation Lab project" onMouseEnter="{{ p4Enter }}" onMouseLeave="{{ p4Leave }}" style="grid-column:{{ pjArrowCol }};grid-row:{{ pjArrowRow }};align-self:end;justify-self:start;display:flex;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p4CircleBg }};transition:background 100ms ease;color:#000000;font-family:'museo-sans',sans-serif;font-size:22px;line-height:1;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p4ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
   </div>
 </section>
+<section data-screen-label="Smaller projects" style="position:relative;isolation:isolate;width:100%;background:#FFFFFF;overflow:hidden;">
+  <div aria-hidden="true" style="position:absolute;inset:{{ spMqInset }};z-index:-1;display:flex;align-items:center;pointer-events:none;user-select:none;">
+    <div ref="{{ spMqRef }}" style="display:flex;white-space:nowrap;will-change:transform;font-family:'barlow-condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:{{ spBgSize }};line-height:1;color:transparent;-webkit-text-stroke:1px #D9D9D9;"><span style="flex:none;padding-right:0.25em;">Smaller projects</span><span style="flex:none;padding-right:0.25em;">Smaller projects</span><span style="flex:none;padding-right:0.25em;">Smaller projects</span><span style="flex:none;padding-right:0.25em;">Smaller projects</span></div>
+  </div>
+  <div style="max-width:1440px;margin:0 auto;padding:{{ spPad }};box-sizing:border-box;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:48px;align-items:center;">
+    <div style="grid-column:{{ spTextCol }};display:flex;flex-direction:column;align-items:flex-start;gap:16px;">
+      <div style="background:#FA3420;color:#FFFFFF;font-family:'museo-sans',sans-serif;font-weight:500;font-size:15px;line-height:1;padding:8px 12px;">Want more?</div>
+      <h2 style="margin:0;font-family:'farnham-display',serif;font-weight:300;font-size:{{ spHeadSize }};line-height:1;color:#000000;text-wrap:balance;"><a href="Small Projects.dc.html" style="color:#000000;transition:color 100ms ease;" style-hover="color:#FA3420;">See my collection of smaller projects.</a><a href="Small Projects.dc.html" aria-label="View smaller projects" onMouseEnter="{{ p5Enter }}" onMouseLeave="{{ p5Leave }}" style="display:{{ spArrowInline }};vertical-align:middle;margin-left:24px;align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p5CircleBg }};transition:background 100ms ease;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p5ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a></h2>
+      <div style="font-family:'museo-sans',sans-serif;font-size:16px;line-height:1.5;color:#FA3420;"><span style="font-weight:700;">Assorted clients</span><span style="font-weight:500;margin:0 10px;">|</span><span style="font-weight:500;">Identity and design</span></div>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" onMouseEnter="{{ p5Enter }}" onMouseLeave="{{ p5Leave }}" style="display:{{ spArrowBelow }};align-items:center;justify-content:center;width:{{ pjCircle }};height:{{ pjCircle }};border:1.5px solid #FA3420;border-radius:50%;background:{{ p5CircleBg }};transition:background 100ms ease;text-decoration:none;"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" fill="none" stroke="{{ p5ArrowStroke }}" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" style="display:block;transition:stroke 100ms ease;"><path d="M1 10 H27 M19 2 L27 10 L19 18"></path></svg></a>
+    </div>
+    <div style="grid-column:{{ spImgCol }};display:{{ spImgDisp }};gap:24px;overflow:hidden;margin-right:calc(-1 * (100vw - min(100vw, 1440px)) / 2 - {{ spSidePad }});">
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-ghost.png" alt="Ghost business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-devnex.png" alt="DevNex business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+      <a href="Small Projects.dc.html" aria-label="View smaller projects" style="flex:none;width:calc((100% - 48px) / 2.4);display:block;aspect-ratio:782 / 1042;background:#D9D9D9;"><img src="img/hp-sp-tile-tws.png" alt="Together We Stand business cards" style="width:100%;height:100%;object-fit:cover;display:block;"></a>
+    </div>
+  </div>
+</section>
 <dc-import name="Footer" hint-size="100%,520px"></dc-import>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;scrollMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Still&quot;,&quot;Parallax&quot;],&quot;default&quot;:&quot;Still&quot;,&quot;tsType&quot;:&quot;'Still' | 'Parallax'&quot;,&quot;section&quot;:&quot;Floating boxes&quot;}}">
@@ -185,6 +203,8 @@ class Component extends DCLogic {
   heroRef = React.createRef();
   cursorRef = React.createRef();
   ringRef = React.createRef();
+  spMqRef = React.createRef();
+  SP_IMGS = ['img/hp-sp-tws-card.png','img/hp-sp-ghost-card.png','img/hp-sp-devnex-card.png','img/hp-sp-extremepay-card.jpg','img/hp-sp-tws-logo.jpg','img/hp-sp-devnex-laptop.png'];
   gridRef = React.createRef();
   aboutAstRef = React.createRef();
   floatRef = React.createRef();
@@ -446,6 +466,7 @@ class Component extends DCLogic {
     if (this.ringRef.current && !this.reduceMotion) this.ringAnim = this.ringRef.current.animate([{ transform: 'rotate(0deg)' }, { transform: 'rotate(360deg)' }], { duration: 24000, iterations: Infinity });
     this.aimArrow();
     this.fit();
+    if (this.spMqRef.current && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) this.spMqAnim = this.spMqRef.current.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-50%)' }], { duration: 60000, iterations: Infinity });
     const go = () => { this.fit(); if (!this.introStarted) this.drawGrid(); if (!reduce) this.intro(); else { const tg = targets(); [tg.nav, tg.l1, tg.l2, tg.tag, tg.toronto, tg.tryB].forEach(el => el && (el.style.opacity = '')); } this.aimArrow(); };
     if (document.fonts) { document.fonts.ready.then(go); setTimeout(go, 1500); } else go();
     window.addEventListener('resize', this.onResize);
@@ -553,7 +574,7 @@ class Component extends DCLogic {
     this.heroRef.current.addEventListener('pointermove', this.onLetterMove);
     this.heroRef.current.addEventListener('pointerleave', this.onLetterOut = () => this.setHover(-1));
   }
-  componentWillUnmount() { window.removeEventListener('resize', this.fitFoot); if (this.pjIO) this.pjIO.disconnect(); window.removeEventListener('scroll', this.onPhrScroll); window.removeEventListener('resize', this.onPhrScroll); window.removeEventListener('resize', this.onNumResize); cancelAnimationFrame(this.floatRaf); if (this.floatIO) this.floatIO.disconnect(); if (this.onFloatMouse) window.removeEventListener('pointermove', this.onFloatMouse); window.removeEventListener('resize', this.onResize); clearInterval(this.cyc); clearTimeout(this.stopT); clearTimeout(this.gridT); cancelAnimationFrame(this.raf); if (this.io) this.io.disconnect(); const sec = this.heroRef.current; if (sec && this.onMove) { sec.removeEventListener('pointermove', this.onMove); sec.removeEventListener('pointerleave', this.onOut); } }
+  componentWillUnmount() { clearInterval(this.spTimer); this.spMqAnim && this.spMqAnim.cancel(); window.removeEventListener('resize', this.fitFoot); if (this.pjIO) this.pjIO.disconnect(); window.removeEventListener('scroll', this.onPhrScroll); window.removeEventListener('resize', this.onPhrScroll); window.removeEventListener('resize', this.onNumResize); cancelAnimationFrame(this.floatRaf); if (this.floatIO) this.floatIO.disconnect(); if (this.onFloatMouse) window.removeEventListener('pointermove', this.onFloatMouse); window.removeEventListener('resize', this.onResize); clearInterval(this.cyc); clearTimeout(this.stopT); clearTimeout(this.gridT); cancelAnimationFrame(this.raf); if (this.io) this.io.disconnect(); const sec = this.heroRef.current; if (sec && this.onMove) { sec.removeEventListener('pointermove', this.onMove); sec.removeEventListener('pointerleave', this.onOut); } }
   footBigRef = React.createRef();
   fitFoot = () => { const el = this.footBigRef.current; if (!el) return; el.style.fontSize = ''; const cs = getComputedStyle(el.parentElement), avail = el.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight), w = el.getBoundingClientRect().width; if (w > 0) el.style.fontSize = (parseFloat(getComputedStyle(el).fontSize) * avail / w * (window.innerWidth < 768 ? 1.6 : 1)) + 'px'; };
   scrollWork = () => { const t = document.getElementById('work'); if (!t) return; const y = t.getBoundingClientRect().top + window.scrollY; window.scrollTo({ top: y, behavior: this.reduceMotionAll ? 'auto' : 'smooth' }); };
@@ -581,6 +602,10 @@ class Component extends DCLogic {
       pj1CountSize: this.state.mob ? '180px' : '320px', pjNumInDisp: this.state.mob ? 'block' : 'none', pjNumGridDisp: this.state.mob ? 'none' : 'block', pjNumSize: this.state.numSize ? this.state.numSize + 'px' : '480px', p3Enter: () => this.setState({ p3Hover: true }), p3Leave: () => this.setState({ p3Hover: false }), p3Go: () => { window.location.href = 'Project - Osler.dc.html'; },
       p3CircleBg: this.state.p3Hover ? '#FA3420' : 'transparent', p3ArrowStroke: this.state.p3Hover ? '#FFFFFF' : '#FA3420',
       pjShift: this.state.mob ? 'none' : 'calc(0.15 * ((min(100vw, 1440px) - 344px) / 4 + 48px)) 0', p4Enter: () => this.setState({ p4Hover: true }), p4Leave: () => this.setState({ p4Hover: false }), p4Go: () => { window.location.href = 'Project - AECO Innovation Lab.dc.html'; },
+      p5Enter: () => this.setState({ p5Hover: true }), p5Leave: () => this.setState({ p5Hover: false }),
+      p5CircleBg: this.state.p5Hover ? '#FA3420' : 'transparent', p5ArrowStroke: this.state.p5Hover ? '#FFFFFF' : '#FA3420',
+      spPad: this.state.mob ? '60px 20px 120px' : '200px 40px 240px', spOffset: this.state.mob ? '24px' : '1.6em', spMqRef: this.spMqRef, spBgSize: this.state.mob ? '340px' : 'clamp(320px, 39vw, 570px)', spHeadSize: this.state.mob ? '48px' : 'clamp(48px, 6vw, 88px)', spTextCol: this.state.mob ? '1 / -1' : '1 / span 8', spImgCol: this.state.mob ? '1 / -1' : '9 / -1', spSidePad: this.state.mob ? '20px' : '40px', spImgDisp: this.state.mob ? 'none' : 'flex', spArrowInline: this.state.mob ? 'none' : 'inline-flex', spArrowBelow: this.state.mob ? 'flex' : 'none', spMqInset: this.state.mob ? '0 0 12% 0' : '0 0 15% 0',
+      
       p4CircleBg: this.state.p4Hover ? '#FA3420' : 'transparent', p4ArrowStroke: this.state.p4Hover ? '#FFFFFF' : '#FA3420',
       pjCountSize: this.state.mob ? '32px' : '48px', pjSideDisp: this.state.mob ? 'none' : 'flex', pjArrowJustify: this.state.mob ? 'start' : 'end',
       pjEnter: () => this.setState({ pjHover: true }), pjLeave: () => this.setState({ pjHover: false }),
