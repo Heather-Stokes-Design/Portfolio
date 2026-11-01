@@ -224,6 +224,7 @@ ${t.src.trim()}
 </x-dc>
 ${s.src}
 <script src="${RT}/accordion.js"></script>
+<script src="${RT}/preload.js"></script>
 ${page.form ? NETLIFY_FORM + "\n" : ""}</body>
 </html>
 `;
@@ -247,6 +248,7 @@ fs.copyFileSync(path.join(DESIGN, "support.js"), path.join(OUT, RT, "support.js"
 for (const f of fs.readdirSync(path.join(SITE, "vendor"))) fs.copyFileSync(path.join(SITE, "vendor", f), path.join(OUT, RT, f));
 fs.copyFileSync(path.join(SITE, "form.js"), path.join(OUT, RT, "form.js"));
 fs.copyFileSync(path.join(SITE, "accordion.js"), path.join(OUT, RT, "accordion.js"));
+fs.copyFileSync(path.join(SITE, "preload.js"), path.join(OUT, RT, "preload.js"));
 
 // Shared components pulled in with <dc-import> (e.g. the footer).
 const footer = findFile("Footer*.dc.html");
