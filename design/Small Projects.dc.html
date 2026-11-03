@@ -18,14 +18,14 @@
     <a href="Homepage v3.dc.html" style="font-family:'barlow-condensed',sans-serif;font-size:22px;line-height:1.5;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Heather Stokes</a>
     <button onClick="{{ toggleMenu }}" aria-label="Menu" aria-expanded="{{ menuOpen }}" style="display:{{ burgerDisp }};align-items:center;justify-content:center;width:44px;height:44px;margin:-6px -10px -6px 0;padding:0;border:none;background:transparent;color:#000000;cursor:pointer;"><svg width="28" height="28" fill="currentColor" viewBox="0 0 256 256"><path d="{{ burgerPath }}"></path></svg></button>
     <div style="display:{{ linksDisp }};align-items:center;gap:24px;">
-      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Work</a>
+      <a href="Homepage v3.dc.html#work" style="font-size:15px;line-height:1.5;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Case studies</a>
       <a href="About Page.dc.html" style="font-size:15px;line-height:1.5;color:#000000;" style-hover="color:#000000;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">About</a>
       <a href="Contact Page.dc.html" style="display:inline-flex;align-items:center;background:#000000;color:#FFFFFF;font-size:15px;line-height:1;padding:10px 16px;border-radius:999px;" style-hover="color:#FFFFFF;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;">Contact</a>
     </div>
   </nav>
   <sc-if value="{{ menuShown }}" hint-placeholder-val="{{ false }}">
     <div style="position:fixed;inset:0;z-index:-1;background:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:80px 40px 40px;box-sizing:border-box;">
-      <a href="Homepage v3.dc.html#work" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#000000;">Work</a>
+      <a href="Homepage v3.dc.html#work" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#000000;">Case studies</a>
       <a href="About Page.dc.html" style="display:flex;align-items:center;min-height:44px;font-size:36px;line-height:1.2;color:#000000;">About</a>
       <a href="Contact Page.dc.html" style="position:absolute;left:40px;right:40px;bottom:40px;display:flex;align-items:center;justify-content:center;min-height:56px;box-sizing:border-box;background:#000000;color:#FFFFFF;font-size:22px;line-height:1;padding:16px 24px;border-radius:999px;">Contact</a>
     </div>
@@ -49,7 +49,7 @@
 <div style="max-width:1440px;margin:0 auto;padding:0 40px 40px;box-sizing:border-box;font-family:'museo-sans',sans-serif;font-weight:400;">
 
   <sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
-    <div data-screen-label="Small project" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.projPad }};align-items:start;">
+    <div data-screen-label="Small project" id="{{ p.anchor }}" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.projPad }};align-items:start;">
       <div ref="{{ p.imgRef }}" style="grid-column:{{ col.imgs }};grid-row:1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:24px;align-items:stretch;">
         <div style="grid-column:1 / span 4;display:flex;flex-direction:column;align-items:flex-end;gap:24px;">
           <div data-anim="tile" style="width:100%;position:relative;aspect-ratio:3/4;background:#EDEDED;"><sc-if value="{{ p.imgL }}" hint-placeholder-val="{{ false }}"><img src="{{ p.imgL }}" alt="{{ p.imgLAlt }}" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></sc-if></div>
@@ -256,6 +256,7 @@ class Component extends DCLogic {
     if (tops.some((t, i) => t !== prev[i])) this.setState({ tops });
   };
   componentDidMount() {
+    if (location.hash.length > 1) { history.scrollRestoration = 'manual'; setTimeout(() => { const el = document.getElementById(decodeURIComponent(location.hash.slice(1))); if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' }); }, 600); }
     this.onResize = () => this.setState({ vw: window.innerWidth, sizes: null }, () => { this.fit(); this.measure(); });
     if (document.fonts) document.fonts.ready.then(() => { this.fit(); this.measure(); });
     setTimeout(() => this.fit(), 50);
@@ -346,7 +347,7 @@ class Component extends DCLogic {
       mq1: this.mq1, mq2: this.mq2, mq3: this.mq3, mq4: this.mq4, heroRef: this.heroRef, gridRef: this.gridRef,
       col: m ? { introBig: '1 / -1', introBigRow: '2', introSmall: '1 / -1', introSmallRow: '1', subW: '100%', brFlex: '1 1 0', brW: '100%', brAR: 'auto', rPad: '0', projPad: '48px 0', h2Wrap: 'wrap', br: 'none', imgs: '1 / -1', text: '1 / -1', textRow: '2', inner: '1 / -1', h2Pad: '0', accH: 'auto' } : { introBig: '5 / span 8', introBigRow: '1', introSmall: '1 / span 3', introSmallRow: '1', subW: '75%', brFlex: '1 1 0', brW: 'auto', brAR: '4/5', rPad: '48px', projPad: '96px 0', h2Wrap: 'nowrap', br: 'inline', imgs: '1 / span 7', text: '7 / span 6', textRow: '1', inner: '2 / span 5', h2Pad: 'calc((100% - 120px) / 12 + 22px)', accH: '115px' },
       projects: this.data.map((p, pi) => ({
-        ...p,
+        ...p, anchor: ['devnex', 'ghost', 'extreme-pay', 'tws'][pi],
         h2Ref: this.h2Refs[pi],
         h2Size: ((this.state.sizes && this.state.sizes[pi]) || this.baseSize()) + 'px',
         imgRef: this.imgRefs[pi], textRef: this.textRefs[pi], accRef: this.accRefs[pi],

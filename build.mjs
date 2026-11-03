@@ -119,13 +119,13 @@ function jsonLd(page) {
       genre: "Graphic design", inLanguage: "en-CA", isPartOf: { "@id": website["@id"] },
     });
     graph.push({ "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Work", item: SITE_URL + "/#work" },
+      { "@type": "ListItem", position: 1, name: "Case studies", item: SITE_URL + "/#work" },
       { "@type": "ListItem", position: 2, name: page.client || page.title, item: url },
     ] });
   } else if (page.type === "collection") {
     graph.push({ "@type": "CollectionPage", "@id": url, url, name: page.headline || page.title, description: page.description, image: page.image ? abs(page.image) : undefined, author: { "@id": personId }, isPartOf: { "@id": website["@id"] } });
     graph.push({ "@type": "BreadcrumbList", itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Work", item: SITE_URL + "/#work" },
+      { "@type": "ListItem", position: 1, name: "Case studies", item: SITE_URL + "/#work" },
       { "@type": "ListItem", position: 2, name: page.headline || page.title, item: url },
     ] });
   } else if (page.type === "about") {
