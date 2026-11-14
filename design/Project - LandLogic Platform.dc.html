@@ -170,10 +170,9 @@
     <img src="img/llp-design-system-icons.webp" alt="LandLogic platform design system icon library and sign-in flows in Figma" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
   </div>
 
-  <div style="display:grid;grid-template-columns:{{ col.three }};gap:24px;margin-top:24px;">
-    <img src="img/llp-panel-sections.webp" alt="LandLogic platform sidebar panel states for layer and parcel information in Figma" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
-    <img src="img/llp-info-sidebar.webp" alt="LandLogic platform information and explore sidebars over a Toronto map" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
-    <img src="img/placeholder.svg" alt="Placeholder image" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
+    <img src="img/llp-panel-sections.webp" alt="LandLogic platform sidebar panel states for layer and parcel information in Figma" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
+    <img src="img/llp-info-sidebar.webp" alt="LandLogic platform information and explore sidebars over a Toronto map" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
   </div>
 
   <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
