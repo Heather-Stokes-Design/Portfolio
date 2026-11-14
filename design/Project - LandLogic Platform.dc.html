@@ -165,20 +165,14 @@
   </div>
 
   <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;">
-    <div style="grid-column:{{ col.span4 }};aspect-ratio:1/1;display:flex;flex-direction:column;">
-      <div style="flex:0 0 44%;background:#000000;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Black</div><div>#000000</div></div>
-      <div style="flex:0 0 18%;background:#1CD396;color:#000000;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Bright green</div><div>#1CD396</div></div>
-      <div style="flex:0 0 18%;background:#008167;color:#FFFFFF;box-sizing:border-box;padding:0 12px 12px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Accessible Green</div><div>#008167</div></div>
-      <div style="flex:0 0 10%;background:#00AAFF;color:#000000;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Bright blue</div><div>#00AAFF</div></div>
-      <div style="flex:0 0 10%;background:#008DD4;color:#FFFFFF;box-sizing:border-box;padding:0 12px;display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;line-height:1.4;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;"><div>Accessible Blue</div><div>#008DD4</div></div>
-    </div>
+    <img src="img/placeholder.svg" alt="Placeholder image" style="grid-column:{{ col.span4 }};display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
     <div style="grid-column:{{ col.span8 }};position:relative;aspect-ratio:{{ col.ar8 }};order:{{ col.logoOrder }};background:#000000;"><img src="img/placeholder.svg" alt="Placeholder image" style="position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;"></div>
   </div>
 
   <div style="display:grid;grid-template-columns:{{ col.three }};gap:24px;margin-top:24px;">
-    <video ref="{{ videoRef }}" autoplay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsinline="{{ true }}" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;background:#D9D9D9;"></video>
-    <img src="img/placeholder.svg" alt="Placeholder image" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
-    <img src="img/placeholder.svg" alt="Placeholder image" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:left center;">
+    <img src="img/llp-type-scale.webp" alt="LandLogic platform type scale set in Greycliff CF" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/llp-toolbar-states.webp" alt="LandLogic platform map toolbar and tool states in Figma" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
+    <img src="img/llp-info-sidebar.webp" alt="LandLogic platform information and explore sidebars over a Toronto map" style="display:block;width:100%;aspect-ratio:1/1;object-fit:cover;">
   </div>
 
   <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;padding:{{ col.secPad }};">
