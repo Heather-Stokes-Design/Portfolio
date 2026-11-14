@@ -258,13 +258,17 @@ fs.writeFileSync(path.join(OUT, RT, "Footer.dc.txt"), rewrite(fs.readFileSync(pa
 // Pages.
 const used = new Set([footer]);
 const built = [];
+// Pages marked "draft": true appear in the local preview only. Netlify (which sets NETLIFY=true)
+// skips them, so a work-in-progress page can never reach the live site.
+const LIVE = process.env.NETLIFY === "true";
 for (const page of config.pages) {
   const file = findFile(page.file);
   if (!file) { warn(`No design file matches "${page.file}" — ${page.route} was skipped`); continue; }
   used.add(file);
+  if (page.draft && LIVE) { console.log(`  ${file}  ->  (draft, not published)`); continue; }
   const { text } = buildPage(page, file, DESIGN);
-  built.push({ ...page, text });
-  console.log(`  ${file}  ->  ${page.route}`);
+  if (!page.draft) built.push({ ...page, text });
+  console.log(`  ${file}  ->  ${page.route}${page.draft ? "  (DRAFT: preview only)" : ""}`);
 }
 for (const g of config.ignore || []) { const f = findFile(g); if (f) used.add(f); }
 for (const f of designFiles) if (!used.has(f)) warn(`New design file "${f}" isn't on the site yet — add it to site.config.json`);

@@ -54,7 +54,7 @@
       "description": "About Heather Stokes, Toronto creative director and graphic designer: from agency work on McDonald's Canada and Osler to in-house brand leadership for startups, ventures and not-for-profits."
     },
     {
-      "file": "Project - LandLogic*.dc.html",
+      "file": "Project - LandLogic.dc.html",
       "route": "/work/landlogic/",
       "type": "project",
       "client": "LandLogic",
@@ -62,6 +62,16 @@
       "headline": "Building a new proptech brand",
       "image": "/img/landlogic-hero.jpg",
       "description": "Brand identity for LandLogic, a proptech DaaS / SaaS company: brand positioning, a full identity, asset roll-out and a communication strategy, by designer Heather Stokes."
+    },
+    {
+      "file": "Project - LandLogic Platform.dc.html",
+      "route": "/work/landlogic-platform/",
+      "type": "project",
+      "draft": true,
+      "client": "LandLogic",
+      "title": "LandLogic Platform - Heather Stokes",
+      "headline": "Project headline goes here",
+      "description": "Draft: LandLogic platform case study by designer Heather Stokes."
     },
     {
       "file": "Project - One Ontario*.dc.html",
