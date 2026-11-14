@@ -306,3 +306,7 @@ ${built.map((p) => `## ${p.title}\n\nURL: ${abs(p.route)}\n\n${p.text}`).join("\
 
 console.log(`\nDone. ${built.length} pages built into /dist.`);
 if (warnings.length) console.log(`${warnings.length} note(s) above need a look.`);
+
+// Safety check: refuse to finish (so Netlify won't publish) if anything is broken.
+const { runChecks } = await import("./check.mjs");
+if (!(await runChecks(OUT))) process.exit(1);

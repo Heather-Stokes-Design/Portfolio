@@ -28,6 +28,10 @@ they'll still be matched. If you **add a new page**, it needs a line in
 `site.config.json` with its address, title and description. The build will tell you
 when a design file isn't on the site yet.
 
+## Safety check (nothing broken goes live)
+
+Every build ends with an automatic check (`check.mjs`): links to pages and page sections, images, videos and data files. If anything is broken, the build stops with a list of what's wrong, and Netlify refuses to publish it, so the live site stays as it was. It also flags images over 2 MB and videos over 10 MB as slow on phones. Run `node check.mjs --external` to also test links to other websites.
+
 ## Preview on your own computer
 
 ```bash
