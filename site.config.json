@@ -74,6 +74,17 @@
       "description": "UX/UI redesign of the LandLogic land-data platform: simpler flows, clearer data visualization for 100+ layers and refined interactions, by designer and creative director Heather Stokes.",
       "image": "/img/llp-hero-desktop-plants.jpg"
     },
+  {
+    "file": "Project - AECORN Realty.dc.html",
+    "route": "/work/aecorn-realty/",
+    "type": "project",
+    "draft": true,
+    "client": "AECORN Realty",
+    "title": "AECORN Realty - Heather Stokes",
+    "headline": "Using AI to enhance identity design",
+    "description": "Draft: AECORN Realty identity case study by designer Heather Stokes.",
+    "image": "/img/placeholder.svg"
+  },
     {
       "file": "Project - One Ontario*.dc.html",
       "route": "/work/one-ontario/",
