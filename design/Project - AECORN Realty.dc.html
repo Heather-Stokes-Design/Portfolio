@@ -262,12 +262,12 @@
     </div>
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
-    <img src="img/aecorn-illus-construction.jpg" alt="Illustration of a homeowner looking at a building under construction across the street" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;">
-    <img src="img/aecorn-illus-floodplain.jpg" alt="Aerial illustration of a floodplain overlapping a property boundary" style="grid-column:{{ col.span6 }};display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 66%;">
+  <div style="display:grid;grid-template-columns:{{ col.illRow }};gap:24px;margin-top:24px;">
+    <img src="img/aecorn-illus-construction.jpg" alt="Illustration of a homeowner looking at a building under construction across the street" style="display:block;width:100%;height:auto;">
+    <img src="img/aecorn-illus-floodplain.jpg" alt="Aerial illustration of a floodplain overlapping a property boundary" style="display:block;width:100%;height:auto;">
   </div>
 
-  <img src="img/aecorn-illus-city-view.jpg" alt="Illustration of a person on a hill looking out over a city" style="display:block;width:100%;height:auto;margin-top:24px;">
+  <img src="img/aecorn-illus-city-view.jpg" alt="Illustration of a person on a hill looking out over a city" style="display:block;width:100%;aspect-ratio:2/1;object-fit:cover;object-position:50% 70%;margin-top:24px;">
 
   <div style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:24px;">
     <img src="img/aecorn-illus-heritage-map.jpg" alt="Watercolour aerial illustration of a highlighted heritage district" style="grid-column:{{ col.span6 }};display:block;width:100%;height:auto;">
@@ -482,7 +482,7 @@ class Component extends DCLogic {
       toggleMenu: () => this.setState(s => ({ menu: !s.menu })),
       burgerPath: this.state.menu ? 'M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z' : 'M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z',
       info, isMobile: m, isDesktop: !m,
-      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0' },
+      col: m ? { left6: '1 / -1', mid3: '1 / -1', right3: '1 / -1', right6: '1 / -1', spacer: '64px', secPad: '32px 0', scopeDisp: 'none', textL: '1 / -1', textR: '1 / -1', noteCol: '1 / -1', noteRow: '2', span4: '1 / -1', span6: '1 / -1', span8: '1 / -1', illRow: 'minmax(0,1fr)', ar4: '1 / 1', ar6: '3 / 2', ar8: '2 / 1', rowH: 'auto', three: 'minmax(0,1fr)', accW: '100%', accCols: 'minmax(0,1fr)', accGap: '0', accLeftBorder: 'none', accTitleFlex: '1', accPad: '64px 0 0', moreTop: '32px', cardW: 'calc((100vw - 64px) / 1.5)', copyJustify: 'flex-start', logoOrder: '-1' } : { left6: '1 / span 6', mid3: '7 / span 3', right3: '10 / span 3', right6: '7 / span 6', spacer: '150px', secPad: '64px 0', scopeDisp: 'flex', textL: '1 / span 6', textR: '7 / span 6', noteCol: '1 / span 4', noteRow: '1', span4: 'span 4', span6: 'span 6', span8: 'span 8', illRow: 'minmax(0,4fr) minmax(0,3fr)', ar4: 'auto', ar6: 'auto', ar8: 'auto', rowH: 'calc((100cqw - 24px) / 3)', three: 'repeat(3,minmax(0,1fr))', accW: 'calc((100% - 264px) * 10 / 12 + 216px)', accCols: 'repeat(2,minmax(0,1fr))', accGap: '24px', accLeftBorder: '1px solid #D9D9D9', accTitleFlex: '1', accPad: '64px 0 24px', moreTop: '64px', cardW: 'calc((min(100vw, 1440px) - 80px - 72px) / 3.35)', copyJustify: 'flex-end', logoOrder: '0' },
       cardsRef: this.cardsRef,
       onCardsScroll: this.onCardsScroll,
       cards: [...this.projects, ...this.projects, ...this.projects],
